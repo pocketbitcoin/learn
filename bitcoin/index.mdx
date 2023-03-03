@@ -1,0 +1,44 @@
+---
+type: learn/category
+lang: en
+slug: bitcoin
+title: Bitcoin
+metatitle: Everything about Bitcoin
+author: Claudio Koller
+description: Learn more about Bitcoin basics.
+keywords: bitcoin
+src: data:image/svg+xml,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M18.627.449c8.037 2.003 12.928 10.144 10.924 18.18-2.004 8.035-10.143 12.926-18.181 10.922C3.336 27.547-1.555 19.408.45 11.373 2.451 3.336 10.591-1.555 18.626.449zm-4.197 4.71l-.673 2.706a54.877 54.877 0 01-1.05-.248l.002-.008-2.267-.567-.437 1.759s.224.051.478.112l.257.061c.252.061.47.117.459.125.666.166.786.608.766.958L10.12 17.47c-.081.203-.287.507-.753.391.017.024-1.194-.298-1.194-.298l-.816 1.885 2.139.535c.398.1.787.204 1.171.303l-.68 2.737 1.642.41.674-2.708c.448.122.883.235 1.31.341l-.672 2.695 1.643.411.68-2.732c2.803.532 4.911.317 5.798-2.224.714-2.045-.036-3.225-1.51-3.995 1.073-.248 1.882-.956 2.098-2.418.298-1.998-1.22-3.072-3.295-3.788l.674-2.707-1.643-.41-.656 2.635c-.432-.108-.876-.21-1.317-.31l.66-2.653-1.643-.41zm-.692 9.958c1.115.278 4.687.83 4.156 2.964-.507 2.045-3.944.94-5.058.662l.902-3.626zm1.232-4.95c.927.233 3.915.665 3.433 2.606-.464 1.86-3.324.916-4.252.684l.819-3.29z" fill="%23F7931A" /%3E%3C/svg%3E
+published: !!timestamp 2022-11-23T21:21:21.000+02:00
+updated: !!timestamp 2022-11-23T21:21:21.000+02:00
+---
+
+import { Article, Articles, CategoryLayout } from 'ui/learn';
+import { metadata as bitcoinExplained } from './bitcoin-explained.mdx';
+import { metadata as bitcoinWalletsOptions } from './bitcoin-wallets-options.mdx';
+import { metadata as dcaExplained } from './dca-explained.mdx';
+import { metadata as howToBequathBitcoin } from './how-to-bequeath-bitcoin.mdx';
+import { metadata as setUpBitcoinBackup } from './set-up-bitcoin-backup.mdx';
+import { metadata as buyBitcoinOptions } from './buy-bitcoin-options.mdx';
+import { metadata as whoIsSatoshiNakamoto } from './who-is-satoshi-nakamoto.mdx';
+import { metadata as satoshiCurrencyExplained } from './satoshi-currency-explained.mdx';
+import { metadata as hashfunctionExplained } from './hashfunction-explained.mdx';
+import { metadata as cypherpunksExplained } from './cypherpunks-explained.mdx';
+import { metadata as kycLightExplained } from './kyc-light-explained.mdx';
+
+
+export { getStaticProps } from 'lib/learn';
+export default (p) => <CategoryLayout category={metadata} {...p} />;
+
+<Articles>
+  <Article article={bitcoinExplained} />
+  <Article article={buyBitcoinOptions} />
+  <Article article={satoshiCurrencyExplained} />
+  <Article article={whoIsSatoshiNakamoto} />
+  <Article article={bitcoinWalletsOptions} />
+  <Article article={setUpBitcoinBackup} />
+  <Article article={howToBequathBitcoin} />
+  <Article article={dcaExplained} />
+  <Article article={hashfunctionExplained} />
+  <Article article={cypherpunksExplained} />
+  <Article article={kycLightExplained} />
+</Articles>

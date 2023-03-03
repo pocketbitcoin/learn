@@ -1,0 +1,75 @@
+---
+type: learn/article
+lang: en
+slug: set-up-coldcard-xpub
+title: Instructions how to set up the Coldcard with the XPub
+metatitle: How to set up Pocket with Coldcard
+author: Claudio Koller
+category:
+  slug: coldcard
+  title: Coldcard
+description: >
+  Additional article, with pictures, on how to set up the Coldcard with your public extended key (XPub) using Pocket.
+keywords:
+- Coldcard XPub
+- Pocket set up with Coldcard
+- Coldcard Bitcoin kaufen
+- Cold Wallet xPub
+- Cold Storage xPub
+- Hardware Wallet XPub
+- Pocket Hardware Wallet xPub
+- Pocket Coldcard XPub
+- Pocket Coinkite
+- Bitcoin Wallet XPub
+published: !!timestamp 2022-12-29T21:21:21.000+02:00
+updated: !!timestamp 2022-12-29T21:21:21.000+02:00
+---
+
+import { ArticleLayout, Article, Articles, Callout } from 'ui/learn';
+import { metadata as dcaExplained } from 'pages/deu/learn/bitcoin/dca-explained.mdx';
+
+export { getStaticProps } from 'lib/learn';
+export default (p) => (
+  <ArticleLayout
+    article={metadata}
+    toc={toc}
+    related={dcaExplained}
+    {...p}
+  />
+);
+
+This is an additional specific instruction to set up your Coldcard with XPub. [The full instructions on how to set up the hardware wallet with Pocket can be found here](/learn/coldcard/set-up-coldcard)
+
+Pocket is popular for recurring bitcoin purchases. Once you set up Pocket, you can reuse your payment details at will to receive bitcoin again into your desired wallet.
+
+In this case, so that we don't always have to pay out your bitcoin to the same bitcoin address, we recommend that you share multiple bitcoin addresses with Pocket at once using your public extended key (XPub)
+
+<Callout icon = "💡">
+ This way you give less information about your wallet and behavior to the bitcoin network.
+</Callout>
+
+To do this, click on the option to share your entire wallet with Pocket.
+
+![Screenshot of the Pocket website with the option to share your entire wallet with Pocket](https://cdn.pocketbitcoin.com/DAFKXQ29Ip8/fc14ef06-89d0-40e6-a1a2-a27c2a3f00c3.png?width=1024&height=576&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMElEQVQImWNwY8jur5w0o3FGMUM4QyhD5/mjN379/9/BUM3AzVAZy9CYw9AUxpAIADjLDxOhX8DuAAAAAElFTkSuQmCC)
+
+To query your XPub, you can export your wallet on your Coldcard via `Advanced/Tools` -> `File Management` -> `Export Wallet`.
+
+![Coldcard menu to wallet export function](https://cdn.pocketbitcoin.com/DAFKXQ29Ip8/aed36797-899a-4810-b8e0-38cd2335f90c.png?width=1024&height=576&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAALklEQVQImWO4kHP/SOb+UwU7/s96zGAr6CPBICnOIOIt78bwf8X//7P/g8iT/wF18BTI/XP7QwAAAABJRU5ErkJggg==)
+
+When exporting your wallet, select the `Generic JSON` option and next specify the same account number you used in your derivation path. Make sure that you create a separate account for Pocket. We recommend you to use the account number `1` here.
+
+![Coldcard menu for JSON export of a specific wallet account](https://cdn.pocketbitcoin.com/DAFKXQ29Ip8/2a609265-5e99-4c69-a891-96902e8fc09d.png?width=1024&height=576&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMklEQVQImQEnANj/ANZz57litsJor/+U3ABIG1cZABoXABRNIUYA/6f//53//6v//8j/dG4UxShHWjMAAAAASUVORK5CYII=)
+
+Once you have exported your XPub to the file `coldcard-export.json`, you can now copy the `xpub` from it to the Pocket website. Click on the `confirm` button.
+
+![Copy screen capture of Pocket Website XPub into field](https://cdn.pocketbitcoin.com/DAFKXQ29Ip8/07632b56-b140-4410-ae99-f250a5dc0deb.png?width=1024&height=576&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMElEQVQImWNwZchqL+7qq5hQyBDKEMLQ9uLNs+///zYylDBwM1SGMVSmMNSEMiQAADYBDvSOQCLPAAAAAElFTkSuQmCC)
+
+With each bitcoin purchase, your bitcoin will now automatically land on a respective unused bitcoin address of your Coldcard wallet.
+
+![Screenshot of the Pocket website with the successfully shared bitcoin wallet addresses](https://cdn.pocketbitcoin.com/DAFKXQ29Ip8/5bba01da-477c-4995-9e27-19a11800222b.png?width=1024&height=576&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMElEQVQImWPwZMid17lw+cTlFQwxDDEMfftXXvn77/8UhlYGbobKKIb6PIa2aIYUAETpD3tqGs1SAAAAAElFTkSuQmCC)
+
+Here you can find the further process [how to set up the coldcard with Pocket](/learn/coldcard/set-up-coldcard).
+
+<Callout icon = "❓">
+ Do you have still questions? If you have any questions or problems setting up your Coldcard, feel free to contact us via [Telegram](https://t.me/PocketBitcoin) or [email](/contact). The Pocket community will be happy to help you.
+</Callout>

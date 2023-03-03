@@ -1,0 +1,102 @@
+---
+type: learn/article
+lang: en
+slug: hashfunction-explained
+title: What is a hash function in bitcoin?
+metatitle: What is a hash function in bitcoin? | Pocket
+author: Claudio Koller
+category:
+  slug: bitcoin
+  title: Bitcoin Basics
+description: >
+ What is a hash or hash function? Where is it used in Bitcoin? And what is the connection to SHA-256? We explain what a block hash is and much more.
+keywords:
+- Bitcoin hash values
+- SHA-256
+- Bitcoin Mining hash function
+- Bitcoin Hash
+- Origin hash functions
+- Bitcoin hash
+- Hash definition
+- Hash function definition
+published: !!timestamp 2022-12-29T21:21:21.000+02:00
+updated: !!timestamp 2022-12-29T21:21:21.000+02:00
+---
+
+import { ArticleLayout, Article, Articles, Callout } from 'ui/learn';
+import { metadata as bitcoinExplained } from './bitcoin-explained.mdx';
+
+export { getStaticProps } from 'lib/learn';
+export default (p) => (
+  <ArticleLayout
+    article={metadata}
+    related={bitcoinExplained}
+    toc={toc}
+    {...p}
+  />
+);
+
+A hash function is an important element of cryptography. The mathematical function is used to convert a string of characters, a word or a data set of any size into an output of a fixed length. Hash functions are basically used for security purposes and form the core of Bitcoin's cryptographic security.
+
+## Origin of hash functions
+
+The term "to hash" and means "to chop up" or "to scatter". Hash functions chop up information and convert it into another form. 
+
+Hash functions have long been used in encryption and digital signatures and are an important part of secure digital communication.
+
+## What are hash functions?
+
+In cryptography, a hash function is a mathematical function that takes input data of any size and produces a fixed-size output. The product of information that has been mapped by a hash function is called a hash or hash value.
+The most important property of a hash function is that it is a one-way function. This means that it is easy to calculate the hash value of any input, but it is impossible to retrieve the original input using only the hash value, even if the hash function used is known. A hash function is therefore not reversible.
+
+## What is a hash value?
+
+The hash value represents the result that was calculated using a hash function.
+The hash value is often encoded as a hexadecimal string. This means that the hash value consists of a combination of numbers and letters between 0 and 9 as well as A to F.
+
+## Types of hash functions
+
+There are many different hash functions, all of which have different properties. The hash function used in Bitcoin is SHA-256, which stands for Secure Hash Algorithm.
+
+## History of SHA-256
+
+The SHA (SHA-0) was developed by the National Institute of Standards and Technology (NIST) and the NSA (National Security Agency) and introduced in 1993. Due to a weakness in the algorithm, the successor SHA-1 was already introduced in 1995.
+
+In the meantime, there are the hash functions SHA-224, SHA-256, SHA-384 and SHA-512. The digit in the name describes the length of the bit sequence of the output.
+
+## Where are hash functions used in Bitcoin?
+
+Several Bitcoin functions are based on the hash function SHA-256. A Bitcoin address is a hash value of the associated public key and individual transactions are also identified by their hash values. SHA-256 is also used in the Bitcoin mining process.
+
+<Callout icon = "💡">
+ Apart from Bitcoin, hash functions are most commonly used in the storage of passwords.
+</Callout>
+
+[> Learn more about the basics of cryptography behind Bitcoin](/learn/bitcoin/cryptography-explained).
+
+## Hash functions in the mining process
+
+In the mining process, an average of 3000 new transactions are bundled into one block. In the process, the transactions are put into an order. These bundled transactions are used together with the hash of the previous block to generate the new hash. With this newly generated hash, the new block is complete. 
+Because the hash of a block contains the hash of the previous block, the order of the blocks in the blockchain is inviolable. 
+
+In order for a block to be added to the Bitcoin blockchain, miners must find a hash that meets the predefined difficulty level.
+
+[> Learn more about bitcoin mining difficulty](/learn/bitcoin/bitcoin-mining-difficulty)
+
+### Example of a hash
+
+To illustrate what a hash looks like, we gave the text "Pocket Bitcoin" as input value to the SHA-256 hash function and got the following value as output: 2990e6def278e1d502089e8d3832c30bc8f884202ab700025e54376bff3cc2e4
+
+From the same input value, the same unique hash is always generated. So, if the slightly customised text "pocket bitcoin" is used as input value, we get the output value: 95841df382eda078daf25205ea6a9d156472e5a901135f2c447fe9f9d0809f25.
+
+The output differs significantly even though the inputs are minimally different. In this example, only a few uppercase letters were converted to lowercase in the input. However, the output, or hash value, has changed so much that no similarities can be seen.
+
+<Callout icon = "🔗">
+ This [Hash Generator](https://emn178.github.io/online-tools/sha256.html) can be used to create hash values for your input.
+</Callout>
+
+## Conclusion
+
+Hash functions play a very important role in the Bitcoin network. Hash functions are used to verify the integrity of transaction data to enable the creation of new Bitcoin currency units through the mining process.
+
+In addition, hash functions are used to generate unique addresses for all users in the network.

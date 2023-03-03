@@ -1,0 +1,23 @@
+---
+type: learn/category
+lang: en
+slug: bitbox02
+title: BitBox02
+author: Claudio Koller
+category:
+  slug: bitbox02
+  title: BitBox02
+description: Learn all about the BitBox02 hardware wallet.
+keywords: Set-up bitbox02
+src: data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.414.858a2 2 0 012.72-.102l.109.102 2.12 2.12L23.88.464a1 1 0 011.414 0l4.243 4.243a1 1 0 010 1.414L27.02 8.635l2.122 2.122a2 2 0 01.102 2.72l-.102.109-15.556 15.556a2 2 0 01-2.72.102l-.109-.102-9.9-9.9a2 2 0 01-.1-2.718l.1-.11L16.415.858zm8.172.314L22.07 3.686l4.243 4.242 2.515-2.514-4.242-4.242zM10.013 20.865L7.92 22.957l.816.318 1.295-1.295.963.353.79-.79-1.772-.678zm-.619-2.311l.679 1.873 1.873.679-.682-1.877-1.87-.675zm-.437.16l-.79.791.353.963-1.295 1.295.318.816 2.092-2.092-.678-1.773z' fill='%23000' /%3E%3C/svg%3E
+---
+
+import { Article, Articles, CategoryLayout } from 'ui/learn';
+import { metadata as setUpBitbox02 } from './set-up-bitbox02.mdx';
+
+export { getStaticProps } from 'lib/learn';
+export default (p) => <CategoryLayout category={metadata} {...p} />;
+
+<Articles>
+  <Article article={setUpBitbox02} />
+</Articles>

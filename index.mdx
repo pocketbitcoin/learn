@@ -1,0 +1,42 @@
+---
+type: learn
+title: Hey, what do you want to learn today? 👋
+---
+
+import { Article, Articles, Category, Categories, LearnLayout } from 'ui/learn';
+import { metadata as buyBitcoinOptions } from './bitcoin/buy-bitcoin-options.mdx';
+import { metadata as bitcoinExplained } from './bitcoin/bitcoin-explained.mdx';
+import { metadata as bitcoin } from './bitcoin/index.mdx';
+import { metadata as economy } from './economy/index.mdx';
+import { metadata as bluewallet } from './bluewallet/index.mdx';
+import { metadata as bitbox02 } from './bitbox02/index.mdx';
+import { metadata as ledger } from './ledger/index.mdx';
+import { metadata as trezor } from './trezor/index.mdx';
+import { metadata as coldcard } from './coldcard/index.mdx';
+
+export { getStaticProps } from 'lib/learn';
+export default (p) => (
+  <LearnLayout
+    title={metadata.title}
+    popular={buyBitcoinOptions}
+    fresh={bitcoinExplained}
+    {...p}
+  />
+);
+
+## Basic knowledge
+
+<Categories>
+  <Category category={bitcoin} />
+  <Category category={economy} />
+</Categories>
+
+## Storage
+
+<Categories>
+  <Category category={bluewallet} />
+  <Category category={bitbox02} />
+  <Category category={ledger} />
+  <Category category={trezor} />
+  <Category category={coldcard} />
+</Categories>

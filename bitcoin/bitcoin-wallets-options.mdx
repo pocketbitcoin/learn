@@ -1,0 +1,167 @@
+---
+type: learn/article
+lang: en
+slug: bitcoin-wallets-options
+title: The best Bitcoin wallet for your private use
+metatitle: The best Bitcoin wallet for your private use
+author: Claudio Koller
+category:
+  slug: bitcoin
+  title: Bitcoin Basics
+description: >
+   What is a bitcoin wallet? What are the differences between custodial and non-custodial wallets? Learn about the advantages of hardware wallets.
+keywords:
+- Bitcoin Wallet
+- Hardware Wallet
+- Paper Wallet
+- Desktop Wallet
+- Mobile Wallet
+- Arten von Bitcoin Wallets
+- Custodial Wallet
+- Non Custodial Wallet
+- Cold Wallet
+- Hot Wallet
+- be your own bank
+- not you keys not your coins
+- Bitcoin Storage
+- Store bitcoin
+published: !!timestamp 2022-11-23T21:21:21.000+02:00
+updated: !!timestamp 2022-11-23T21:21:21.000+02:00
+---
+
+import { ArticleLayout, Article, Articles, Callout } from 'ui/learn';
+
+export { getStaticProps } from 'lib/learn';
+export default (p) => (
+  <ArticleLayout
+    article={metadata}
+    toc={toc}
+    {...p}
+  />
+);
+
+A bitcoin wallet is a digital wallet that is used to store Bitcoin and to send as well as receive the cryptocurrency. There are now different types of wallets. In this article you will find a brief overview.
+
+## Bitcoin Wallet = Keychain
+
+Strictly speaking, wallets do not store your bitcoin. This is because bitcoin are held in the decentralized blockchain. Instead, wallets store and manage the private keys of your bitcoin addresses. This means that you only own the access, or rather the private keys, to your bitcoin balance. You control the bitcoin on the network by signing transactions with your private keys in the wallet.
+
+In this way, a bitcoin wallet is more like a keychain. This contains at least one private key and one public key.
+
+### Public and private key briefly explained
+
+The key pair consists of a private key and an associated public key. Private keys are used to send bitcoin and must be kept secret. Public keys are used to receive bitcoin and can be shared with anyone without hesitation. The public key is derived from a corresponding private key.
+
+### Not your keys, not your coins.
+
+The saying "Not your keys, not your coins" refers to the fact that you must own the private keys for your bitcoin yourself in order to be able to manage them independently. Only those who own their private keys themselves can also decide when and how to spend the digital currency.
+
+Therefore, wallets are differentiated based on two important features.
+
+## Important features of bitcoin wallets
+
+Wallets are distinguished by the following two characteristics:
+
+- Ownership / Custody: Custodial or Non-Custodial Wallet.
+    - Custodial wallets are managed by a third party.
+    - With a non-custodial wallet, you manage your bitcoin yourself.
+- Connectivity: Hot or Cold Wallet
+    - A hot wallet is connected to the internet.
+    - Cold wallets manage the private keys offline.
+
+When choosing a wallet, you should be guided by how high your balance is and how often you plan to send bitcoin. It requires a compromise between security and convenience.
+
+### Ownership / Custody: Custodial Wallet vs. Non-Custodial Wallet
+
+With a custodial wallet, or a wallet managed by a third party, you place your private keys in the hands of someone else, such as an exchange or broker. In doing so, you have to trust and depend on this third party, because they have full control over your funds, while you basically only have permission to send and receive bitcoin.
+
+For this reason, the phrase "Not your keys, not your coins" has quickly spread throughout the bitcoin community.
+
+Whereas with a non-custodial wallet, or a self-managed wallet, you own your keys yourself and have complete control over how you use your assets. You are your own bank. However, this also gives you greater personal responsibility.
+
+You are responsible for the security of your wallet. This includes the secure handling and especially the secure storage of your recovery phrase.
+
+### Connectivity: Hot Wallets vs. Cold Wallets
+
+Hot wallets are connected to the internet online. They are easy to set up and you also have quick access to your bitcoin. Unfortunately, this means that the risk of someone stealing your private keys through a cyberattack is greater than with an offline wallet.
+
+Hot wallets are therefore particularly suitable for managing smaller bitcoin amounts. Often, smaller amounts are stored separately in hot wallets so that transactions can be processed quickly and easily via them.
+
+The different types of hot wallets include web, desktop and mobile wallets.
+
+Unlike hot wallets, cold wallets generate and store private keys in an offline environment, also known as cold storage. Cold wallets do not require a connection to the Internet.
+
+Since they are never connected to the Internet, the risk of an attacking person gaining digital access to your keys is greatly reduced. Only your private keys can be accessed in a physical way.
+
+<Callout icon = "💡">
+  For larger amounts, a cold wallet is recommended for security reasons.
+</Callout>
+
+## Types of Bitcoin Wallets
+
+### Hardware Wallet
+
+Hardware wallets are physical devices, often similar in appearance to a USB flash drive, which can be used to operate a secure bitcoin wallet. Hardware wallets are designed to be immune to cyberattacks. The hardware is not directly connected to the Internet and is therefore not externally vulnerable to attack. Thus, these are cold wallets.
+
+If you manage larger amounts of bitcoin, it is recommended to consider a hardware wallet as it is one of the most secure storage methods.
+
+<Callout icon = "💡">
+ The hardware wallet, as well as the private key that goes with it, should be kept in a safe place.
+</Callout>
+
+A hardware wallet generates a recovery phrase, which allows you to restore your wallet to another device. This way you have a backup if your hardware wallet is lost or damaged.
+
+Most hardware wallets also require an unlock PIN. However, if a person with bad intentions gains physical access to your hardware wallet, it is possible for them to guess the PIN. Therefore, it is crucial that you keep your hardware wallet, as well as the recovery phrase, safe.
+
+<Callout icon = "📌">
+ True to the saying "Not your keys, not you coins", we recommend keeping your bitcoin on a hardware wallet. For this reason, you can order the most popular hardware wallets directly from us.
+</Callout>
+
+### Desktop Wallet
+
+A desktop wallet is software that you install on your computer. As a result, the security of your bitcoin depends on how well your computer is protected against cyberattacks.
+
+You can run a desktop wallet as either a "full node" or a "light client". A "full node" wallet has access to the entire Bitcoin blockchain and requires hundreds of gigabytes of storage.
+
+**Light Client Wallet Simply Explained**.
+
+In contrast, the light client wallet itself does not store the entire bitcoin blockchain, but queries it from other full nodes for the specific transactions and blocks in which it is interested.
+
+Light clients therefore do not interact directly with the Bitcoin blockchain, but use other full nodes as intermediaries.
+
+As a result, light client wallets are less private and do not act independently, since they are relying on full nodes. On the other hand, they are easier to install and require less storage space. A light client wallet is recommended for beginners.
+
+<Callout icon = "💡">
+ Most desktop wallets are light clients, as running an entire full node requires a lot of storage and is not efficient.
+</Callout>
+
+### Mobile Wallet
+
+Mobile wallets are also software wallets. A mobile wallet is an app which is installed on the smartphone. Therefore, it is well suited for payments in everyday life, since you usually have your smartphone with you.
+
+With mobile wallets, the private key is generally managed directly in the software, without the manufacturing company having access to it. Many of these apps are simple in design. You can easily send and receive bitcoin by scanning a QR code with your smartphone camera.
+
+<Callout icon = "💡">
+Mobile wallets are basically suitable for smaller amounts and are comparable to your physical wallet.
+</Callout>
+
+There are also more complex mobile wallets with more detailed functionalities for advanced users.
+
+**Tip**
+
+BlueWallet is one of the most popular mobile wallets in the bitcoin community. We have written a guide specifically for [using BlueWallet with Pocket](/learn/bluewallet/set-up-bluewallet) to help you create and set up a BlueWallet bitcoin wallet.
+
+### Paper Wallet
+
+A paper wallet is one of the cheapest methods to store bitcoin yourself. The private keys can be printed out. The paper wallet should ideally be laminated to be waterproof and stored in a fireproof folder or safe. The private key is offline and is therefore immune to any cyberattacks. There is no way to digitally access a piece of paper.
+
+To securely generate the private key for a paper wallet, you should disconnect the computer from the Internet and Bluetooth. Any service that offers to generate a private key should be run offline. Also, avoid copying and pasting the private key on someone else's computer.
+
+**Tip**
+
+The better alternative to a paper wallet is an Opendime. An Opendime is a physical device and looks like a USB flash drive. It is like the digital form of a paper wallet. However, what makes the Opendime special is that it hides the private key until it is physically unsealed. Unlike the paper wallet, there is no way for the manufacturer or any other party involved in the sale to access the private key. An opendime costs a bit more than a piece of paper, but is quite a bit cheaper than a hardware wallet.
+
+<Callout icon = "❓">
+Do you still have questions?
+If you're still unclear about anything related to the wallet, feel free to contact us on [Telegram](https://t.me/PocketBitcoinTG) or by [email](https://pocketbitcoin.com/de/contact). The Pocket community will be happy to help.
+</Callout>

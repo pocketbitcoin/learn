@@ -1,0 +1,88 @@
+---
+type: learn/article
+lang: en
+slug: satoshi-currency-explained
+title: What is a Satoshi?
+metatitle: What is a Satoshi? Explanation of the currency unit
+author: Claudio Koller
+category:
+  slug: bitcoin
+  title: Bitcoin Basics
+description: >
+ One satoshi is the smallest unit of bitcoin currency. But how much satoshi does one bitcoin make? Learn how to convert bitcoin to satoshi. 
+keywords:
+- Satoshi
+- Currency unit Satoshi
+- Currency unit Bitcoin
+- Monetary unit Satoshi
+- Monetary unit Bitcoin
+- Satoshi Nakamoto
+published: !!timestamp 2022-12-29T21:21:21.000+02:00
+updated: !!timestamp 2022-12-29T21:21:21.000+02:00
+---
+
+import { ArticleLayout, Article, Articles, Books, Book, Callout } from 'ui/learn';
+import { metadata as bitcoinExplained } from './bitcoin-explained.mdx';
+import { metadata as buyBitcoinOptions } from './buy-bitcoin-options.mdx';
+
+export { getStaticProps } from 'lib/learn';
+export default (p) => (
+  <ArticleLayout
+    article={metadata}
+    related={bitcoinExplained}
+    related={buyBitcoinOptions}
+    toc={toc}
+    {...p}
+  />
+);
+
+A satoshi is the smallest currency unit of bitcoin. Like the cent for the euro, or the centime for the franc, the satoshi is the smallest unit of currency for bitcoin. 
+
+Many individuals believe that if they want to invest in the digital asset, they need to buy a whole bitcoin. However, because the smaller currency unit satoshi exists, it is possible to buy only a fraction of a Bitcoin. This allows for smaller transactions to be made.
+
+## How many satoshi are one bitcoin?
+
+Each bitcoin is divisible into 100,000,000 satoshi. satoshi are also abbreviated as sat(s). 
+
+<Callout icon = "🪙">
+1 satoshi = 0.00000001 bitcoin <br />
+1 bitcoin = 100,000,000 satoshi
+</Callout>
+
+So a value in bitcoin can always be multiplied by 100 million to convert the amount to satoshi. 
+
+### How many satoshi are one euro?
+
+On 10/21/2022, one bitcoin is worth approximately 19,494.83 euros. So, conversely, one Euro is equal to exactly 0.0000513 Bitcoin at that time. The conversion from Euro to satoshi always depends on the current daily exchange rate. 
+
+<Callout icon = "🪙">
+1 BTC = 100,000,000 Sats = 19,494.83 EUR <br />
+1 EUR = 0.0000513 BTC = 5'129.57 Sats
+</Callout>
+
+### How many satoshi are one Swiss franc?
+
+On 10/21/2022, one bitcoin is worth approximately 19,195.47 Swiss francs. So, conversely, one franc is exactly equal to 0.0000521 bitcoin at that time. The conversion from francs to Satoshi always depends on the current daily exchange rate. 
+
+<Callout icon = "🪙">
+1 BTC = 100,000,000 Sats = 19,195.47 CHF <br />
+1 CHF = 0.0000521 BTC = 5'209.56 Sats
+</Callout>
+
+## Where does the name Satoshi come from?
+
+Bitcoin was invented by the pseudonym Satoshi Nakamoto. To this day, it is unclear who or what collective is behind this pseudonym. However, Satoshi Nakamoto must have an above-average talent in the fields of programming, cryptography, as well as a very good economic understanding. So, the satoshi was named after the Bitcoin creator collective Satoshi Nakamoto. 
+
+## Where can I buy satoshi?
+
+There are many different options to buy satoshi and therefore bitcoin. There are now numerous bitcoin exchanges, brokers, peer-to-peer platforms and bitcoin ATMs. 
+
+Bitcoin brokers are best suited for beginners who want to buy bitcoin easily and without complications. The exchange of fiat currency for bitcoin and vice versa takes place between the buyer or seller and the broker.
+
+<Callout icon = "💡">
+ Pocket is a broker for individuals who want to buy smaller or larger amounts of bitcoin. It takes just a few minutes to make your first bitcoin purchase.
+[>Buy bitcoin now in just 3 steps](/checkout).
+
+</Callout>
+
+[> Learn more about the different buying options, as well as their advantages and disadvantages.](/learn/bitcoin/buy-bitcoin-options)
