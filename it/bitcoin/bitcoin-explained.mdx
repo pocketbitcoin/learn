@@ -1,0 +1,88 @@
+---
+type: learn/article
+lang: it
+slug: bitcoin-explained
+title: What is Bitcoin?
+metatitle: What is Bitcoin? Bitcoin explained briefly and simply
+author: Matthias Koller
+category:
+  slug: bitcoin
+  title: Bitcoin Basics
+description: >
+   How is bitcoin a software and currency at the same time? We explain how bitcoin works and what the differences are with the euro and other currencies.
+keywords:
+- What is Bitcoin?
+- Bitcoin briefly explained
+- Bitcoin simply explained
+- Bitcon as money
+- Bitcoin as store of value
+- Bitcoin as a payment network
+- Be your own bank
+published: !!timestamp 2022-11-23T21:21:21.000+02:00
+updated: !!timestamp 2022-11-23T21:21:21.000+02:00
+---
+
+import { ArticleLayout, Article, Articles, Callout } from 'ui/learn';
+
+export { getStaticProps } from 'lib/learn';
+export default (p) => (
+  <ArticleLayout
+    article={metadata}
+    toc={toc}
+    {...p}
+  />
+);
+
+Bitcoin is an open source software that provides a decentralized, digital and global currency. At the same time, bitcoin is a monetary network through which people can send money directly to each other without having to trust and know each other personally.
+
+The basis behind bitcoin is the blockchain. The name is derived from cryptographically linked blocks, that contain and settle transactions. This decentralized database is not subject to any government control, central bank or company. Therefore, there is no need to trust any third party that processes payments. Bitcoin operates completely without a need for trust.
+
+<Callout icon = "📎">
+ Bitcoin is a payment network as well as money at the same time. It is managed without any financial institutions.
+</Callout>
+
+## Origin bitcoin
+
+The idea of bitcoin was published by a person or group under the pseudonym "Satoshi Nakamoto" in October 2008 as a whitepaper on the Internet. In January 2009 the first open source implementation of bitcoin was released.
+
+## Bitcoin as a payment network
+
+Bitcoin transactions can be processed without the supervision of a government, company or bank. Thus, in the bitcoin payment network, there are no parties to mediate or higher authorities to control it. Transactions are cryptographically signed and settled over a peer-to-peer network that has proven resistant to censorship.
+
+Any person with Internet access and an electronic device can be part of the network. The bitcoin network therefore excludes no one.
+
+<Callout icon = "📎">
+ Bitcoin is an open-source software that allows direct transactions between two parties, without a higher controlling authority.
+</Callout>
+
+Bitcoin software is open-source. This means that the source code is fully published and freely available. Every person participating in the network thus has the option to check and verify the algorithm themselves. Every person has the opportunity to participate in the development of bitcoin and submit suggestions for improvements. However, changes to the system cannot be made and published alone. It needs a common consensus of the network, i.e. an agreement of the network participants.
+
+## Bitcoin as money
+
+Network participants can send money to each other in the form of the currency unit bitcoin. This is done completely digitally. Unlike fiat money, such as the US dollar, the euro or the Swiss franc, there are no physical notes or coins of the bitcoin currency unit.
+
+Like the cent to the euro or the centime to the franc, bitcoin has a small unit of currency called a satoshi. Each bitcoin is made up of 100&nbsp;million Satoshis.
+
+1&nbsp;BTC = 100,000,000&nbsp;sats.
+
+One of Bitcoin's biggest differences from traditional government currencies is that the number of bitcoin available on the network is limited to 21&nbsp;million units based on a mathematical formula.
+
+<Callout icon = "🏷️">
+ The price of bitcoin is determined by supply and demand in a free market.
+</Callout>
+
+## Bitcoin does not need financial institutions.
+
+Since bitcoin operates without banks, fintechs, or other financial institutions, each person who owns bitcoin is their own bank.
+
+<Callout icon = "🏦">
+ With Bitcoin, the motto is: be your own bank.
+</Callout>
+
+When you manage your bitcoin in your own wallet, you are the sole owner with access to your bitcoin funds. Thus, you are completely independent from any third parties. You only have to trust yourself and the cryptography behind bitcoin.
+
+The Bitcoin database, also called blockchain, with all transactions and balances, is not located on a central server of a financial institution, but is distributed on thousands of computers worldwide. This distribution gives all network participants the security that no bitcoin can be created out of thin air, invalid  transactions executed or issued twice.
+
+> Bitcoin creates an environment that is ripe for innovation because it is not just a currency; it is a technology, a network and a currency.
+>
+> Andreas Antonopoulos
