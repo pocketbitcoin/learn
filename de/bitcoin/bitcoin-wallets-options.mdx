@@ -1,0 +1,180 @@
+---
+type: learn/article
+lang: de
+slug: bitcoin-wallets-options
+title: Die beste Bitcoin Wallet für deine private Nutzung
+metatitle: Die beste Bitcoin Wallet für deine private Nutzung
+author: Claudio Koller
+category:
+  slug: bitcoin
+  title: Bitcoin Grundlagen
+description: >
+  Was ist eine Bitcoin-Wallet? Welches sind die Unterschiede zwischen Custodial und Non-Custodial-Wallets? Lerne die Vorteile von Hardware-Wallets kennen.
+keywords:
+- Bitcoin Wallet
+- Hardware Wallet
+- Paper Wallet
+- Desktop Wallet
+- Mobile Wallet
+- Arten von Bitcoin Wallets
+- Custodial Wallet
+- Non Custodial Wallet
+- Cold Wallet
+- Hot Wallet
+- be your own bank
+- not you keys not your coins
+- Bitcoin verwahren
+- Bitcoin aufbewahren
+published: !!timestamp 2022-10-14T21:21:21.000+02:00
+updated: !!timestamp 2022-10-14T21:21:21.000+02:00
+---
+
+import { ArticleLayout, Article, Articles, Books, Book, Callout } from 'ui/learn';
+import { metadata as satoshiCurrencyExplained } from './satoshi-currency-explained.mdx';
+import { metadata as bitcoinExplained } from './bitcoin-explained.mdx';
+import { metadata as bitcoinEntdecken } from '../books/bitcoin-entdecken.mdx';
+
+export { getStaticProps } from 'lib/learn';
+export default (p) => (
+  <ArticleLayout
+    article={metadata}
+    related={satoshiCurrencyExplained}
+    related={bitcoinExplained}
+    toc={toc}
+    {...p}
+  />
+);
+
+Eine Bitcoin-Wallet ist eine digitale Geldbörse, die zur Aufbewahrung von Bitcoin und zum Senden sowie Empfangen der Kryptowährung dient. Es gibt inzwischen unterschiedliche Arten von Wallets. In diesem Artikel findest du einen kurzen Überblick.
+
+## Bitcoin Wallet = Schlüsselbund
+
+Wallets bewahren streng genommen nicht deine Bitcoin auf. Denn Bitcoin werden in der dezentralen Blockchain festgehalten. In Wallets werden stattdessen die privaten Schlüssel deiner Bitcoin-Adressen gespeichert und verwaltet. Das heisst, dass du lediglich den Zugang oder vielmehr die privaten Schlüssel zu deinem Bitcoin Guthaben besitzt. Du kontrollierst die Bitcoin im Netzwerk, indem du Transaktionen mit deinen privaten Schlüsseln in der Wallet signierst.
+
+So gesehen ist eine Bitcoin-Wallet eher so etwas wie ein Schlüsselbund. Dieser enthält mindestens einen privaten und einen öffentlichen Schlüssel.
+
+### Öffentlicher und privater Schlüssel kurz erklärt
+
+Das Schlüsselpaar besteht aus einem privaten und einem zugehörigen öffentlichen Schlüssel. Private Schlüssel werden zum Senden von Bitcoin verwendet und müssen geheim gehalten werden. Öffentliche Schlüssel werden zum Empfangen von Bitcoin verwendet und können mit jeder Personen bedenkenlos geteilt werden. Der öffentliche Schlüssel wird von einem entsprechenden privaten Schlüssel abgeleitet.
+
+### Not your keys, not your coins
+
+Die Redensart «Nicht deine Schlüssel, nicht deine Münzen» bezieht sich darauf, dass du die privaten Schlüssel für deine Bitcoin selbst besitzen musst, um sie auch selbstständig verwalten zu können. Nur wer seine privaten Schlüssel selbst besitzt, kann auch selber darüber entscheiden wann und wie die digitale Währung ausgegeben werden soll.
+
+Daher werden Wallets anhand zwei wichtiger Merkmale unterschieden.
+
+## Wichtige Merkmale von Bitcoin-Wallets
+
+Wallets werden durch folgende zwei Merkmale unterschieden:
+
+- Eigentum / Verwahrung: Custodial oder Non-Custodial Wallet
+    - Custodial Wallets sind fremdverwaltet.
+    - Mit einer Non-Custodial Wallet verwaltest du deine Bitcoin selber.
+- Konnektivität: Hot oder Cold Wallet
+    - Eine Hot Wallet ist mit dem Internet verbunden.
+    - Cold Wallets verwalten die private Schlüssel offline.
+
+Bei der Wahl einer Wallet solltest du dich daran orientieren, wie hoch dein Guthaben ist und wie oft du planst Bitcoin zu versenden. Es erfordert einen Kompromiss zwischen Sicherheit und Komfort.
+
+### Eigentum / Verwahrung: Custodial Wallet vs. Non-Custodial Wallet
+
+Bei einer Custodial Wallet, oder einer fremd verwalteten Wallet, gibst du deine privaten Schlüssel in die Hände anderer, zum Beispiel einer Börse oder eines Brokers. Dabei musst du dieser Drittparteie vertrauen und bist von ihr abhängig, denn sie hat die volle Kontrolle über deine Gelder, während du grundsätzlich nur die Erlaubnis hast, Bitcoin zu versenden und zu empfangen.
+
+Aus diesem Grund hat sich die Redewendung «Not your keys, not your coins» in der Bitcoin Community schnell verbreitet.
+
+Hingegen bei einer Non-Custodial Wallet, oder einer selbst verwalteten Wallet, besitzt du deine Schlüssel selber und hast die vollständige Kontrolle darüber, wie du deine Vermögenswerte verwendest. Du bist deine eigene Bank. Dadurch trägst du jedoch auch eine grössere Eigenverantwortung.
+
+Du bist selber für die Sicherheit deiner Wallet verantwortlich. Dazu gehört auch der sichere Umgang und speziell die sichere Aufbewahrung deiner Wiederherstellungsphrase.
+
+### Konnektivität: Hot Wallets vs. Cold Wallets
+
+Hot Wallets sind online mit dem Internet verbunden. Sie sind einfach einzurichten und du hast zudem einen schnellen Zugriff auf deine Bitcoin. Leider ist dadurch das Risiko, dass dir jemand durch eine Cyberattacke deine privaten Schlüssel raubt, grösser als bei einer offline Wallet.
+
+Hot Wallets eignen sich daher vor allem für die Verwaltung von kleineren Bitcoin-Beträgen. Oft werden kleinere Beträge separat in Hot Wallets aufbewahrt, damit Transaktionen rasch und unkompliziert darüber abgewickelt werden können.
+
+Zu den verschiedenen Arten von Hot Wallets gehören Web-, Desktop- und Mobile-Wallets.
+
+Im Gegensatz zu Hot Wallets generieren und speichern Cold Wallets die privaten Schlüssel in einer Offline-Umgebung, die auch als Cold Storage bezeichnet wird. Cold Wallets benötigen keine Verbindung zum Internet.
+
+Da sie niemals mit dem Internet verbunden sind, ist die Gefahr, dass eine angreifende Person digitalen Zugriff auf deine Schlüssel erhält, erheblich reduziert. Es kann nur auf physische Weise auf deine privaten Schlüssel zugegriffen werden.
+
+<Callout icon = "💡">
+  Für grössere Beträge ist aus Sicherheitsgründen eine Cold Wallet zu empfehlen.
+</Callout>
+
+## Arten von Bitcoin Wallets
+
+### Hardware-Wallet
+
+Hardware-Wallets sind physische Geräte, die oft ähnlich aussehen wie ein USB-Stick und mit welchen eine sichere Bitcoin-Wallet betrieben werden kann. Hardware-Wallets sind so konzipiert, dass sie immun sind gegen Cyberattacken. Die Hardware wird nicht direkt mit dem Internet verbunden und ist somit nicht extern angreifbar. Es handelt sich hierbei also um Cold Wallets.
+
+Wenn du grössere Bitcoin-Beträge verwaltest, empfiehlt es sich eine Hardware-Wallet in Betracht zu ziehen, da sie eine der sichersten Aufbewahrungsmethode ist.
+
+<Callout icon = "💡">
+ Die Hardware-Wallet, sowie der dazugehörige private Schlüssel, sollten an einem sicheren Ort aufbewahrt werden.
+</Callout>
+
+Eine Hardware-Wallet generiert eine Wiederherstellungphrase, welche es ermöglicht, dass du deine Wallet auf einem anderen Gerät wiederherstellen kannst. Somit hast du ein Backup, wenn deine Hardware-Wallet verloren geht oder beschädigt wird.
+
+Die meisten Hardware-Wallets benötigen auch einen Entsperrungs-PIN. Wenn sich eine Person mit schlechten Absichten  jedoch physischen Zugriff zu deiner Hardware-Wallet verschafft, ist es ihr möglich den PIN zu erraten. Daher ist es massgebend, dass du deine Hardware-Wallet, sowie die Wiederherstellungsphrase, sicher verwahrst.
+
+<Callout icon = "📌">
+ Ganz nach der Redewendung «Not your keys, not you coins» empfehlen wir dir deine Bitcoin auf einer Hardware-Wallet aufzubewahren. Aus diesem Grund kannst du die beliebtesten Hardware-Wallets direkt bei uns bestellen.
+</Callout>
+
+### Desktop-Wallet
+
+Eine Desktop-Wallet ist eine Software, die man auf seinem Computer installiert. Die Sicherheit deiner Bitcoin ist dadurch abhängig davon, wie gut dein Computer gegen Cyberattacken geschützt ist.
+
+Du kannst eine Desktop-Wallet entweder als «Full Node» oder als «Light Client» betreiben. Eine «Full Node»-Wallet hat Zugriff auf die ganze Bitcoin-Blockchain und benötigt Hunderte von Gigabytes an Speicherplatz.
+
+**Light-Client Wallet einfach erklärt**
+
+Hingegen speichert die Light-Client-Wallet selber nicht die ganze Bitcoin-Blockchain ab, sondern fragt diese bei anderen Full Nodes nach den spezifischen Transaktionen und Blöcken ab, an welchen sie interessiert ist.
+
+Light-Clients interagieren also nicht direkt mit der Bitcoin-Blockchain, sondern nutzen andere Full Nodes als Vermittler.
+
+Dadurch sind Light-Client-Wallets weniger privat und agieren nicht unabhängig, da sie auf Full Nodes angwiesen sind. Dafür sind sie einfacher zu installieren und benötigen weniger Speicherplatz. Für Anfänger ist eine Light-Client-Wallet zu empfehlen.
+
+<Callout icon = "💡">
+ Die meisten Desktop-Wallets sind Light Clients, da der Betrieb eines ganzen Full Nodes sehr viel Speicherplatz benötigt und nicht effizient ist.
+</Callout>
+
+### Mobile-Wallet
+
+Bei Mobile-Wallets handelt es sich ebenfalls um Software-Wallets. Eine Mobile-Wallet ist eine App, welche auf dem Smartphone installiert wird. Daher eignet sie sich gut für Zahlungen im Alltag, da du dein Smartphone ja meist mit dabei hast.
+
+Der private Schlüssel wird bei Mobile-Wallets generell direkt in der Software verwaltet, ohne dass die Herstellerfirma Zugriff darauf hat. Viele dieser Apps sind einfach aufgebaut. Du kannst unkompliziert Bitcoin versenden und empfangen, indem du mit der Smartphone-Kamera einen QR-Code scannst.
+
+<Callout icon = "💡">
+Mobile-Wallets eignen sich grundsätzlich für kleinere Beträge und sind vergleichbar mit deiner physischen Geldbörse.
+</Callout>
+
+Es gibt auch komplexere Mobile-Wallets mit ausführlicheren Funktionalitäten für Fortgeschrittene.
+
+**Tipp**
+
+BlueWallet ist eine der beliebtesten Mobile-Wallets in der Bitcoin-Community. Wir haben spezifisch für die [Nutzung von BlueWallet mit Pocket ein Anleitung](/learn/bluewallet/set-up-bluewallet) verfasst, um dich bei der Erstellung und dem Einrichten einer BlueWallet Bitcoin-Wallet zu unterstützen.
+
+### Paper-Wallet
+
+Eine Paper-Wallet ist eine der günstigsten Methoden um Bitcoin selber zu verwahren. Die privaten Schlüssel können ausgedruckt werden. Das Paper-Wallet sollte idealerweise wasserfest laminiert und in einer feuerfesten Mappe oder einem Tresor aufbewahrt werden. Der private Schlüssel ist offline und ist somit immun gegen jegliche Cyberattacken. Es gibt keine Möglichkeit, digital auf ein Blatt Papier zuzugreifen.
+
+Um den privaten Schlüssel für eine Paper-Wallet sicher zu generieren, solltest du den Computer von Internet und Bluetooth trennen. Jeder Dienst, der anbietet, einen privaten Schlüssel zu generieren, sollte offline ausgeführt werden. Vermeide ausserdem das Kopieren und Einfügen des privaten Schlüssels auf einem fremden Computer.
+
+**Tipp**
+
+Die bessere Alternative zu einem Paper-Wallet ist ein Opendime. Ein Opendime ist ein physisches Gerät und sieht aus wie ein USB-Stick. Er ist wie die digitale Form einer Paper-Wallet. Das besondere am Opendime ist jedoch, dass dieser den privaten Schlüssel versteckt bis er physisch entsiegelt wird. Im Gegensatz zum Paper-Wallet gibt es keine Möglichkeit für den Hersteller oder eine andere in den Verkauf involvierte Partei, auf den privaten Schlüssel zuzugreifen. Ein Opendime kostet zwar etwas mehr als ein Stück Papier, ist jedoch einiges günstiger als eine Hardware-Wallet.
+
+<Callout icon = "❓">
+Hast du noch Fragen?
+Falls dir noch Sachen zum Thema Wallet unklar sind, kannst du uns gerne über [Telegram](https://t.me/PocketBitcoinTG) oder per [E-Mail](https://pocketbitcoin.com/de/contact) kontaktieren. Die Pocket-Community hilft dir gerne weiter.
+</Callout>
+
+[> Erfahre mehr wie du ein sicheres Bitcoin-Backup für deine Wallet erstellst.](/learn/bitcoin/set-up-bitcoin-backup)
+
+## Buchtipp
+
+<Books>
+  <Book book={bitcoinEntdecken} />
+</Books>

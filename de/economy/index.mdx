@@ -1,0 +1,65 @@
+---
+type: learn/category
+lang: de
+slug: economy
+title: Wirtschaft
+metatitle: Wirtschaft rund um Bitcoin
+author: Claudio Koller
+description: Lerne mehr über wirtschaftliche Themen rund um Bitcoin.
+keywords:
+src: data:image/svg+xml,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Ctext x="50%25" y="50%25" dominant-baseline="middle" text-anchor="middle"%3E🪙%3C/text%3E%3C/svg%3E
+published: !!timestamp 2022-10-14T21:21:21.000+02:00
+updated: !!timestamp 2022-10-14T21:21:21.000+02:00
+---
+
+import { Article, Articles, CategoryLayout } from 'ui/learn';
+import { metadata as fiatmoneyExplained } from './fiatmoney-explained.mdx';
+import { metadata as stockToFlowRatioExplained } from './stock-to-flow-ratio-explained.mdx';
+import { metadata as commodityMoneyExplained } from './commodity-money-explained.mdx';
+import { metadata as moneyExplained } from './money-explained.mdx';
+import { metadata as goldExplained } from './gold-explained.mdx';
+import { metadata as bullBearMarketExplained } from './bull-bear-market-explained.mdx';
+import { metadata as mediumOfExchangeExplained } from './medium-of-exchange-explained.mdx';
+import { metadata as brettonWoodsSystemExplained } from './bretton-woods-system-explained.mdx';
+import { metadata as austrianEconomicsExplained } from './austrian-economics-explained.mdx';
+import { metadata as cantillonEffectExplained } from './cantillon-effect-explained.mdx';
+import { metadata as raiStonesExplained } from './rai-stones-explained.mdx';
+import { metadata as barterExplained } from './barter-explained.mdx';
+import { metadata as bitcoinPriceExplained } from './bitcoin-price-explained.mdx';
+import { metadata as businessCycleExplained } from './business-cycle-explained.mdx';
+import { metadata as primeRateExplained } from './prime-rate-explained.mdx';
+import { metadata as nixonShockExplained } from './nixon-shock-explained.mdx';
+import { metadata as reserveCurrencyExplained } from './reserve-currency-explained.mdx';
+import { metadata as monetaryPolicyExplained } from './monetary-policy-explained.mdx';
+import { metadata as fiscalPolicyExplained } from './fiscal-policy-explained.mdx';
+import { metadata as financialInclusionExplained } from './financial-inclusion-explained.mdx';
+import { metadata as pyramidSchemeExplained } from './pyramid-scheme-explained.mdx';
+import { metadata as goldstandardExplained } from './goldstandard-explained.mdx';
+
+export { getStaticProps } from 'lib/learn';
+export default (p) => <CategoryLayout category={metadata} {...p} />;
+
+<Articles>
+  <Article article={moneyExplained} />
+  <Article article={fiatmoneyExplained} />
+  <Article article={mediumOfExchangeExplained} />
+  <Article article={goldExplained} />
+  <Article article={commodityMoneyExplained} />
+  <Article article={stockToFlowRatioExplained} />
+  <Article article={bullBearMarketExplained} />
+  <Article article={brettonWoodsSystemExplained} />
+  <Article article={austrianEconomicsExplained} />
+  <Article article={cantillonEffectExplained} />
+  <Article article={raiStonesExplained} />
+  <Article article={barterExplained} />
+  <Article article={bitcoinPriceExplained} />
+  <Article article={businessCycleExplained} />
+  <Article article={primeRateExplained} />
+  <Article article={nixonShockExplained} />
+  <Article article={reserveCurrencyExplained} />
+  <Article article={monetaryPolicyExplained} />
+  <Article article={fiscalPolicyExplained} />
+  <Article article={financialInclusionExplained} />
+  <Article article={pyramidSchemeExplained} />
+  <Article article={goldstandardExplained} />
+</Articles>

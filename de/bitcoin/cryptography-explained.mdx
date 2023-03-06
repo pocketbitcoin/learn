@@ -1,0 +1,105 @@
+---
+type: learn/article
+lang: de
+slug: cryptography-explained
+title: Kurzer Einblick in die Kryptographie hinter Bitcoin 
+metatitle: Wie funktioniert die Kryptgraphie hinter Bitcoin?
+author: Claudio Koller
+category:
+  slug: bitcoin
+  title: Bitcoin Grundlagen
+description: >
+ Erfahre mehr über die Kryptographie, die die Grundlage für die Sicherheit von Bitcoin bildet. Dieser Artikel gibt einen kurzen Einblick in die wichtigsten kryptographischen Konzepte, die hinter Bitcoin stehen.
+keywords:
+- Kryptographie Bitcoin
+- Verschlüsselung Bitcoin
+- Brute-Force Bitcoin
+- asymmetrische Verschlüsselung Bitcoin
+- SHA-256 Bitcoin
+published: !!timestamp 2023-02-02T21:21:21.000+02:00
+updated: !!timestamp 2023-02-02T21:21:21.000+02:00
+---
+
+import { ArticleLayout, Article, Articles, Books, Book, Callout } from 'ui/learn';
+import { metadata as hashfunctionExplained } from './hashfunction-explained.mdx';
+import { metadata as bitcoinEntdecken} from '../books/bitcoin-entdecken.mdx';
+
+export { getStaticProps } from 'lib/learn';
+export default (p) => (
+  <ArticleLayout
+    article={metadata}
+    related={hashfunctionExplained}
+    toc={toc}
+    {...p}
+  />
+);
+
+Bitcoin ist die weltweit erste und bekannteste Kryptowährung. Die digitale Währung wird durch kryptographische Verfahren gesichert und baut auf der Kryptographie auf.
+
+## Sichere Kommunikation durch Kryptographie
+
+Nur mit Hilfe der Kryptographie ist es heute möglich sicher elektronisch zu kommunizieren. Dabei ist es eine Methode, Daten in einer bestimmten Form zu sichern und zu übertragen. Nur diejenigen, die für die Daten bestimmt sind, können diese lesen und verarbeiten.
+
+<Callout icon = "💡">
+ Die Kryptographie ist die Wissenschaft des Verschlüsselns von Informationen.
+</Callout>
+
+## Definition Kryptographie
+
+Kryptographie (von griechisch: kryptós «verborgen», und  gráphein «schreiben») ist die Anwendung mathematischer Verfahren, um Techniken und Algorithmen zu entwickeln, welche die Sicherheit von Informationen schützen. 
+
+<Callout icon = "💡">
+ Mit Kryptographie können Informationen geheim übertragen werden.
+</Callout>
+
+## Ursprung der Kryptographie
+
+Der Ursprung der Kryptographie wird auf ungefähr 2000 v. Chr. geschätzt. Zu diesem Zeitpunkt verwendeten die Ägypter Hieroglyphen. Diese bestanden aus komplexen Piktogrammen, deren vollständige Bedeutung nur einigen wenigen bekannt war. 
+
+Der erste bekannte Einsatz einer modernen Chiffrierung geht zu den Römern (100 v. Chr. bis 44 v. Chr.) zurück. Die Offiziere traute ihren Mittelsmännern nicht, wenn sie mit anderen kommunizierten. Daher entwickelte sie ein System, in dem sie jeden Buchstaben ihrer Nachricht durch den Buchstaben ersetzte, der drei Positionen später im römischen Alphabet folgte.
+
+## Asymmetrische Verschlüsselung beim Bitcoin
+
+Bei der Kryptographie beim Bitcoin kommen komplexe mathematische Methoden zum Einsatz. Man spricht in diesem Fall von der asymmetrischen Verschlüsselung.
+
+Bei diesem Verfahren werden zwei unterschiedliche Schlüssel verwendet. Der öffentliche Schlüssel ist für die Verschlüsselung und der private Schlüssel ist für die Entschlüsselung zuständig. Die Besonderheit dabei ist, dass der öffentliche Schlüssel für jeden bekannt sein darf, wohingegen der private Schlüssel geheim bleiben sollte. 
+
+<Callout icon = "💡">
+ Mit dem privaten Schlüssel hat man den Zugriff auf die Bitcoin. Bei einem Verlust kann der private Schlüssel nicht durch einen anderen ersetzt werden.
+</Callout>
+
+Der private und der öffentliche Schlüssel ist kryptographisch miteinander verknüpft. Das bedeutet, dass der öffentliche aus dem privaten Schlüssel abgeleitet wird. Nachrichten, die mit einem bestimmten öffentlichem Schlüssel verschlüsselt sind, können nur mit dem dazugehörigen privaten Schlüssel entschlüsselt werden.
+
+## Brute-Force-Attacken bei Bitcoin
+
+Bei der Verschlüsselung von Bitcoin existiert nur die Brute-Force-Attacke, um das kryptographische Nachricht zu knacken.
+
+Die Brute-Force-Attacke bedeutet, dass man ganz simpel alle vorhandenen Möglichkeiten ausprobiert, die eine Lösung sein könnten. Wenn eine Kombination nicht zum Ziel führt, nimmt man die nächste. 
+
+Man kann sich das vorstellen, wie wenn man bei einem vierstelligen Zahlenschloss, die Kombination vergessen hat. Somit beginnt man ganz einfach bei vier Nullen und versucht dann langsam die Zahl zu erhöhen. 0001, 0002, 0003, … 9998, 9999. Natürlich sind solche Brute-Force-Attacken durch viele verschiedene Algorithmen gesteuert, welche oft verwendete Kombinationen eher versuchen, zumindest wenn es um das einfache Herausfinden einer vierstelligen Zahl geht.
+
+<Callout icon = "💡">
+ Theoretisch gibt es über 2^160 verschiedene Bitcoin Wallet Kombinationen. Diese Zahl sieht ausgeschrieben so aus: 2^160 = 1’461’501’637’330’902’918’203’684’832’716’283’019’655’932’542’976 = 1.4615e+48. Dies, weil eine Bitcoin Adresse eine 160-Bit Zahl ist, welche in Base58 enkodiert wird.
+</Callout>
+
+Im Fall beim Bitcoin führt das aber zu einer unvorstellbar grossen Menge an Rechenvorgängen. Man würde riesige Mengen elektrischer Energie verbrauchen, um die Rechner zu betreiben, die das kryptographische Rätsel per Zufall lösen. Dabei gehen die Rechner mehrere Millionen Kombinationen pro Sekunde durch, um das Rätsel bzw. privaten Schlüssel zu erraten.
+
+<Callout icon = "🔗">
+ Bitcoin verwendet dabei die SHA-256 Verschlüsselung. [Dieses Video](https://www.youtube.com/watch?v=S9JGmA5_unY&t=125s) veranschaulicht, wie sicher diese ist.
+</Callout>
+
+[> Erfahre mehr über die Hashfunktionen bei Bitcoin.](/learn/bitcoin/hashfunction-explained)
+
+## Fazit
+
+Kryptographie und Bitcoin sind eng miteinander verbunden, wobei die Kryptographie eine entscheidende Rolle für die Sicherheit und Dezentralisierung der digitalen Währung spielt.
+
+Die Verwendung von Kryptographie bei Bitcoin ermöglicht sichere und überprüfbare Transaktionen auf der Blockchain, wodurch sichergestellt wird, dass die Nutzerinnen und Nutzer darauf vertrauen können, dass ihre Transaktionen korrekt verarbeitet werden.
+
+Die dezentralisierte Natur von Bitcoin, die durch Kryptographie ermöglicht wird, erlaubt zensurresistente sowie Peer-to-Peer Transaktionen, die vorher mit dem traditionellen Finanzsystem nicht möglich war.
+
+## Buchtipp
+
+<Books>
+  <Book book={bitcoinEntdecken} />
+</Books>

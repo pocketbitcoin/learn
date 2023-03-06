@@ -1,0 +1,109 @@
+---
+type: learn/article
+lang: de
+slug: hashfunction-explained
+title: Was ist eine Hashfunktion bei Bitcoin?
+metatitle: Was ist eine Hashfunktion bei Bitcoin? | Pocket
+author: Claudio Koller
+category:
+  slug: bitcoin
+  title: Bitcoin Grundlagen
+description: >
+ Was ist ein Hash oder eine Hashfunktion? Wo kommt diese beim Bitcoin zum Einsatz? Und was ist der Zusammenhang zu SHA-256? Wir erklären was ein Block-Hash ist.
+keywords:
+- Bitcoin Hashfunktion
+- SHA-256
+- Bitcoin-Mining Hashfunktion
+- Bitcoin Hash
+- Ursprung Hashfunktionen
+- Bitcoin Hash
+- Hash Definition
+- Hashfunktion Definition
+published: !!timestamp 2022-12-21T21:21:21.000+02:00
+updated: !!timestamp 2022-12-21T21:21:21.000+02:00
+---
+
+import { ArticleLayout, Article, Articles, Books, Book, Callout } from 'ui/learn';
+import { metadata as cryptographyExplained } from './cryptography-explained.mdx';
+import { metadata as bitcoinEntdecken } from '../books/bitcoin-entdecken.mdx';
+
+export { getStaticProps } from 'lib/learn';
+export default (p) => (
+  <ArticleLayout
+    article={metadata}
+    related={cryptographyExplained}
+    toc={toc}
+    {...p}
+  />
+);
+
+Eine Hashfunktion ist ein wichtiges Element der Kryptographie. Die mathematische Funktion dient dazu eine Zeichenkette, ein Wort oder einen beliebig grossen Datensatz in eine Ausgabe von einer festen Länge umzuwandeln. Hashfunktionen werden grundsätzlich zu Sicherheitszwecken verwendet und bildet den Kern der kryptographischen Sicherheit von Bitcoin.
+
+## Ursprung Hashfunktionen
+
+Der Begriff «Hash» geht auf das englische «to hash» zurück und bedeutet «zerhacken» oder «verstreuen». Hashfunktionen zerhacken Informationen und wandeln diese in eine andere Form um. 
+
+Hashfunktionen werden schon lange in Verschlüsselungen und digitalen Signaturen eingesetzt und sind ein wichtiger Bestandteil der sicheren Kommunikation.
+
+## Was sind Hashfunktionen?
+
+In der Kryptographie ist eine Hashfunktion eine mathematische Funktion, die Eingabedaten beliebiger Grösse annimmt und eine Ausgabe fester Grösse erzeugt. Das Produkt einer Information, die durch eine Hashfunktion abgebildet wurde, nennt man Hash oder Hashwert.
+Die wichtigste Eigenschaft einer Hashfunktion ist, dass sie eine Einwegfunktion ist. Dies bedeutet, dass es einfach möglich ist den Hashwert einer beliebigen Eingabe zu berechnen, jedoch ist es unmöglich nur mit dem Hashwert die ursprüngliche Eingabe wieder zu ermitteln, selbst wenn die verwendete Hashfunktion bekannt ist. Eine Hashfunktion ist also nicht umkehrbar.
+
+## Was ist ein Hashwert?
+
+Der Hashwert stellt das Ergebnis dar, welches mittels einer Hashfunktion berechnet wurde.
+Oft wird der Hashwert als eine hexadezimale Zeichenkette codiert. Das heisst, der Hashwert besteht aus einer Kombination aus Zahlen und Buchstaben zwischen 0 und 9 sowie A bis F.
+
+## Arten von Hashfunktionen
+
+Es gibt viele verschiedene Hashfunktionen, die alle unterschiedliche Eigenschaften aufweisen. Die Hashfunktion, die bei Bitcoin zum Einsatz kommt, ist der SHA-256. SHA steht für Secure Hash Algorithm.
+
+## Geschichte zu SHA-256
+
+Der SHA (SHA-0) wurde vom National Institute of Standards and Technology (NIST), sowie der NSA (National Security Agency) entwickelt und 1993 vorgestellt. Aufgrund einer Schwäche im Algorithmus wurde bereits 1995 der Nachfolger SHA-1 vorgestellt.
+
+Mittlerweile gibt es die Hashfunktionen SHA-224, SHA-256, SHA-384 und SHA-512. Die Ziffer im Namen beschreibt die Länge der Bitfolge des Outputs.
+
+## Wo kommen Hashfunktionen bei Bitcoin zum Einsatz?
+
+Mehrere Funktionsweisen von Bitcoin basieren auf der Hashfunktion SHA-256. Eine Bitcoin-Adresse ist ein Hashwert des zugehörigen öffentlichen Schlüssels und auch einzelnen Transaktionen werden anhand ihrer Hashwerte identifiziert. SHA-256 kommt ausserdem beim Bitcoin-Mining-Prozess zum Einsatz.
+
+<Callout icon = "💡">
+ Abgesehen von Bitcoin werden Hashfunktionen am häufigsten bei der Speicherung von Passwörtern verwendet.
+</Callout>
+
+[> Erfahre mehr über die Grundlagen der Kryptographie hinter Bitcoin](/learn/bitcoin/cryptography-explained)
+
+## Hashfunktionen im Mining-Prozess
+
+Beim Mining-Prozess werden im Schnitt 3000 neue Transaktionen in einem Block gebündelt. Dabei werden die Transaktionen in eine Reihenfolge gebracht. Diese gebündelten Transaktionen werden zusammen mit dem Hash des vorherigen Blocks zur Generierung des neuen Hash verwendet. Mit diesem neu generierten Hash ist der neue Block vollständig. 
+Dadurch dass der Hash eines Blocks den Hash des vorherigen Blocks enthält, ist die Reihenfolge der Blöcke in der Blockchain unantastbar. 
+
+Damit ein Block zur Bitcoin-Blockchain hinzugefügt werden kann, müssen Miner einen Hash finden, der den vordefinierten Schwierigkeitsgrad erfüllt.
+
+[> Erfahre mehr über die Bitcoin Mining-Difficulty](/learn/bitcoin/bitcoin-mining-difficulty)
+
+### Beispiel für einen Hash
+
+Um zu verdeutlichen, wie ein Hash aussieht, haben wir den Text «Pocket Bitcoin» als Inputwert der SHA-256-Hashfunktion mitgegeben und als Output folgenden Wert erhalten: 2990e6def278e1d502089e8d3832c30bc8f884202ab700025e54376bff3cc2e4
+
+Aus demselben Inputwert, wird immer derselbe einzigartige Hash generiert. Wenn also der Text «pocket bitcoin» als Inputwert verwendet wird, erhalten wir den Outputwert: 95841df382eda078daf25205ea6a9d156472e5a901135f2c447fe9f9d0809f25
+
+Der Output unterscheidet sich deutlich, obwohl die Inputs minimal unterschiedlich sind. In diesem Beispiel wurden beim Input nur ein paar Grossbuchstaben in Kleinbuchstaben umgewandelt. Der Output, bzw. der Hashwert, hat sich jedoch so stark verändert, dass keine Ähnlichkeiten mehr zu erkennen sind.
+
+<Callout icon = "🔗">
+ Mit diesem [Hash Generator](https://emn178.github.io/online-tools/sha256.html) können Hashwerte für deine Eingaben erstellt werden.
+</Callout>
+
+## Fazit
+
+Hashfunktionen spielen eine sehr wichtige Rolle im Bitcoin-Netzwerk. Hashfunktionen werden verwendet, um die Integrität von Transaktionsdaten zu überprüfen und somit die Schaffung neuer Bitcoin-Währungseinheiten durch den Mining-Prozess zu ermöglichen.
+
+Zudem werden Hashfunktionen eingesetzt, um eindeutige Adressen für alle Nutzerinnen und Nutzer im Netzwerk zu generieren.
+
+## Buchtipp
+
+<Books>
+  <Book book={bitcoinEntdecken} />
+</Books>

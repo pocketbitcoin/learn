@@ -1,0 +1,147 @@
+---
+type: learn/article
+lang: de
+slug: set-up-bitbox02
+title: So richtest du die Bitbox02 mit Pocket ein
+metatitle: Anleitung Pocket mit Bitbox02 einrichten
+author: Claudio Koller
+category:
+  slug: bitbox02
+  title: Bitbox02
+description: >
+ Lerne in unserer Schritt für Schritt Anleitung, mit Bildern, wie du mit einer BitBox02 über Pocket Bitcoin kaufen kannst.
+keywords:
+- Bitbox02
+- Bitbox
+- Pocket mit Bitbox einrichten
+- Bitbox Bitcoin kaufen
+- Cold Wallet
+- Hardware Wallet
+- digitale Wallet
+- Pocker Hardware Wallet
+- Pocket Shiftcrypto
+- Pocket Bitbox02
+published: !!timestamp 2022-11-30T21:21:21.000+02:00
+updated: !!timestamp 2022-11-30T21:21:21.000+02:00
+---
+
+import { ArticleLayout, Article, Articles, Book, Books, Callout } from 'ui/learn';
+import { metadata as setUpBlueWallet } from 'pages/deu/learn/bluewallet/set-up-bluewallet.mdx';
+import { metadata as bitcoinsVerwahrenUndVererben } from '../books/bitcoins-verwahren-und-vererben.mdx';
+
+export { getStaticProps } from 'lib/learn';
+export default (p) => (
+  <ArticleLayout
+    article={metadata}
+    toc={toc}
+    related={setUpBlueWallet}
+    {...p}
+  />
+);
+
+Dieser Artikel dient als Anleitung für die Initialisierung der Bitbox02 über Pocket für den Kauf von Bitcoin.
+
+Die Bitbox02 ist ein Hardware Wallet von der Schweizer Firma Shiftcrypto. Mit der Hardware Wallet verwaltest du den Zugang zu deinem Bitcoin Guthaben.
+
+## 1. Voraussetzung
+
+In diesem Artikel gehen wir davon aus, dass du bereits eine BitBox02 hast und diese schon eingerichtet ist.
+
+## 2. Synchronisation mit Pocket starten
+
+Wähle [Bitcoin kaufen](/checkout) auf der Pocket-Webseite. Klicke auf den Button «Wallet auswählen».
+
+![Bildschirmfoto der Pocket-Website mit dem Button Wallet auswählen](https://cdn.pocketbitcoin.com/DAFKWqAdn3o/fbbd9149-cb73-4840-8335-d8d3a032bce6.png?width=1024&height=768&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMElEQVQImWMIZMicEDJhfsL0KoZEhmn5K7//+/Dn//8tHWsZZBiSYhnKCrRagxiiAV9tETPJbJAiAAAAAElFTkSuQmCC)
+
+Auf der nächsten Seite musst du angeben, wo du deine Bitcoin aufbewahren möchtest.
+
+Um nun deine Bitbox02 Hardware Wallet zu nutzen, klicke in der Kachel «Auf deiner bestehenden Bitcoin Wallet» auf den Button «Auswählen».
+
+![Bildschirmfoto der Pocket-Website mit der Option bestehende Bitcoin-Wallet](https://cdn.pocketbitcoin.com/DAFKWqAdn3o/ca5b4922-330c-4a7e-acbd-eefd112f41e9.png?width=1024&height=768&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMElEQVQImWPwYYhf1bxqU9facqkEhhq/rm//3z39/bzBv4JBmcG/wKSgwCTXicEZAGJ4EL7I41DhAAAAAElFTkSuQmCC)
+
+Auf der nächsten Seite musst du angeben, welche Art von Wallet du besitzt. Klicke auf «Bitbox02».
+
+![Bildschirmfoto mit der Pocket-Website mit der Option Bitbox02](https://cdn.pocketbitcoin.com/DAFS3gTU908/b0775793-2dbb-4156-8450-0921230e56eb.png?width=1748&height=1240&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMklEQVQImQEnANj/AGoZfa93r7yDtphGhADBr8vX9tbo//LLus4AGABbLgBUOQBOQABGlgYSOd5OXNkAAAAASUVORK5CYII=)
+
+Um ohne Benutzerkonto und zusätzliche Identifizierung Bitcoin kaufen zu können, sendet die BitBox02 eine Empfangsadresse an Pocket. 
+
+Zusätzlich signiert sie auch eine Nachricht mit dem privaten Schlüssel dieser Adresse (der dabei natürlich geheim bleibt) und beweist damit, dass die Empfangsadresse wirklich zu dieser Wallet gehört.
+
+Dazu kommuniziert die Webseite von Pocket direkt mit der BitBoxApp.
+
+Auf der nächsten Seite klicke auf den Button «Weiter in der BitBoxApp», wodurch die BitBoxApp geöffnet wird.
+
+![Bildschirmfoto mit der Pocket-Website mit der Weiterleitung zur BitboxApp](https://cdn.pocketbitcoin.com/DAFS3gTU908/45506e65-cb2c-48d8-bf19-578a150e3303.png?width=1748&height=1240&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMklEQVQImQEnANj/AGMKeJpinKJpnYozdgCtlLju/+j1//q9pLkAJABdVABsahJ9UwBWfM0SEsZGYhsAAAAASUVORK5CYII=)
+
+## 3. Bitcoin-Adresse aus Bitbox-App signieren
+
+Die bereits installierte BitBoxApp öffnet sich. Klicke auf den blauen Button «Weiter».
+
+![Bildschirmfoto mit der BitboxApp](https://cdn.pocketbitcoin.com/DAFS3gTU908/acc1a0d4-a2c2-4067-b996-70c2f6606c35.png?width=1748&height=1240&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMElEQVQImWMIZCiaaD9xtvvEWoZ4hgqFOb//f/30/+d0q24GcYbSVIa+GIa6IIYEAEYQD+gvvmZaAAAAAElFTkSuQmCC)
+
+Verbinde deine BitBox02 Hardware Wallet mit deinem Computer.
+
+![Bildschirmfoto mit der BitboxApp mit der Aufforderung, die Bitbox02 zu verbinden](https://cdn.pocketbitcoin.com/DAFS3gTU908/859279a3-052d-42de-a2e1-525eba2b026d.png?width=1748&height=1240&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMElEQVQImWOIYCivZ2jsYqhrZkhmmJuw/ff/H7/+/9tdtoFBiKHSjqEqgKEklCEZAEGrD/v++OsUAAAAAElFTkSuQmCC)
+
+Gib dein Passwort / Pin ein und bestätige die Eingabe auf deiner Hardware Wallet.
+
+![Bildschirmfoto mit der Hardware Wallet Bitbox02](https://cdn.pocketbitcoin.com/DAFS3gTU908/58f5d815-ff06-4466-8107-368977451626.png?width=1748&height=1240&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMklEQVQImQEnANj/AI8Aqf/s///X/7oplACbM6mUoXantZTNYKsAUwCVLgA8bxl+lwCYqp0S4G+dY6MAAAAASUVORK5CYII=)
+
+Wähle dein gewünschtes Bitcoin Konto aus und klicke auf den blauen Button «Weiter».
+
+![Bildschirmfoto mit der BitboxApp mit der Adressanfrage](https://cdn.pocketbitcoin.com/DAFS3gTU908/0c9b2f74-9e59-4c32-bd39-2d771a904fd3.png?width=1748&height=1240&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMElEQVQImWMIYCiaYDJhlm1fHUMcQyH7jH//f3z892uidhuDGEN5EkN3LEN9IEMCAD3hD4/WrgOhAAAAAElFTkSuQmCC)
+
+Daraufhin wird dir eine Nachricht angezeigt, die bestätigt, dass du im Besitz der angezeigten Adresse bist. 
+
+Überprüfe auf deiner Hardware Wallet, ob die angezeigte Bitcoin Adresse übereinstimmt. Signiere danach diese Nachricht auf deiner BitBox02.
+
+![Bildschirmfoto mit der BitboxApp mit der Adressanfrage](https://cdn.pocketbitcoin.com/DAFS3gTU908/15816cc0-06e0-44e5-bfce-cd5f3aa72c4d.png?width=1748&height=1240&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMElEQVQImWNwYEg+MGH/4Sn7ChiCGdwYat/8e/bh/4cKhhwGOYZCIwY/KwbvGIYMAE+ZDzmm2MfVAAAAAElFTkSuQmCC)
+
+Nachdem du die Nachricht signiert hast wird diese Nachricht zurück an Pocket übermittelt und du siehst eine Bestätigung in der BitBoxApp.  Klicke danach auf den blauen Button «Fertig».
+
+![Bildschirmfoto mit der BitboxApp mit der Bestätigung der Adresse](https://cdn.pocketbitcoin.com/DAFS3gTU908/6e3c70d7-4f63-4699-b20e-3aae690eacd9.png?width=1748&height=1240&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMklEQVQImQEnANj/AE0AcL6SvcKXvHkAWgBGAH36//X3//h1AGkAFgB3l1ivkFSmUwBgZcMRmFDVyCsAAAAASUVORK5CYII=)
+
+## 4. Bitcoin-Adresse bei Pocket bestätigen
+
+Nun kannst du zu Pocket Bitcoin in deinem Browser zurückkehren. Deine Bitcoin Adresse von der Bitbox02 erscheint nun im violetten Feld. 
+
+Klicke auf den Button «Bestätigen» um mit dieser Adresse fortzufahren.
+
+![Bildschirmfoto mit der Pocket Website mit der bestätigten Adresse](https://cdn.pocketbitcoin.com/DAFS3gTU908/cc8c5841-c1a9-46ec-b64a-47dfaee44859.png?width=1748&height=1240&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMklEQVQImQEnANj/AFYAcLSMtb2VuoIRagB3OpS9v8Tx//6oaZ8AHABmahh/h0udWgBia94RlkpHt1YAAAAASUVORK5CYII=)
+
+## 5. E-Mail-Adresse angeben
+
+Damit wir dich über deine Transaktionen auf dem Laufenden halten können, musst du im nächsten Schritt deine E-Mail-Adresse eingeben. Keine Angst, wir senden dir keine Marketing-Mails, sondern werden dir jeweils nur per E-Mail deine zukünftigen Transaktionen bestätigen.
+
+Gib deine E-Mail-Adresse ein und klicke auf den Button «Bestätigen».
+
+![Bildschirmfoto der Pocket-Website mit der Aufforderung die E-Mail-Adresse anzugeben](https://cdn.pocketbitcoin.com/DAFKWqAdn3o/abbf447d-87a5-467f-b809-86d23756858c.png?width=1024&height=768&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMElEQVQImWMIZcjpdu2e5t1by5DAMLtszdd/7379/79r8iYGSYbUUIayFM6aIIZoAFlgENx62p20AAAAAElFTkSuQmCC)
+
+## 6. Bankkonto angeben
+
+Jetzt muss nur noch das Bankkonto verknüpft werden. Dazu gibst du hier deine gewünschte IBAN-Adresse ein, von der du einzahlst.
+
+![Bildschirmfoto der Pocket-Website mit der Aufforderung die Bankverbindung anzugeben](https://cdn.pocketbitcoin.com/DAFKWqAdn3o/288c85cb-2109-4cca-b0f3-b0b8d9fa4eee.png?width=1024&height=768&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMElEQVQImWMIZEhfUrd4ffuqSuUUho7E2a9/P/31//+K2oUMsgyhKSqF9QF9/gxhAHCREdjADMpHAAAAAElFTkSuQmCC)
+
+Klicke anschliessend auf den Button «Akzeptieren und fortfahren». Jetzt ist alles fertig eingerichtet.
+
+## 7. Auftragsbestätigung studieren
+
+Auf der nächsten Seite findest du alle Informationen zu deinem Auftrag. Unter anderem findest du alle Zahlungs-Informationen zu Pocket, damit du gleich einen ersten Bitcoin-Kauf tätigen kannst. Bitte beachte auch die Tageslimite, wenn du Zahlungen erstellst.
+
+## 8. Bitcoin kaufen
+
+Um nun Bitcoin zu kaufen kannst du einfach in deinem E-Banking eine neue Zahlung einrichten. Alle notwendigen Informationen, wie IBAN, Referenznummer, BIC und unsere Adresse, haben wir dir auch per E-Mail zugestellt. Denke daran unbedingt die Zahlungsreferenz bei der Überweisung anzugeben, damit die Zahlung deiner Bitcoin-Adresse zugeordnet und an dich ausbezahlt werden kann.
+
+Jetzt kannst du unter anderem auch einen Dauerauftrag / DCA-Auftrag einrichten und so Bitcoin in einem gewünschten Intervall, zum Beispiel wöchentlich oder monatlich, auf deine neu verknüpfte Wallet empfangen.
+
+<Callout icon = "❓">
+Hast du noch Fragen?
+Falls dir noch Sachen unklar sind oder du Probleme beim einrichten deiner Bitbox02 hast, kannst du uns gerne über [Telegram](https://t.me/PocketBitcoinTG) oder per [E-Mail](/contact) kontaktieren. Die Pocket-Community hilft dir gerne weiter.
+</Callout>
+
+## Buchtipp
+
+<Books>
+  <Book book={bitcoinsVerwahrenUndVererben} />
+</Books>

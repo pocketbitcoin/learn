@@ -1,0 +1,85 @@
+---
+type: learn/article
+lang: de
+slug: commodity-money-explained
+title: Was ist Warengeld?
+metatitle: Was ist Warengeld? – Naturalgeld einfach erklärt
+author: Claudio Koller
+category:
+  slug: economy
+  title: Wirtschaft
+description: >
+ Weshalb nimmt die Bedeutung von Warengeld ab? Wir erläutern die Eigenschaften von Warengeld und weshalb heute Tauschmittel viel weiter verbreitet sind.
+keywords:
+- Warengeld
+- Naturalgeld
+- Tauschmittel
+- Primitivgeld
+- Geschichte Geld
+- Geschichte Tauschmittel
+- Geschichte Währung
+published: !!timestamp 2022-10-14T21:21:21.000+02:00
+updated: !!timestamp 2022-10-14T21:21:21.000+02:00
+---
+
+import { ArticleLayout, Article, Articles, Books, Book, Callout } from 'ui/learn';
+import { metadata as fiatmoneyExplained } from './fiatmoney-explained.mdx';
+import { metadata as bitcoinStandard } from '../books/bitcoin-standard.mdx';
+
+export { getStaticProps } from 'lib/learn';
+export default (p) => (
+  <ArticleLayout
+    article={metadata}
+    related={fiatmoneyExplained}
+    toc={toc}
+    {...p}
+  />
+);
+
+Als Warengeld werden Güter bezeichnet, die anstelle von Münzen oder dem heutigem Fiatgeld als allgemeine Tauschmittel und Wertmassstab dienen. Warengeld, auch Naturalgeld genannt, bezeichnet ein Zahlungsmittel, das zusätzlich zu seinem Tauschwert meistens auch einen inneren Wert, in Form der Ware selber, hat.
+
+## Warengeld hat einen Fundamentalwert
+
+Warengeld hat einen gewissen Fundamentalwert und kann, wenn die Ware ihre Funktion als Geldeinheit verliert, als Gut konsumiert oder verwendet werden. Historische Beispiele für häufiges Naturalgeld waren Edelmetalle, Salz, Muscheln, Zigaretten, Steine oder Perlen.
+
+## Bedeutung von Warengeld nimmt ab
+
+Während Warengeld früher weit verbreitet war, spielt es in der heutigen Gesellschaft fast keine Rolle mehr, da staatliche Fiatwährungen zu den üblichen Zahlungsmitteln geworden sind. Wo das Fiatgeld nicht vorhanden oder verboten ist, wird Warengeld auch heute noch benutzt. 
+
+So werden zum Beispiel oft Zigaretten als Zahlungsmittel in Gefängnissen eingesetzt. Warengelder sind auch beliebte Alternativen in Regionen, in welchen eine starke (Hyper-) Inflation oder Krieg herrscht.
+
+<Callout icon = "💡">
+Selbst in entwickelten Staaten mit etablierten Währungen, könnte das System zusammenbrechen, wenn die Bevölkerung ihr Vertrauen in das staatliche Fiatgeld verliert.
+</Callout>
+
+## Eigenschaften von Warengeld
+
+Bei Warengeld handelt es sich immer um ein knappes Gut. Es ist eine Ware, die nicht beliebig vermehrbar oder deren Gewinnung oder Erschaffung mit hohem Arbeits- und Zeitaufwand verbunden ist.
+
+Es muss auch für eine bestimmte Zeit lagerfähig sein, also seinen Wert für eine längere Zeit behalten. Güter die altern oder kompliziert zu lagern sind, eignen sich daher nicht als langfristige Wertspeicher. Ausserdem muss einfach verifizierbar sein, ob das Gut eine Fälschung oder qualitativ minderwertig ist.
+
+Die Transportfähigkeit spielt ebenfalls eine grosse Rolle. Früher, in einem kleinem lokalen Ökosystem, konnte Warengeld problemlos physisch von einer der anderen Partei übergeben werden, um einen Kauf abzuschliessen.  In einer Welt, in welcher der internationale Handel immer wichtiger wird, hat sich das Warengeld nie im grossen Stil durchgesetzt. 
+
+Stattdessen haben sich mehr oder weniger stabile Fiatwährungen von grossen Nationen als international anerkannte Tauschmittel durchgesetzt.
+
+## Zigaretten als Warengeld im Zweiten Weltkrieg
+
+Im Jahr 1945, nach dem Zweiten Weltkrieg, traten in Deutschland vor allem Zigaretten, aber auch andere Güter, an die Stelle des gesetzlichen Zahlungsmittels. Zigaretten hatten einen hohen Tauschwert, weil sie ein begehrtes Gut waren, für das jederzeit Interessenten gefunden werden konnten. 
+
+Zudem waren sie auch leicht zu transportieren und in Deutschland zu dieser Zeit nicht beliebig vermehrbar. Deshalb konnten Güter und Dienstleistungen stets gegen eine bestimmte Anzahl von Zigaretten eingetauscht und umgekehrt wieder für Güter und Dienstleistungen eingesetzt werden.
+
+## Fazit
+
+Die zunehmende Globalisierung stellt eine grosse Hürde für den Einsatz von Warengeld dar. Das beste Beispiel dafür ist Gold. Das Edelmetall war vor der Globalisierung jahrhundertlang das am stärksten bevorzugte Tausch- und Zahlungsmittel. Heute kommen physische Gold-Transaktionen nur noch selten vor. 
+
+Stattdessen werden weltweit Zertifikate gehandelt, welche durch Gold gedeckt sind. Diese Zertifikate werden auch als Papier-Gold bezeichnet. Es ist jedoch sehr schwierig oder gar unmöglich deren Echtheit zu überprüfen. Dieses Problem wird auch als Orakel-Problem bezeichnet.
+
+Bitcoin hat gegenüber Gold einen grossen Vorteil. Da es sich bei Bitcoin «nur» um eine Information ohne physische Komponente handelt, lassen sie sich schnell und kostengünstig online um den Globus transferieren. Ausserdem lässt sich einfach verfizieren, ob es sich um richtige Bitcoin und nicht um Fälschungen handelt.
+
+Dies sind einige der Gründe dafür, dass Bitcoin, in der heutigen stark von der Globalisierung geprägten Zeit, immer weiter an Attraktivität gewinnt.
+
+## Buchtipp
+
+<Books>
+  <Book book={bitcoinStandard} />
+</Books>

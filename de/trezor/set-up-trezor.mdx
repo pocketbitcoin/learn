@@ -1,0 +1,163 @@
+---
+type: learn/article
+lang: de
+slug: set-up-trezor
+title: So richtest du den Trezor mit Pocket ein
+metatitle: Anleitung Pocket mit Trezor einrichten
+author: Claudio Koller
+category:
+  slug: trezor
+  title: Trezor
+description: >
+ Lerne in unserer Schritt für Schritt Anleitung, mit Bildern, wie du mit dem Trezor über Pocket Bitcoin kaufen kannst.
+keywords:
+- Trezor Mode T
+- Trezor Model One
+- Pocket mit Trezor einrichten
+- Trezor Bitcoin kaufen
+- Cold Wallet
+- Hardware Wallet
+- Digitale Wallet
+- Pocket Hardware Wallet
+- Pocket Trezor
+- Pocket SatoshiLabs
+- Bitcoin Hardware Wallet
+published: !!timestamp 2022-12-08T21:21:21.000+02:00
+updated: !!timestamp 2022-12-08T21:21:21.000+02:00
+---
+
+import { ArticleLayout, Article, Articles, Book, Books, Callout } from 'ui/learn';
+import { metadata as setUpTrezorManual } from 'pages/deu/learn/trezor/set-up-trezor-manual.mdx';
+import { metadata as bitcoinsVerwahrenUndVererben } from '../books/bitcoins-verwahren-und-vererben.mdx';
+
+export { getStaticProps } from 'lib/learn';
+export default (p) => (
+  <ArticleLayout
+    article={metadata}
+    toc={toc}
+    related={setUpTrezorManual}
+    {...p}
+  />
+);
+
+Dieser Artikel dient als Anleitung für die Initialisierung von dem Ledger Model T / One über Pocket für den Kauf von Bitcoin.
+
+Die Trezor Model T / One sind Hardware Wallets von der tschechischen Firma SatoshiLabs. Mit der Hardware Wallet verwaltest du den Zugang zu deinem Bitcoin Guthaben.
+
+## 1. Voraussetzung
+
+In diesem Artikel gehen wir davon aus, dass du bereits einen Model T / One hast und dieser schon eingerichtet ist.
+
+## 2. Synchronisation mit Pocket starten
+
+Wähle [Bitcoin kaufen](/checkout) auf der Pocket-Webseite. Klicke auf den Button «Wallet auswählen».
+
+![Bildschirmfoto der Pocket-Website mit dem Button Wallet auswählen](https://cdn.pocketbitcoin.com/DAFKWqAdn3o/fbbd9149-cb73-4840-8335-d8d3a032bce6.png?width=1024&height=768&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMElEQVQImWMIZMicEDJhfsL0KoZEhmn5K7//+/Dn//8tHWsZZBiSYhnKCrRagxiiAV9tETPJbJAiAAAAAElFTkSuQmCC)
+
+Auf der nächsten Seite musst du angeben, wo du deine Bitcoin aufbewahren möchtest.
+
+Um nun deinen Trezor Model T / One zu nutzen, klicke in der Kachel «Auf deiner bestehenden Bitcoin Wallet» auf den Button «Auswählen».
+
+![Bildschirmfoto der Pocket-Website mit der Option bestehende Bitcoin-Wallet](https://cdn.pocketbitcoin.com/DAFKWqAdn3o/ca5b4922-330c-4a7e-acbd-eefd112f41e9.png?width=1024&height=768&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMElEQVQImWPwYYhf1bxqU9facqkEhhq/rm//3z39/bzBv4JBmcG/wKSgwCTXicEZAGJ4EL7I41DhAAAAAElFTkSuQmCC)
+
+Auf der nächsten Seite musst du angeben, welche Art von Wallet du besitzt. Klicke auf «Trezor».
+
+![Bildschirmfoto mit der Pocket-Website mit der Option Trezor](https://cdn.pocketbitcoin.com/DAFThaIlgRQ/8f97a1e1-8111-4f2f-ada5-acf99b58be97.png?width=1748&height=1240&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMklEQVQImQEnANj/AHRAgdS01N2+25hdiQDIuNW/0sDu//TMu9AAGQBFQRpXWjFrSwBSweUUB0v4pwoAAAAASUVORK5CYII=)
+
+Um ohne Benutzerkonto und zusätzliche Identifizierung Bitcoin kaufen zu können, sendet der Trezor Model T / One eine Empfangsadresse an Pocket. 
+
+Zusätzlich signiert sie auch eine Nachricht mit dem privaten Schlüssel dieser Adresse (der dabei natürlich geheim bleibt) und beweist damit, dass die Empfangsadresse wirklich zu dieser Wallet gehört.
+
+Dazu kommuniziert die Webseite von Pocket direkt mit Trezor Suite.
+
+Auf der nächsten Seite klicke auf den Button «Weiter in Trezor Bridge», wodurch Trezor Bridge geöffnet wird.
+
+![Bildschirmfoto mit der Pocket-Website mit der Weiterleitung zu Trezor Bridge](https://cdn.pocketbitcoin.com/DAFThaIlgRQ/7e9c00d8-c860-4a2c-ba6f-2f2c246495a1.png?width=1748&height=1240&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMElEQVQImWNIYqjqtZkwxaGngyePYcPUfe//v/76/9/RNUcYlBiy3RiyUhmaEhiyAGfnEYmJ2fxGAAAAAElFTkSuQmCC)
+
+## 3. Bitcoin-Adresse aus Trezor Suite signieren
+
+Die bereits installierte Trezor Bridge  öffnet sich. Klicke auf den blauen Button «Öffnen».
+
+Verbinde dein Hardware Wallet Trezor Model T / One mit deinem Computer.
+
+![Bildschirmfoto Trezor Bridge mit der Aufforderung die Hardware Waller zu verbinden](https://cdn.pocketbitcoin.com/DAFThaIlgRQ/68261e56-9aa1-40e8-8158-806aaab9130f.png?width=1748&height=1240&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMElEQVQImWOIZChqUWrt12lpZchk2D371P//f////39103kGKYZcV4ayEIaiEIZ4AGCZEU0HZCCNAAAAAElFTkSuQmCC)
+
+Hier wird dir um Erlaubnis gefragt, ob Pocket Bitcoin auf deinen öffentlichen Schlüssel zugreifen darf.
+
+Klicke dafür auf den blauen Button «Allow once for this session» (Deutsch: Erlauben Sie einmalig für diese Sitzung).
+
+![Bildschirmfoto Trezor Bridge Export Erlaubnis für öffentlicher Schlüssel](https://cdn.pocketbitcoin.com/DAFThaIlgRQ/c06cc5d5-5bf4-4c80-afe7-bbd66ff45797.png?width=1748&height=1240&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMElEQVQImWOIZiju1OucbNbRxpDJsHvuqf///337+3f3wqMMUgw53gwVAQxFHgwxAGJCES2ea1BuAAAAAElFTkSuQmCC)
+
+Indem du auf den grünen Button «Export» klickst, bestätigst du, dass der öffentliche Schlüssel von deinem Trezor Model T / One exportiert wird.
+
+![Bildschirmfoto Trezor Bridge Bestätigung öffentlicher Schlüssel](https://cdn.pocketbitcoin.com/DAFThaIlgRQ/caa4ee4a-db46-4d4b-a659-eaf372af8774.png?width=1748&height=1240&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMElEQVQImWOIYihqN+icYtnRwpDBcGDZ2f///3/7+/fA+gMMUgxZ3gwVAQx5HgxhAGR+EUALP13OAAAAAElFTkSuQmCC)
+
+Gib den Pin in der Trezor Suite ein, welcher auf deiner Hardware Wallet angezeigt wird. Bestätige danach deine Eingabe mit dem grünen Button «Confirm».
+
+![Bildschirmfoto Trezor Bridge mit der Pin Eingabe ](https://cdn.pocketbitcoin.com/DAFThaIlgRQ/4519aee2-f573-44f4-8574-20ed43e2794f.png?width=1748&height=1240&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAALElEQVQImWOIZCjqNuuZ6dDbypDBsG3K0f9gcHrFUQZJhmx/hqpAhgInhmAAZoQRUE1t1i4AAAAASUVORK5CYII=)
+
+Du kehrst nun zur Pocket Website zurück. 
+
+## 4. Deine Bitcoin-Adresse auf deinem Trezor bestätigen
+
+Um deine Bitcoin Adresse mit deinem Hardware Wallet zu bestätigen, klicke auf den Button «Weiter in Trezor Bridge».
+
+![Bildschirmfoto mit der Pocket-Website mit der Weiterleitung zu Trezor Bridge](https://cdn.pocketbitcoin.com/DAFThaIlgRQ/cfa5aa4b-52dd-434d-8d00-207953ac970c.png?width=1748&height=1240&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMElEQVQImWNIYKjqMu+bYtPdyZ7HsG7C3g//3339/+/oqiMMSgw57gw5qQyNCQxZAGTNEXEWkrSFAAAAAElFTkSuQmCC)
+
+Um die Bitcoin Nachricht zu signieren, klicke dafür auf den blauen Button «Allow once for this session» (Deutsch: Erlauben Sie einmalig für diese Sitzung).
+
+![Bildschirmfoto Trezor Bridge Bitcoin Nachricht signieren](https://cdn.pocketbitcoin.com/DAFThaIlgRQ/db8c2815-d7fa-4e96-bd3d-301c0f4a13a7.png?width=1748&height=1240&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMElEQVQImWOIYShsM+qYaNPeyp7FcHzjxf///3/7+3fvhrMMUgzpXgylfgwFjgzhAGfwEV4IA2/UAAAAAElFTkSuQmCC)
+
+Signiere nun deine Bitcoin Adresse auf deiner Hardware Wallet.
+
+Es erscheint auf deinem Trezor Model T / One deine Bitcoin Adresse. Um diese Adresse zu bestätigen, klicke auf die rechte Taste auf deiner Hardware Wallet.
+
+Nun wird auf dem Bildschirm deiner Hardware Wallet gefragt, ob du die Nachricht signieren möchtest. Klicke dafür auf die rechte Taste bzw. «Next».
+
+Zum letzten Mal wirst du aufgefordert die Nachricht zu signieren. Indem du die rechte Taste bzw. «Confirm» klickst, wird die Bitcoin Adresse signiert und an Pocket übermittelt.
+
+![Bildschirmfoto Trezor Bridge mit Aufforderung die Instruktionen auf der Hardware Wallet zu befolgen](https://cdn.pocketbitcoin.com/DAFThaIlgRQ/43eda71e-6ee9-42b9-bf0a-9af27da35a33.png?width=1748&height=1240&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMElEQVQImWMIZyitYWjoZKhrZUhj2NR25Ne/H////z+74BiDBEOpPUN5AENxGEMyAE0IEJaG3V70AAAAAElFTkSuQmCC)
+
+Der Vorgang in der Trezor Bridge ist nun abgeschlossen.
+
+## 5. Bitcoin-Adresse bei Pocket bestätigen
+
+Nun kannst du zu Pocket Bitcoin in deinem Browser zurückkehren. Klicke auf den Button «Bestätigen» um mit dieser Adresse fortzufahren.
+
+![Bildschirmfoto mit der Pocket Website mit der bestätigten Adresse](https://cdn.pocketbitcoin.com/DAFThaIlgRQ/665d27ff-826b-42e3-95ac-10b3f7cfe12b.png?width=1748&height=1240&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMklEQVQImQEnANj/AE4AbdWt1uS+34MAaABuCJXg4un0//+cOZAAGQBscxiHkk+nXABmg/wSbkVCPNIAAAAASUVORK5CYII=)
+
+## 6. E-Mail-Adresse angeben
+
+Damit wir dich über deine Transaktionen auf dem Laufenden halten können, musst du im nächsten Schritt deine E-Mail-Adresse eingeben. Keine Angst, wir senden dir keine Marketing-Mails, sondern werden dir jeweils nur per E-Mail deine zukünftigen Transaktionen bestätigen.
+
+Gib deine E-Mail-Adresse ein und klicke auf den Button «Bestätigen».
+
+![Bildschirmfoto der Pocket-Website mit der Aufforderung die E-Mail-Adresse anzugeben](https://cdn.pocketbitcoin.com/DAFKWqAdn3o/abbf447d-87a5-467f-b809-86d23756858c.png?width=1024&height=768&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMElEQVQImWMIZcjpdu2e5t1by5DAMLtszdd/7379/79r8iYGSYbUUIayFM6aIIZoAFlgENx62p20AAAAAElFTkSuQmCC)
+
+## 7. Bankkonto angeben
+
+Jetzt muss nur noch das Bankkonto verknüpft werden. Dazu gibst du hier deine gewünschte IBAN-Adresse ein, von der du einzahlst.
+
+![Bildschirmfoto der Pocket-Website mit der Aufforderung die Bankverbindung anzugeben](https://cdn.pocketbitcoin.com/DAFKWqAdn3o/288c85cb-2109-4cca-b0f3-b0b8d9fa4eee.png?width=1024&height=768&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMElEQVQImWMIZEhfUrd4ffuqSuUUho7E2a9/P/31//+K2oUMsgyhKSqF9QF9/gxhAHCREdjADMpHAAAAAElFTkSuQmCC)
+
+Klicke anschliessend auf den Button «Akzeptieren und fortfahren». Jetzt ist alles fertig eingerichtet.
+
+## 8. Auftragsbestätigung studieren
+
+Auf der nächsten Seite findest du alle Informationen zu deinem Auftrag. Unter anderem findest du alle Zahlungs-Informationen zu Pocket, damit du gleich einen ersten Bitcoin-Kauf tätigen kannst. Bitte beachte auch die Tageslimite, wenn du Zahlungen erstellst.
+
+## 9. Bitcoin kaufen
+
+Um nun Bitcoin zu kaufen kannst du einfach in deinem E-Banking eine neue Zahlung einrichten. Alle notwendigen Informationen, wie IBAN, Referenznummer, BIC und unsere Adresse, haben wir dir auch per E-Mail zugestellt. Denke daran unbedingt die Zahlungsreferenz bei der Überweisung anzugeben, damit die Zahlung deiner Bitcoin-Adresse zugeordnet und an dich ausbezahlt werden kann.
+
+Jetzt kannst du unter anderem auch einen Dauerauftrag / DCA-Auftrag einrichten und so Bitcoin in einem gewünschten Intervall, zum Beispiel wöchentlich oder monatlich, auf deine neu verknüpfte Wallet empfangen.
+
+<Callout icon = "❓">
+Hast du noch Fragen? Falls dir noch Sachen unklar sind oder du Probleme beim einrichten deiner Trezor Model T / One hast, kannst du uns gerne über [Telegram](https://t.me/PocketBitcoinTG) oder per [E-Mail](/contact) kontaktieren. Die Pocket-Community hilft dir gerne weiter.
+</Callout>
+
+## Buchtipp
+
+<Books>
+  <Book book={bitcoinsVerwahrenUndVererben} />
+</Books>

@@ -1,0 +1,147 @@
+---
+type: learn/article
+lang: de
+slug: set-up-trezor-manual
+title: Anleitung fürs Einrichten eines Trezor's mit mehreren Konten
+metatitle: Zusatzanleitung Pocket mit Trezor manuell einrichten
+author: Claudio Koller
+category:
+  slug: trezor
+  title: Trezor
+description: >
+ Mehrere Konten auf deinem Trezor? Mit dieser Zusatzanleitung richtest du einen Auftrag manuell ein.
+keywords:
+- Trezor Mode T
+- Trezor Model One
+- Pocket mit Trezor einrichten
+- Trezor Bitcoin kaufen
+- Cold Wallet
+- Hardware Wallet
+- Digitale Wallet
+- Pocket Hardware Wallet
+- Pocket Trezor
+- Pocket SatoshiLabs
+- Bitcoin Hardware Wallet
+published: !!timestamp 2022-12-08T21:21:21.000+02:00
+updated: !!timestamp 2022-12-08T21:21:21.000+02:00
+---
+
+import { ArticleLayout, Article, Articles, Book, Books, Callout } from 'ui/learn';
+import { metadata as setUpTrezor } from 'pages/deu/learn/trezor/set-up-trezor.mdx';
+import { metadata as bitcoinsVerwahrenUndVererben } from '../books/bitcoins-verwahren-und-vererben.mdx';
+
+export { getStaticProps } from 'lib/learn';
+export default (p) => (
+  <ArticleLayout
+    article={metadata}
+    toc={toc}
+    related={setUpTrezor}
+    {...p}
+  />
+);
+
+Dies ist eine zusätzliche Instruktion um deinen Trezor mit Pocket manuell einzurichten. [Die komplette Anleitung wie du den Trezor mit Pocket einrichtest findest du hier.](/learn/trezor/set-up-trezor)
+
+Diese Option sollte vorallem verwendet werden, wenn sich mehrere Konten auf dem Trezor befinden und man den Auftrag auf ein explizites Wallet einrichten möchte (Nicht möglich via «Weiter in Trezor Bridge Button»).
+
+## 1. Bitcoin Adresse aus Trezor Suite kopieren
+
+Um den Trezor manuell einzurichten, klicke den Button «Manuell eingeben».
+
+![Bildschirmaufnahme Pocket Website Auf mein Trezor empfangen](https://cdn.pocketbitcoin.com/DAFU6jOFNao/8685c9bf-d3ed-46e7-bca4-4639db69feee.png?width=1748&height=1240&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMElEQVQImWNIZqjqte2b4tjdKVXIsGPhoQ//3379/+/M7jMMigwZbgxZyQwN8QyZAG3lEcrhIUl+AAAAAElFTkSuQmCC)
+
+Nun wirst du aufgefordert deine Bitcoin Adresse einzugeben. Dafür musst du dich in die Applikation Trezor Suite anmelden.
+
+![Bilfschirmaufnahme Pocket Website Teile deine Bitcoin-Adresse](https://cdn.pocketbitcoin.com/DAFU6jOFNao/2069aaa9-7cf4-48e1-a6d8-bd064324f586.png?width=1748&height=1240&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMklEQVQImQEnANj/AG0YgJZTlZZPj440eACxoL6tsr72//7j4OUAIgBhOABlYwB9YABscpgRxe7KoWQAAAAASUVORK5CYII=)
+
+Verbinde deine Trezor Hardware Wallet mit deinem Computer.
+
+![Bilfschirmaufnahme Trezor Suite Willkommen](https://cdn.pocketbitcoin.com/DAFU6jOFNao/c10c163c-fa9b-48ab-a536-6b00a7fdb33c.png?width=1748&height=1240&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMElEQVQImWPIZKivZqivZyhuZchkeHjz+c//Pz58//j07hMGSYYCM4Y8D4bMIIYEAGEhEWLhsCfTAAAAAElFTkSuQmCC)
+
+Gib deinen Pin am Computer ein, welcher dir die Hardware Wallet anzeigt.
+
+![Bilfschirmaufnahme Trezor Suite Pin Eingabe](https://cdn.pocketbitcoin.com/DAFU6jOFNao/aefdb926-976c-4daf-bb31-d28ffd92dbfd.png?width=1748&height=1240&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMElEQVQImWOwZUjbXL5lf9OWXAYfBnWG3B/f//7//z+GIZCBk6EqTrUlU7cxmCEBAEcJD64QQDX5AAAAAElFTkSuQmCC)
+
+Wähle dein gewünschetes Bitcoin Konto aus und öffne es.
+
+![Bildschirmaufnahme Trezor Suite Auswahl Bitcoin Konto](https://cdn.pocketbitcoin.com/DAFU6jOFNao/7c746685-ffcc-4bcd-8362-b0a6c0b54e40.png?width=1748&height=1240&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMElEQVQImWMIYyjLZSirYyjoYEhjeLLt/f9v//9/+//r9BcGPoZKA4YyF4asMIZkAFqAEUquVNvIAAAAAElFTkSuQmCC)
+
+Um deine Bitcoin Adresse anzuzeigen, klicke auf den Button «Receive BTC».
+
+![Bildschirmaufnahme Trezor Suite Bitcoin Konto](https://cdn.pocketbitcoin.com/DAFU6jOFNao/e2313434-9db4-4cda-9d73-30445f2d66eb.png?width=1748&height=1240&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMklEQVQImQEnANj/AEcAXdG5zMa1xmgCVAB3O5L///v4/v2RT4YAHQBYjmacflyPTQBWgkMSoRXw3q0AAAAASUVORK5CYII=)
+
+Um die ganze Bitcoin-Adesse anzuzeigen, klicke auf den grünen Button «Show full address».
+
+![Bildschirmaufnahme Trezor Suite Adresse anzeigen](https://cdn.pocketbitcoin.com/DAFU6jOFNao/9ca96930-3017-466f-94bb-a540c8f02771.png?width=1748&height=1240&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMElEQVQImWOIZCgoZ6hqZ6hpZ8hiOLX90v//f+98fLZvyyEGSYYCG4YSB4YUL4YIAE4TEGO+HPqrAAAAAElFTkSuQmCC)
+
+Bestätige auf deiner Hardware Wallet, ob die Bitcoin Adresse übereinstimmt.
+
+![Bildschirmaufnahme Trezor Suite angezeigte Adresse](https://cdn.pocketbitcoin.com/DAFU6jOFNao/2cc1222c-6b2d-46ec-9b98-9d28e44f4b00.png?width=1748&height=1240&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMklEQVQImQEnANj/AEYAbf/c///z/4wAZgBAAIPW19bNz8uGAHgAAQB80pTp56r0YABslwAUOdcgrCkAAAAASUVORK5CYII=)
+
+Kopiere nun die angezeigte Bitcoin Adresse und wechsle auf die Pocket Website zurück.
+
+![Bildschirmaufnahme Trezor Suite bestätigte Adresse](https://cdn.pocketbitcoin.com/DAFU6jOFNao/94c162c8-73bc-480b-bebc-228767f5dabc.png?width=1748&height=1240&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMklEQVQImQEnANj/AFEAeP/S///u/58AdwBGAInq4e3f2d2PAIAAAwB7/LL//9D/ZwByqooVmWEQDCoAAAAASUVORK5CYII=)
+
+Füge die kopierte Bitcoin Adresse ins violette Feld ein und klicke auf den Button «Bestätigen».
+
+![Bilfschirmaufnahme Pocket Website Teile deine Bitcoin-Adresse](https://cdn.pocketbitcoin.com/DAFU6jOFNao/c5a9a338-2ec8-4377-b7c7-a854f513ffb8.png?width=1748&height=1240&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMklEQVQImQEnANj/AG4TgpdRlplOko4wdwCvnb6vtMD1//7i3OMAIQBjOwBnZAB+YwBtcisRyPF5RhIAAAAASUVORK5CYII=)
+
+## 2. Bitcoin Adresse signieren
+
+Nun musst du die Bitcoin-Adresse mit deinem Trezor signieren. Klicke dafür auf den Button «Manuell signieren».
+
+![Bildschirmaufnahme Pocket Website Bestätige deine Trezor-Adresse](https://cdn.pocketbitcoin.com/DAFU6jOFNao/3c5cb688-c8c0-4032-a6f1-0d630b7d74be.png?width=1748&height=1240&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMElEQVQImWNIYqjoceyf4tbdJpHHsGXugbf/Xn7//+/ElhMMSgxprgwZqQwNcQwZAGtNEaWmdZS/AAAAAElFTkSuQmCC)
+
+Kopiere die ganze Nachricht «Ich bestaetige diese Bitcoin-Adresse…» und wechsle zu Trezor Suite zurück.
+
+![Bildschirmaufnahme Pocket Website Signatur](https://cdn.pocketbitcoin.com/DAFU6jOFNao/5d4c1b97-5994-48b6-80f0-8da4fa5b53a8.png?width=1748&height=1240&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMElEQVQImWNIF6l9fPbRm+vvpjk0MBTY9zbP6Hv3/9fu+k0Msgyx5gyxla7TchkKAZdjEoplXciLAAAAAElFTkSuQmCC)
+
+Schliesse oben rechts das angezeigte Fenster.
+
+![Bildschirmaufnahme Trezor Suite bestätigte Adresse](https://cdn.pocketbitcoin.com/DAFU6jOFNao/58cc1fb6-a767-44cc-90fa-b595ca225a84.png?width=1748&height=1240&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMklEQVQImQEnANj/AFEAeP/S///u/58AdwBGAInq4e3f2d2PAIAAAwB7/LL//9D/ZwByqooVmWEQDCoAAAAASUVORK5CYII=)
+
+Kehre zurück zu deinem Bitcoin Konto, indem du ebenfalls dieses Fenster schliesst.
+
+![Bildschirmaufnahme Trezor Suite Adresse anzeigen](https://cdn.pocketbitcoin.com/DAFU6jOFNao/8f9f9f92-9c9a-4ded-8bd8-6f6213608c8a.png?width=1748&height=1240&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMElEQVQImWOIZCgoZ6hqZ6hpY8hgOLX90v//f+98fLZ3014GSYYCG4YSB4YUL4YoAE1OEFpdQUYpAAAAAElFTkSuQmCC)
+
+Klicke oben rechts auf den Button mit den drei Punken.
+
+![Bildschirmaufnahme Trezor Suite Bitcoin Konto](https://cdn.pocketbitcoin.com/DAFU6jOFNao/04003cf0-c06e-4c54-8e17-7b8d4fb1b177.png?width=1748&height=1240&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMElEQVQImWOIYshusmvqdG2sUklhePb45f//f//+///0yWMGWYYIB4ZUW4YIZwZ/AHb+Ee6qUtIgAAAAAElFTkSuQmCC)
+
+Klicke auf den Button «Sign & Verify».
+
+![Bildschirmaufnahme Trezor Suite Bitcoin Konto Menü signieren und verfizieren](https://cdn.pocketbitcoin.com/DAFU6jOFNao/497b0afe-4c24-4ec2-b694-f10f15665c0d.png?width=1748&height=1240&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMElEQVQImWOI4c1q9Wjp8mmu0klnePbk5f//f//9///s+TMGWYZQJ4Y0B4YIBwZvAH3+EiUc3XbFAAAAAElFTkSuQmCC)
+
+Füge die bereits kopierte Nachricht in das Feld «Message» ein und wähle bei «Address» deine Bitcoin Adresse aus. (siehe unten wie es aussehen sollte). 
+
+Wenn du beides gemacht hast, klicke auf den grünen Button «Sign».
+
+![Bildschirmaufnahme Trezor Suite Nachricht signieren](https://cdn.pocketbitcoin.com/DAFU6jOFNao/fa8d6407-4c8d-4ca0-a2a1-e23f908625e0.png?width=1748&height=1240&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMElEQVQImWOIVkpvCWvujmlpdM5neP705b9/P//////p0wcGOQZPe4YYSwY/GwZXAIjrEmX4pNQIAAAAAElFTkSuQmCC)
+
+Nun wird dir eine Signatur erstellt und angezeigt.
+
+![Bildschirmaufnahme Trezor Suite Nachricht verfizieren](https://cdn.pocketbitcoin.com/DAFU6jOFNao/cd4af37a-9721-49e3-b82d-5b12c0523d1a.png?width=1748&height=1240&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMklEQVQImQEnANj/AEgAYNC9zdXC1XYNXgBrKYf///7///+KQ4EAHABbmnGnmnGlTABViqITLC3CAkUAAAAASUVORK5CYII=)
+
+Markiere die ganze Signatur und kopiere sie. Wechsle zurück auf die Pocket Website.
+
+![Bildschirmaufnahme Trezor Suite Nachricht signieren / verfizieren](https://cdn.pocketbitcoin.com/DAFU6jOFNao/94441fb6-c09d-41a5-888d-2ac9dd280ca5.png?width=1748&height=1240&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMklEQVQImQEnANj/AE0AZtS/0NfE13gJYABsKYr///7///+KP38AHABdlGyklmyjTQBWjZcTL7BhcHUAAAAASUVORK5CYII=)
+
+Füge die kopierte Sigantur in das violette Feld hinein. Danach klicke auf den Button «Bestätigen».
+
+![Bildschirmaufnahme Pocket Website Bestätige deine Bitcoin-Adresse](https://cdn.pocketbitcoin.com/DAFU6jOFNao/34925490-c97a-44d7-afb4-06af1e243156.png?width=1748&height=1240&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMklEQVQImQEnANj/AHQwiMetx9q+2KNXkABUMG5ugH3u//nOpMcAIgBfRwBzhEyehi6KjFQSxbkNSLAAAAAASUVORK5CYII=)
+
+Deine Bitcoin Adresse wurde mit Pocket geteilt. Klicke nun noch auf den Button «Bestätigen».
+
+![Bildschirmaufnahme Pocket Website Adresse erfolgreich geteilt](https://cdn.pocketbitcoin.com/DAFU6jOFNao/fab6b0ee-85f8-42b9-8c2f-4ed72582520d.png?width=1748&height=1240&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMklEQVQImQEnANj/AGUfeODK4OvT6JVJggCNXqOmn7X2///Ln8MAIQBUWRFqlGaoYwBqrRYT7njoOecAAAAASUVORK5CYII=)
+
+Hier findest du den weiterer Vorgang [wie du den Trezor mit Pocket einrichtest](/learn/trezor/set-up-trezor).
+
+<Callout icon = "❓">
+Hast du noch Fragen? Falls dir noch Sachen unklar sind oder du Probleme beim einrichten deiner Trezor Model T / One hast, kannst du uns gerne über [Telegram](https://t.me/PocketBitcoinTG) oder per [E-Mail](/contact) kontaktieren. Die Pocket-Community hilft dir gerne weiter.
+</Callout>
+
+## Buchtipp
+
+<Books>
+  <Book book={bitcoinsVerwahrenUndVererben} />
+</Books>

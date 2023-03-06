@@ -1,0 +1,148 @@
+---
+type: learn/article
+lang: de
+slug: set-up-ledger
+title: So richtest du den Ledger mit Pocket ein
+metatitle: Anleitung Pocket mit Ledger einrichten
+author: Claudio Koller
+category:
+  slug: ledger
+  title: Ledger
+description: >
+ Lerne in unserer Schritt für Schritt Anleitung, mit Bildern, wie du mit dem Ledger über Pocket Bitcoin kaufen kannst.
+keywords:
+- Ledger Nano S
+- Ledger Nano X
+- Pocket mit Ledger einrichten
+- Ledger Bitcoin kaufen
+- Cold Wallet
+- Hardware Wallet
+- Digitale Wallet
+- Pocket Hardware Wallet
+- Pocket Ledger
+- Bitcoin Hardware Wallet
+published: !!timestamp 2022-11-30T21:21:21.000+02:00
+updated: !!timestamp 2022-11-30T21:21:21.000+02:00
+---
+
+import { ArticleLayout, Article, Articles, Books, Book, Callout } from 'ui/learn';
+import { metadata as setUpLedgerManual } from 'pages/deu/learn/ledger/set-up-ledger-manual.mdx';
+import { metadata as bitcoinsVerwahrenUndVererben } from '../books/bitcoins-verwahren-und-vererben.mdx';
+
+export { getStaticProps } from 'lib/learn';
+export default (p) => (
+  <ArticleLayout
+    article={metadata}
+    toc={toc}
+    related={setUpLedgerManual}
+    {...p}
+  />
+);
+
+Dieser Artikel dient als Anleitung für die Initialisierung von dem Ledger Nano S / X über Pocket für den Kauf von Bitcoin.
+
+Die Ledger Nano S / X sind Hardware Wallets von der Firma Ledger. Mit der Hardware Wallet verwaltest du den Zugang zu deinem Bitcoin Guthaben.
+
+## 1. Voraussetzung
+
+In diesem Artikel gehen wir davon aus, dass du bereits einen Ledger Nano S / X hast und dieser schon eingerichtet ist.
+
+## 2. Synchronisation mit Pocket starten
+
+Wähle [Bitcoin kaufen](/checkout) auf der Pocket-Webseite. Klicke auf den Button «Wallet auswählen».
+
+![Bildschirmfoto der Pocket-Website mit dem Button Wallet auswählen](https://cdn.pocketbitcoin.com/DAFKWqAdn3o/fbbd9149-cb73-4840-8335-d8d3a032bce6.png?width=1024&height=768&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMElEQVQImWMIZMicEDJhfsL0KoZEhmn5K7//+/Dn//8tHWsZZBiSYhnKCrRagxiiAV9tETPJbJAiAAAAAElFTkSuQmCC)
+
+Auf der nächsten Seite musst du angeben, wo du deine Bitcoin aufbewahren möchtest.
+
+Um nun deinen Ledger Nano S / X zu nutzen, klicke in der Kachel «Auf deiner bestehenden Bitcoin Wallet» auf den Button «Auswählen».
+
+![Bildschirmfoto der Pocket-Website mit der Option bestehende Bitcoin-Wallet](https://cdn.pocketbitcoin.com/DAFKWqAdn3o/ca5b4922-330c-4a7e-acbd-eefd112f41e9.png?width=1024&height=768&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMElEQVQImWPwYYhf1bxqU9facqkEhhq/rm//3z39/bzBv4JBmcG/wKSgwCTXicEZAGJ4EL7I41DhAAAAAElFTkSuQmCC)
+
+Auf der nächsten Seite musst du angeben, welche Art von Wallet du besitzt. Klicke auf «Ledger».
+
+![Bildschirmfoto mit der Pocket-Website mit der Option Ledger](https://cdn.pocketbitcoin.com/DAFTbizJWpU/5d10efea-62c1-4907-92ef-b0ee96754e24.png?width=1748&height=1240&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMklEQVQImQEnANj/AHI/gNGx0Nu72pZciADFtdK5y7bu//fKuM4AGQBFQRpXVi1nSgBSu6UTvnNPsCUAAAAASUVORK5CYII=)
+
+Um ohne Benutzerkonto und zusätzliche Identifizierung Bitcoin kaufen zu können, sendet der Ledger Nano S / X eine Empfangsadresse an Pocket. 
+
+Zusätzlich signiert sie auch eine Nachricht mit dem privaten Schlüssel dieser Adresse (der dabei natürlich geheim bleibt) und beweist damit, dass die Empfangsadresse wirklich zu dieser Wallet gehört.
+
+Dazu kommuniziert die Webseite von Pocket direkt mit Ledger Live.
+
+Auf der nächsten Seite klicke auf den Button «Weiter in Ledger Live», wodurch Ledger Live geöffnet wird.
+
+![Bildschirmfoto mit der Pocket-Website mit der Weiterleitung zu Ledger Live](https://cdn.pocketbitcoin.com/DAFTbizJWpU/26c5d5b7-41bb-4635-a24d-f955f2983054.png?width=1748&height=1240&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMElEQVQImWOIZSjvt580zbWvhSGLYWHVlnf/X3/9/3/P1B0M8gw5/gwl6QwtsQwZAF+dES2khzngAAAAAElFTkSuQmCC)
+
+## 3. Bitcoin-Adresse aus Ledger Live signieren
+
+Das bereits installierte Ledge Live öffnet sich. Klicke auf den blauen Button «Öffnen».
+
+![Bildschirmfoto mit Ledger Live](https://cdn.pocketbitcoin.com/DAFTbizJWpU/6cf09249-3fac-47fc-af71-c14bb7681b65.png?width=1748&height=1240&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMElEQVQImWPwYshc27xmffOqMoZIhhiGtv/////7/79ZoJJBlKGwx3dRs/tsd4YoAFwNESkrZ1BJAAAAAElFTkSuQmCC)
+
+Verbinde dein Hardware Wallet Ledger Nano S / X mit deinem Computer.
+
+Gib dein Passwort / Pin ein und bestätige die Eingabe auf deiner Hardware Wallet.
+
+![Bildschirmfoto mit Ledger Live mit der Aufforderung, den Ledger zu verbinden](https://cdn.pocketbitcoin.com/DAFTbizJWpU/777b7f1a-5549-4b9d-955d-74f68251ae33.png?width=1748&height=1240&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMElEQVQImWPwZ8hbkLdgadH8SoYYhhyGSd//f/r6/9cU7TYGIYaiestZrTbTgxniAFVCEO+GAATvAAAAAElFTkSuQmCC)
+
+Jetzt öffne das Bitcoin Wallet auf deiner Hardware Wallet indem du beim Ledger Nano S / X beide Tasten gleichzeitig bedienst.
+
+![Bildschirmfoto mit der Aufforderung das Bitcoin Wallet zu öffnen](https://cdn.pocketbitcoin.com/DAFTbizJWpU/8a80ccd8-e22a-49f7-a2c5-f59dbd11bbbc.png?width=1748&height=1240&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMElEQVQImWPwYciZFT9zQeqMSoZohgSG7i//337//6NHop5BiKGsXHNGg/6UMIZEAEg2EFJYRs2GAAAAAElFTkSuQmCC)
+
+Signiere nun deine Nachricht. Es erscheint auf deinem Ledger Nano S / X eine lange Signatur. Klick dich durch mit der rechten Taste bis die Nachricht «Sign message» erscheint.. 
+
+Du bestätigst nun die Signatur, indem du beide Tasten gleichzeitig bedienst.
+
+Nachdem du die Nachricht signiert hast wird diese Nachricht zurück an Pocket übermittelt und du siehst eine Bestätigung im Ledger Live.
+
+Du kannst nun den blauen Button «Trennen» klicken.
+
+![Bildschirmfoto mit mit der Bestätigung im Ledger Live](https://cdn.pocketbitcoin.com/DAFTbizJWpU/b88acdc7-d15e-4235-9a05-ea9320b60eb6.png?width=1748&height=1240&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMElEQVQImWPwYchdW7tmU8OqMoZIhmiGtv////39/7+WoZhBiKG40XZWhelED4YoAFhQEMAuCbnnAAAAAElFTkSuQmCC)
+
+Der Vorgang im Ledger Live ist abgeschlossen.
+
+![Bildschirmfoto vom Ledger Live Sitzung abgeschlossen](https://cdn.pocketbitcoin.com/DAFTbizJWpU/91d077f1-d709-4764-a6ba-7831ca0a1165.png?width=1748&height=1240&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMElEQVQImWNwY0ibGDJhanhfIUMoQ4Zw9///v/79/9+lV8cgylCUydtZINoWwBADAEB6D89RPU96AAAAAElFTkSuQmCC)
+
+## 4. Bitcoin-Adresse bei Pocket bestätigen
+
+Nun kannst du zu Pocket Bitcoin in deinem Browser zurückkehren. Klicke auf den Button «Bestätigen» um mit dieser Adresse fortzufahren.
+
+![Bildschirmfoto mit der Pocket Website mit der bestätigten Adresse](https://cdn.pocketbitcoin.com/DAFTbizJWpU/042b743a-e35a-436c-884e-940b1d8a6084.png?width=1748&height=1240&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMklEQVQImQEnANj/AFIAcNGs0uC73IMAaQB0IpfPz9jx//+iSpUAGgBqbQ9/kVGnWwBkgjoST1D9bygAAAAASUVORK5CYII=)
+
+## 5. E-Mail-Adresse angeben
+
+Damit wir dich über deine Transaktionen auf dem Laufenden halten können, musst du im nächsten Schritt deine E-Mail-Adresse eingeben. Keine Angst, wir senden dir keine Marketing-Mails, sondern werden dir jeweils nur per E-Mail deine zukünftigen Transaktionen bestätigen.
+
+Gib deine E-Mail-Adresse ein und klicke auf den Button «Bestätigen».
+
+![Bildschirmfoto der Pocket-Website mit der Aufforderung die E-Mail-Adresse anzugeben](https://cdn.pocketbitcoin.com/DAFKWqAdn3o/abbf447d-87a5-467f-b809-86d23756858c.png?width=1024&height=768&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMElEQVQImWMIZcjpdu2e5t1by5DAMLtszdd/7379/79r8iYGSYbUUIayFM6aIIZoAFlgENx62p20AAAAAElFTkSuQmCC)
+
+## 6. Bankkonto angeben
+
+Jetzt muss nur noch das Bankkonto verknüpft werden. Dazu gibst du hier deine gewünschte IBAN-Adresse ein, von der du einzahlst.
+
+![Bildschirmfoto der Pocket-Website mit der Aufforderung die Bankverbindung anzugeben](https://cdn.pocketbitcoin.com/DAFKWqAdn3o/288c85cb-2109-4cca-b0f3-b0b8d9fa4eee.png?width=1024&height=768&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMElEQVQImWMIZEhfUrd4ffuqSuUUho7E2a9/P/31//+K2oUMsgyhKSqF9QF9/gxhAHCREdjADMpHAAAAAElFTkSuQmCC)
+
+Klicke anschliessend auf den Button «Akzeptieren und fortfahren». Jetzt ist alles fertig eingerichtet.
+
+## 7. Auftragsbestätigung studieren
+
+Auf der nächsten Seite findest du alle Informationen zu deinem Auftrag. Unter anderem findest du alle Zahlungs-Informationen zu Pocket, damit du gleich einen ersten Bitcoin-Kauf tätigen kannst. Bitte beachte auch die Tageslimite, wenn du Zahlungen erstellst.
+
+## 8. Bitcoin kaufen
+
+Um nun Bitcoin zu kaufen kannst du einfach in deinem E-Banking eine neue Zahlung einrichten. Alle notwendigen Informationen, wie IBAN, Referenznummer, BIC und unsere Adresse, haben wir dir auch per E-Mail zugestellt. Denke daran unbedingt die Zahlungsreferenz bei der Überweisung anzugeben, damit die Zahlung deiner Bitcoin-Adresse zugeordnet und an dich ausbezahlt werden kann.
+
+Jetzt kannst du unter anderem auch einen Dauerauftrag / DCA-Auftrag einrichten und so Bitcoin in einem gewünschten Intervall, zum Beispiel wöchentlich oder monatlich, auf deine neu verknüpfte Wallet empfangen.
+
+<Callout icon = "❓">
+ Hast du noch Fragen? Falls dir noch Sachen unklar sind oder du Probleme beim einrichten deinem Ledger Nano S / X hast, kannst du uns gerne über [Telegram](https://t.me/PocketBitcoinTG) oder per [E-Mail](/contact) kontaktieren. Die Pocket-Community hilft dir gerne weiter.
+</Callout>
+
+## Buchtipp
+
+<Books>
+  <Book book={bitcoinsVerwahrenUndVererben} />
+</Books>
+
+

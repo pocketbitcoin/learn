@@ -1,0 +1,84 @@
+---
+type: learn/article
+lang: de
+slug: bitcoin-pseudonym
+title: Ist Bitcoin wirklich anonym?
+metatitle: Ist Bitcoin anonym?
+author: Claudio Koller
+category:
+  slug: bitcoin
+  title: Bitcoin Grundlagen
+description: >
+ Erfahre alles Wissenswerte darüber, ob Bitcoin wirklich anonym ist oder nicht. Der Artikel deckt die häufigsten Mythen auf und erklärt, wie die Blockchain es schwierig macht, Bitcoin-Transaktionen anonym zu halten.
+keywords:
+- Bitcoin anonym
+- Bitcoin pseudonym
+- Bitcoin Anonymität
+- Bitcoin Pseudonymität
+- Bitcoin transparent
+- Bitcoin-Blockchain
+published: !!timestamp 2023-02-02T21:21:21.000+02:00
+updated: !!timestamp 2023-02-02T21:21:21.000+02:00
+---
+
+import { ArticleLayout, Article, Articles, Books, Book, Callout } from 'ui/learn';
+import { metadata as satoshiCurrencyExplained } from './satoshi-currency-explained.mdx';
+import { metadata as bitcoinEntdecken} from '../books/bitcoin-entdecken.mdx';
+
+export { getStaticProps } from 'lib/learn';
+export default (p) => (
+  <ArticleLayout
+    article={metadata}
+    related={satoshiCurrencyExplained}
+    toc={toc}
+    {...p}
+  />
+);
+
+Eine weit verbreitete Meinung ist, dass die Bitcoin-Transaktionen anonym seien. Ebenfalls wird Bitcoin in den Medien regelmässig als anonym bezeichnet. Beispielsweise soll Bitcoin Kriminellen die Geldwäsche erleichtern. Oder Terroristen können sich mit Bitcoin anonym finanzieren, ohne dass die Regierungen dies nachvollziehen könnten. Aber ist Bitcoin wirklich anonym? 
+
+Obwohl es möglich ist, Bitcoin ohne Offenlegung einer Identität zu senden und zu empfangen, werden alle Transaktionen auf der öffentlichen und transparenten Bitcoin-Blockchain gespeichert. Jeder kann den Verlauf einer bestimmten Bitcoin-Adresse einsehen und potenziell die Person identifizieren, der sie gehört.
+
+## Pseudoanonymität von Bitcoin
+
+Wenn man sich die Bitcoin-Blockchain ansieht, sieht man keinen einzigen Namen und auch keine anderen persönlichen Informationen. Das Netzwerk ist jedoch nicht vollständig anonym. Denn tatsächlich sind der Bitcoin und alle Transaktionen sehr transparent und für jedermann zugänglich.
+
+### Die Bitcoin-Blockchain ist öffentlich
+
+Die öffentliche Blockchain speichert alle jemals getätigten Transaktionen. Wenn also Person A sich dazu entscheidet, Bitcoin an eine Adresse von Person B zu schicken, dann ist diese Transaktion für immer in der Blockchain verewigt und für jeden einsehbar.
+
+### Die Bitcoin-Adresse ist pseudonym
+
+Eine Bitcoin-Adresse, welche einer IBAN ähnelt, ist pseudonym. Wenn jemand immer wieder dieselbe Bitcoin-Adresse verwendet, um die Kryptowährung zu versenden oder zu empfangen, kann man in diesem Fall relativ einfach nachvollziehen, was die Person für eine Transaktionshistorie hat.
+
+Die Adressen der Bitcoin-Wallets sind an sich kryptographisch verschlüsselt. Dadurch kann man keinen Hinweis auf die Person, welche sich dahinter verbirgt, herausfinden. Allerdings müssen beim Kauf von Bitcoin, Fiatgeld in die Kryptowährung umgetauscht werden. Üblicherweise müssen die Nutzer beim Broker oder Börse ihre persönlichen Daten (KYC-Verfahren) angeben. Dieses Verfahren nennt man KYC (= Know your Customer). Daher ist der Bitcoin genau genommen nicht anonym, sondern pseudonym.
+
+<Callout icon = "💡">
+ Bitcoin ist pseudonym. Bargeld hingegen ist anonym.
+</Callout >
+
+## Regulierungen und Identifizierung
+
+Im Jahr 2017 wurde Bitcoin zum Mainstream. Dieser Anstieg des Interesses führte dazu, dass Regierungen auf der ganzen Welt die Anonymität von Bitcoin diskutierten. Ein Schwerpunkt dabei ist die Identifizierung. Die Regierungen wollten, dass Broker und Börsen eine Identitätsprüfung (KYC) ihrer Kunden durchführen, bevor sie in Bitcoin investieren dürfen.
+
+[> Erfahre mehr über das Thema KYC-Light.](/learn/bitcoin/kyc-light-explained)
+
+## Wer und wie kann man Bitcoin-Transaktionen nachverfolgen?
+
+Das Bitcoin-Netzwerk zeichnet durch die Verwendung der Blockchain alle Transaktionen auf. Dabei funktioniert die Blockchain wie ein digitales und öffentliches Kassenbuch. Jeder kann mit der Hilfe von einem Blockchain Explorer zugreifen und die einzelnen Transaktionen einsehen.
+
+<Callout icon = "🔗">
+ Mit diesem [Blockchain Explorer](https://mempool.space/de/) kannst du in die Bitcoin-Blockchain einsehen und Transaktionen verfolgen.
+</Callout>
+
+## Welche Daten können ermittelt werden?
+
+Über den Blockchain Explorer können alle transaktionsrelevanten Daten eingesehen werden. Hierzu zählen die Empfänger-Adresse, die Sender-Adresse, der Betrag, das Transaktionsdatum, die Uhrzeit und die Höhe der gezahlten Transaktionsgebühren. 
+
+Ausserdem kann gezielt nach Transaktionsnummern und Wallet-Adressen gesucht werden. Hierdurch lassen sich zu jeder Wallet-Adresse der Bitcoin-Bestand und die getätigten Transaktionen einsehen.
+
+## Buchtipp
+
+<Books>
+  <Book book={bitcoinEntdecken} />
+</Books>

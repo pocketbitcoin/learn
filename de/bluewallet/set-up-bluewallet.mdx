@@ -1,0 +1,216 @@
+---
+type: learn/article
+lang: de
+slug: set-up-bluewallet
+title: So richtest du BlueWallet mit Pocket ein
+metatitle: Anleitung Pocket mit BlueWallet einrichten
+author: Claudio Koller
+category:
+  slug: bluewallet
+  title: BlueWallet
+description: >
+ Lerne in unserer Schritt für Schritt Anleitung, wie du eine BlueWallet aufsetzt und wie du mit einer BlueWallet über Pocket Bitcoin kaufen kannst.
+keywords:
+- BlueWallet
+- Pocket mit BlueWallet einrichten
+- BlueWallet Bitcoin kaufen
+- Smartphone Wallet
+- Digitale Wallet
+- Non Custodial Wallet
+published: !!timestamp 2022-10-14T21:21:21.000+02:00
+updated: !!timestamp 2022-10-14T21:21:21.000+02:00
+---
+
+import { ArticleLayout, Article, Articles, Books, Book, Callout } from 'ui/learn';
+import { metadata as setUpBitbox02 } from 'pages/deu/learn/bitbox02/set-up-bitbox02.mdx';
+import { metadata as bitcoinsVerwahrenUndVererben } from '../books/bitcoins-verwahren-und-vererben.mdx';
+
+export { getStaticProps } from 'lib/learn';
+export default (p) => (
+  <ArticleLayout
+    article={metadata}
+    toc={toc}
+    related={setUpBitbox02}
+    {...p}
+  />
+);
+
+Dieser Artikel dient als Anleitung für die Erstellung einer Bitcoin-Wallet mit der BlueWallet-App, sowie die Initialisierung dieser Wallet über Pocket für den Bitcoin-Kauf.
+
+Die BlueWallet-App ist ein mobile Wallet. Das bedeutet, dass du in dieser App deine Bitcoin direkt auf deinem mobilen Gerät verwalten und auch darüber Bitcoin-Transaktionen erhalten kannst.
+
+## 1. BlueWallet-App herunterladen
+
+Um das BlueWallet-App zu downloaden, gehe mit einem Android- oder iOS-Gerät in den zugehörigen App-Store und lade die App «BlueWallet - Bitcoin wallet» herunter.
+
+![Bildschirmfoto vom App-Store mit dem BlueWallet](https://cdn.pocketbitcoin.com/DAFKWqAdn3o/49c7a98c-2c1e-44ff-b047-515e26b8c073.png?width=1024&height=768&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMElEQVQImWMIZahKYsgqYkiaypDJYMlQnyXe3WveU8SQxMDAUPv/6///3//bM3gCAOXoDkP3MYo6AAAAAElFTkSuQmCC)
+
+## 2. Wallet erstellen
+
+Öffne die App. Klicke auf den Button «Jetzt hinzufügen».
+
+![Bildschirmfoto der BlueWallet mit der Option Wallet hinzufügen](https://cdn.pocketbitcoin.com/DAFKWqAdn3o/f3908c44-a82d-4a3d-bc70-dcfcb36be1c3.png?width=1024&height=768&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMElEQVQImWMIYqjIZCitZ8ifxZDNYMlQn8RQWcRQXMuQy8DAUP3/1f//P/67MPgCAODuDej9HPnTAAAAAElFTkSuQmCC)
+
+Anschliessend hast du drei Auswahlmöglichkeiten. Du kannst auswählen, ob du entweder ein normales Bitcoin-Wallet, ein Bitcoin-Lightning-Wallet oder ein Tresor für Multisignaturen erstellen möchtest. Um die einfache und native Version von Bitcoin zu nutzen, wähle Bitcoin an, gib deiner Wallet einen Namen und klicke anschliessend auf «Erstellen».
+
+![Bildschirmfoto der BlueWallet mit der Auswahl der Wallets](https://cdn.pocketbitcoin.com/DAFKWqAdn3o/f66295ce-49f5-4992-9706-e158ea4d8be9.png?width=1024&height=768&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMElEQVQImWPwZSiuMWyoMsqpZQhh0GYo/P/l/++X/70Z7BkYGGr/P/j/7uJnBwYvAC9aEWnufUfhAAAAAElFTkSuQmCC)
+
+## 3. Wiederherstellungsphrase notieren / Wallet-Backup sichern
+
+<Callout icon="❗">
+Dieser Schritt ist sehr wichtig! Also mach nicht zu schnell weiter und nimm dir 2&nbsp;Minuten Zeit.
+</Callout>
+
+Wenn du dein Wallet erstellt hast werden dir auf dem nächsten Screen 12&nbsp;Wörter angezeigt. Diese 12&nbsp;Wörter sind deine Wallet-Wiederherstellungsphrase. Wie BlueWallet schreibt ist es sehr wichtig, dass du dir diese Wörter physisch aufschreibst, denn mit ihnen kannst du deine Wallet wiederherstellen, falls du dein Smartphone verlierst oder es gestohlen wird.
+
+✅ Wir empfehlen dir:
+
+- Schreibe dir die Wörter, wie vorgegeben, nummeriert 2× auf einem Blatt Papier auf. Es wird empfohlen die Wörter mit Bleistift und Kugelschreiber aufzuschreiben, da Kugelschreiber auf die Dauer verbleichen kann.
+- Am besten laminierst du anschliessend das Dokument, um es vor Nässe zu schützen, und verwahre es an einem sicheren Ort.
+
+
+❌ Das solltest du nicht tun:
+
+- Mache keinen Screenshot. Deine Bilder werden sehr wahrscheinlich in die Cloud gespeichert. Aus diesem Grund ist es für Personen mit böswilligen Absichten einfacher über die Cloud an deine Wiederherstellungsphrase zu kommen, als wenn du dir diese nur physisch notierst.
+
+![Bildschirmfoto der BlueWallet mit der Wiederherstellungsphrase](https://cdn.pocketbitcoin.com/DAFKWqAdn3o/cb1c22b9-d41b-46a4-a17e-95d3593e1335.png?width=1024&height=768&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMElEQVQImWPwYSgqNCgrMsuoZAhk0GQo/P/p/49H37wY7BgYGGr+Xv7/6MgzBwYfACdZEPWXUPFcAAAAAElFTkSuQmCC)
+
+Wenn du dir die Wörter notiert und nochmals kontrolliert hast, klicke auf «Ok, ich habe sie notiert» um fortzufahren.
+
+## 4. Synchronisation mit Pocket starten
+
+<Callout icon="💡">
+In den nächsten Schritten musst du Text und Zeichenabfolgen zwischen der BlueWallet-App und der Pocket-Webseite hin und her kopieren. Daher empfiehlt es sich, dies auf dem Smartphone zu machen, damit das Kopieren aus der Zwischenablage funktioniert und die Texte nicht von Hand abgetippt werden müssen.
+</Callout>
+
+Öffne die Website [pocketbitcoin.com/de/checkout](https://pocketbitcoin.com/de/checkout). Klicke auf den Button «Wallet auswählen».
+
+![Bildschirmfoto der Pocket-Website mit dem Button Wallet auswählen](https://cdn.pocketbitcoin.com/DAFKWqAdn3o/fbbd9149-cb73-4840-8335-d8d3a032bce6.png?width=1024&height=768&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMElEQVQImWMIZMicEDJhfsL0KoZEhmn5K7//+/Dn//8tHWsZZBiSYhnKCrRagxiiAV9tETPJbJAiAAAAAElFTkSuQmCC)
+
+Auf der nächsten Seite musst du angeben, wo du deine Bitcoin aufbewahren möchtest.
+
+Um nun deine neue BlueWallet Bitcoin-Wallet zu nutzen, klicke in der Kachel «Auf deiner bestehenden Bitcoin Wallet» auf den Button «Auswählen».
+
+![Bildschirmfoto der Pocket-Website mit der Option bestehende Bitcoin-Wallet](https://cdn.pocketbitcoin.com/DAFKWqAdn3o/ca5b4922-330c-4a7e-acbd-eefd112f41e9.png?width=1024&height=768&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMElEQVQImWPwYYhf1bxqU9facqkEhhq/rm//3z39/bzBv4JBmcG/wKSgwCTXicEZAGJ4EL7I41DhAAAAAElFTkSuQmCC)
+
+Auf der nächsten Seite musst du angeben, welche Art von Wallet du besitzt. Klicke auf «BlueWallet».
+
+![Bildschirmfoto mit der Pocket-Website mit der Option BlueWallet](https://cdn.pocketbitcoin.com/DAFKWqAdn3o/df6fa55d-049f-4765-80e1-76cd3fe3dccc.png?width=1024&height=768&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMElEQVQImWMIYchcW7lmS8PaGoEkhql5q06/PP3i/7tllQsYJBhiQ6Tz0nSqfBnCAGltESCrHPfwAAAAAElFTkSuQmCC)
+
+## 5. Bitcoin-Adresse aus BlueWallet-App kopieren
+
+Gehe jetzt in deine BlueWallet-App. Wähle die soeben erstellte Wallet aus und klicke auf «Erhalten».
+
+![Bildschirmfoto der BlueWallet mit der Funktion Erhalten](https://cdn.pocketbitcoin.com/DAFKWqAdn3o/a397910e-ded2-49a9-be95-006e912d643e.png?width=1024&height=768&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMElEQVQImWMIZyh1D5tvG9DSwhDKYMRQ+PPp/1tXfgQyODIwMNT+f////5P/jgw+AC76EYT4x3iDAAAAAElFTkSuQmCC)
+
+Aus Sicherheitsgründen fragt dich die App beim ersten Mal nochmals, ob du deine Wiederherstellungsphrase (12&nbsp;Wörter) notiert hast.
+
+![Bildschirmfoto der BlueWallet mit der Sicherheitsmeldung, ob man die Wiederherstellungsphrase notiert hat](https://cdn.pocketbitcoin.com/DAFKWqAdn3o/4e38b23c-b16d-4662-9bc1-99c3a88c6c4c.png?width=1024&height=768&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMElEQVQImWMIZ6gOYgj3Y3buYkhg0GIo/P/5/7sbr70Z7BgYGGpf7f9zcu1pBwYfAAtoD691wqYuAAAAAElFTkSuQmCC)
+
+- Falls du dies noch nicht gemacht hast klicke auf «Nein, habe ich nicht». Dir wird anschliessend ein QR-Code für den Export deiner Wallet angezeigt und unterhalb werden dir nochmals die 12&nbsp;Wörter / deine Wiederherstellungsphrase angezeigt. Schreibe dir die 12&nbsp;Wörter unbedingt auf bevor du fortfährst.
+
+![Bildschirmfoto der BlueWallet mit dem QR-Code für den Export deiner Wallet](https://cdn.pocketbitcoin.com/DAFKWqAdn3o/2527710c-0833-452f-8d97-fab4f956dcea.png?width=1024&height=768&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMklEQVQImQEnANj/AFYAesFzw7lvq5wAbgBBAILeu+6zoLZdAE4AAAB9/+7/99T2RQBQV7MSYhr+BpcAAAAASUVORK5CYII=)
+
+- Falls du dir die 12&nbsp;Wörter bereits auf einem Blatt Papier notiert hast, klicke auf «Ja, habe ich.» um fortzufahren.
+
+Auf dem nächsten Screen wird dir die Bitcoin-Adresse deiner Wallet als QR-Code, sowie als eine Zeichen-Abfolge unterhalb des QR-Codes angezeigt. Auf diese Adresse kannst du also Bitcoin erhalten.
+
+<Callout icon = "📎">
+Deine Bitcoin-Adresse ist öffentlich. Du kannst sie als eine Art Kontonummer ansehen, die du z.&nbsp;B. mit Bekannten oder deinem Arbeitgeber teilst, damit du Zahlungen und deinen Lohn darauf erhalten kannst. Eine Person, die deine Bitcoin-Adresse kennt, kann mit dieser Adresse nicht auf deine Bitcoin zugreifen. Du kannst deine Bitcoin-Adresse also bedenkenlos teilen.
+</Callout>
+
+![Bildschirmfoto der BlueWallet mit dem QR-Code und der Bitcoin-Adresse](https://cdn.pocketbitcoin.com/DAFKWqAdn3o/6325fd9c-5f2f-4fcb-91e8-9ebced1226d3.png?width=1024&height=768&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMElEQVQImWMwZwj3YwiJZPCrZghlKHTvyQrL76qYlmQdz3B3w+8rh278//F/U88GAPmNEYmTp9t3AAAAAElFTkSuQmCC)
+
+Klicke auf die Zeichen-Abfolge, die im Screenshot hellviolett hinterlegt ist, um deine Bitcoin-Adresse zu kopieren. Die Aktion wird dir mit dem Text «In die Zwischenablage kopiert.» bestätigt.
+
+## 6. Bitcoin-Adresse mit Pocket teilen
+
+Kehre nun auf die Pocket-Webseite zurück und füge im violetten Feld deine Bitcoin-Adresse aus der Zwischenablage ein und klicke auf den Button «Bestätigen».
+
+![Bildschirmfoto der Pocket-Website mit der Aufforderung die Bitcoin-Adresse zu teilen](https://cdn.pocketbitcoin.com/DAFKWqAdn3o/fe2aaf8a-c5ac-4e5e-9201-ef5d777abfb0.png?width=1024&height=768&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMElEQVQImWOIZShcWbZ0ZfHCBvE0hp6UhQfPnf7+//+m9tUM0gzxIYyFJeadoQxxAGZuETgYg5e6AAAAAElFTkSuQmCC)
+
+## 7. Zugriff auf Bitcoin-Adresse bestätigen
+
+Als nächstes muss die Bitcoin-Wallet mit Pocket Bitcoin verknüpft werden. Dazu wird das Wallet signiert. Auf der Pocket-Webseite werden dir bereits die nächsten Schritte erklärt.
+
+![Bildschirmfoto der Pocket-Website mit der Aufforderung die Bitcoin-Adresse zu bestätigen](https://cdn.pocketbitcoin.com/DAFKWqAdn3o/7f4f26d7-4bef-4ec3-91ba-3c3732d8527f.png?width=1024&height=768&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMElEQVQImWMIZciamzlncc7cSp4Ehr60Re/+vv71///axmUM0gyxSfJVpeYdgQxRAGaPEX3DmYxBAAAAAElFTkSuQmCC)
+
+Öffne deine BlueWallet-App und klicke auf die neu erstellte Wallet, die du mit Pocket verknüpfen möchtest. Klicke anschliessend auf die drei Punkte oben rechts.
+
+![Bildschirmfoto der BlueWallet mit dem Hinweis auf das Menü (Drei Punkte)](https://cdn.pocketbitcoin.com/DAFKWqAdn3o/f485386e-762e-4a53-8128-3c1e3b0e9c6d.png?width=1024&height=768&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMElEQVQImWMIZSh1C51j51XbyBDCYMxQ/Onu/yvnPgYyODIwMNT8//D/38P/Tgy+ACnFEUyFfDEbAAAAAElFTkSuQmCC)
+
+Nun bist du auf der Detail-Ansicht deiner Wallet. Hier kannst du z.&nbsp;B. den Namen deiner Wallet ändern.
+
+Klicke nun auf den Button «Meldung signieren/verifizieren», um die Wallet zu signieren.
+
+![Bildschirmfoto Menü der BlueWallet mit der Option Meldung signieren/verifizieren](https://cdn.pocketbitcoin.com/DAFKWqAdn3o/4bbd479b-43b9-4c1e-85f2-44cd04194c1b.png?width=1024&height=768&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMklEQVQImQEnANj/AEcAbNCY0sCPtHIASwAoAHD/8v//6P1JADwAAAB868L/1LviQgBNZ8YSx4cpV7cAAAAASUVORK5CYII=)
+
+Danach wird dir in der App ein Screen mit 3&nbsp;Feldern angezeigt. Zuoberst erkennst du vermutlich deine Bitcoin-Adresse wieder. Danach hast du je ein Feld für die «Signatur» und für eine «Meldung».
+
+![Bildschirmfoto der BlueWallet mit je ein Feld für Signatur und für Meldung](https://cdn.pocketbitcoin.com/DAFKWqAdn3o/a6b40dde-9d0e-4624-9abd-79f6680ddb55.png?width=1024&height=768&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMElEQVQImWPwZSjOVy7KVUusZghi0GAo/P/5/7cHn7wY7BgYGGo/n/x/Y/dtBwZvACBKEJESzNwZAAAAAElFTkSuQmCC)
+
+Kopiere nun auf der Pocket-Webseite die Nachricht «Ich bestätige diese Bitcoin-Adresse …» indem du auf den Button rechts neben dem Text klickst.
+
+![Bildschirmfoto der Pocket-Website, um die Bitcoin-Adresse zu bestätigen ](https://cdn.pocketbitcoin.com/DAFKWqAdn3o/15926f81-5aa5-459c-81ee-a9622b6914eb.png?width=1024&height=768&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMElEQVQImWMIE8y4f+rW7eO3KvVSGTLtG5on93/+/39x4WwGeQYfaQaDyuQJOeq5AHnrEWrh3+LmAAAAAElFTkSuQmCC)
+
+Kehre anschliessend in die BlueWallet-App zurück und füge die kopierte Nachricht aus der Zwischenablage im Feld «Meldung» ein. Klicke anschliessend auf «Signieren».
+
+![Bildschirmfoto der BlueWallet, um zu signieren](https://cdn.pocketbitcoin.com/DAFKWqAdn3o/c809e11c-2785-4542-8085-29dbd6994aea.png?width=1024&height=768&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMElEQVQImWPwZSjsDp3QEFReweDPoMNQ9P/j/58Pvnoz2DMwMNT+OPv/weHHTgx+ADmhEXvInUhWAAAAAElFTkSuQmCC)
+
+Durch diese Aktion hast du bestätigt, dass du Zugriff auf deine Bitcoin-Adresse hast.
+
+Nun wird dir im zweiten Feld eine Signatur angezeigt. In dieser Signatur ist die Meldung, die du von Pocket übernommen hast, kryptografisch integriert. Indem du diese Signatur in den folgenden Schritten an Pocket zurück gibst, wissen wir, auf welchen Auftrag und welche Bitcoin-Adresse sich deine zukünftigen Zahlungen referenzieren. Also auf welche Bitcoin-Adresse wir deine Bitcoin auszahlen müssen.
+
+## 8. Wallet signieren
+
+Wähle also den gesamten Text aus, kopiere die Signatur und kehre zur Pocket-Webseite zurück.
+
+![Bildschirmfoto der BlueWallet, um die Signatur zu kopieren](https://cdn.pocketbitcoin.com/DAFKWqAdn3o/c3cea6ed-e7e8-46ff-992b-6fc87d83a02b.png?width=1024&height=768&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMElEQVQImWMIZ6i1Z3CyZTDpZIhnMGAo+//5//fH3/0ZnBkYGGo+n/h/bectewZvAAcdD9IYMNdNAAAAAElFTkSuQmCC)
+
+Füge den kopierten Text aus der Zwischenablage im violetten Feld ein und klicke auf den Button «Bestätigen».
+
+![Bilfschirmfoto der Pocket-Webiste, um die kopierte Signatur hineinzufügen und zu bestätigen](https://cdn.pocketbitcoin.com/DAFKWqAdn3o/e0acc871-0b26-4814-bbe2-7f91dd58446a.png?width=1024&height=768&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMElEQVQImWPwYYi9tPPc5d0Xi9TiGJKtqpsn9X/+/39u1lQGGQZ3GQbdmvQJmepZAGX0ELpzbhhVAAAAAElFTkSuQmCC)
+
+Auf dem nächsten Screen wird dir bestätigt, dass die Verknüpfung zwischen deiner Wallet und Pocket funktioniert hat.
+
+![Bildschirmfoto der Pocket-Website, dass man erfolgreich die Bitcoin-Adresse geteilt hat](https://cdn.pocketbitcoin.com/DAFKWqAdn3o/2a566197-d680-4ca1-b335-174aa87be4e6.png?width=1024&height=768&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMElEQVQImWPwYkicENg7Jai3iCGCoTt5wcnrl379/7+ley2DDENsOHdhuXVnMEMUAEpFEG90W1jhAAAAAElFTkSuQmCC)
+
+Somit ist die Wallet-Konfiguration abgeschlossen. Klicke jetzt auf den Button «Bestätigen».
+
+## 9. E-Mail-Adresse angeben
+
+Damit wir dich über deine Transaktionen auf dem Laufenden halten können, musst du im nächsten Schritt deine E-Mail-Adresse eingeben. Keine Angst, wir senden dir keine Marketing-Mails, sondern werden dir jeweils nur per E-Mail deine zukünftigen Transaktionen bestätigen.
+
+Gib deine E-Mail-Adresse ein und klicke auf den Button «Bestätigen».
+
+![Bildschirmfoto der Pocket-Website mit der Aufforderung die E-Mail-Adresse anzugeben](https://cdn.pocketbitcoin.com/DAFKWqAdn3o/abbf447d-87a5-467f-b809-86d23756858c.png?width=1024&height=768&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMElEQVQImWMIZcjpdu2e5t1by5DAMLtszdd/7379/79r8iYGSYbUUIayFM6aIIZoAFlgENx62p20AAAAAElFTkSuQmCC)
+
+## 10. Bankkonto angeben
+
+Jetzt muss nur noch das Bankkonto verknüpft werden. Dazu gibst du hier deine gewünschte IBAN-Adresse ein, von der du einzahlst.
+
+![Bildschirmfoto der Pocket-Website mit der Aufforderung die Bankverbindung anzugeben](https://cdn.pocketbitcoin.com/DAFKWqAdn3o/288c85cb-2109-4cca-b0f3-b0b8d9fa4eee.png?width=1024&height=768&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMElEQVQImWMIZEhfUrd4ffuqSuUUho7E2a9/P/31//+K2oUMsgyhKSqF9QF9/gxhAHCREdjADMpHAAAAAElFTkSuQmCC)
+
+Klicke anschliessend auf den Button «Akzeptieren und fortfahren». Jetzt ist alles fertig eingerichtet.
+
+## 11. Auftragsbestätigung studieren
+
+Auf der nächsten Seite findest du alle Informationen zu deinem Auftrag. Unter anderem findest du alle Zahlungs-Informationen zu Pocket, damit du gleich einen ersten Bitcoin-Kauf tätigen kannst. Bitte beachte auch die Tageslimite, wenn du Zahlungen erstellst.
+
+## 12. Bitcoin kaufen
+
+Um nun Bitcoin zu kaufen kannst du einfach in deinem E-Banking eine neue Zahlung einrichten. Alle notwendigen Informationen, wie IBAN, Referenznummer, BIC und unsere Adresse, haben wir dir auch per E-Mail zugestellt. Denke daran unbedingt die Zahlungsreferenz bei der Überweisung anzugeben, damit die Zahlung deiner Bitcoin-Adresse zugeordnet und an dich ausbezahlt werden kann.
+
+Jetzt kannst du unter anderem auch einen Dauerauftrag / DCA-Auftrag einrichten und so Bitcoin in einem gewünschten Intervall, zum Beispiel wöchentlich oder monatlich, auf deine neu verknüpfte Wallet empfangen.
+
+<Callout icon = "❓">
+Hast du noch Fragen?
+Falls dir noch Sachen unklar sind oder du Probleme beim einrichten deiner BlueWallet hast, kannst du uns gerne über [Telegram](https://t.me/PocketBitcoinTG) oder per [E-Mail](https://pocketbitcoin.com/de/contact) kontaktieren. Die Pocket-Community hilft dir gerne weiter.
+</Callout>
+
+## Buchtipp
+
+<Books>
+  <Book book={bitcoinsVerwahrenUndVererben} />
+</Books>
+

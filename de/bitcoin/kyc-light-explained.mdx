@@ -1,0 +1,89 @@
+---
+type: learn/article
+lang: de
+slug: kyc-light-explained
+title: Was ist KYC-Light?
+metatitle: KYC-Light  einfach erklärt
+author: Claudio Koller
+category:
+  slug: bitcoin
+  title: Bitcoin Grundlagen
+description: >
+ Das KYC-Light-Verfahren einfach erklärt. Alle wichtige Informationen über den vereinfachten Anmeldeprozess findest du in diesem Artikel.
+keywords:
+- KYC-Light
+- KYC
+- Was ist KYC-light?
+- Know your Customer
+- Bitcoin Anmeldeprozess
+- Bitcoin Anmeldeverfahren
+- Bitcoin KYC
+- Bitcoin KYC-Light
+published: !!timestamp 2023-01-06T21:21:21.000+02:00
+updated: !!timestamp 2023-01-06T21:21:21.000+02:00
+---
+
+import { ArticleLayout, Article, Articles, Books, Book, Callout } from 'ui/learn';
+import { metadata as bitcoinPseudonym } from './bitcoin-pseudonym.mdx';
+import { metadata as bitcoinEntdecken } from '../books/bitcoin-entdecken.mdx';
+
+export { getStaticProps } from 'lib/learn';
+export default (p) => (
+  <ArticleLayout
+    article={metadata}
+    related={bitcoinPseudonym}
+    toc={toc}
+    {...p}
+  />
+);
+
+KYC-Light, auch bekannt als Soft-KYC, bezieht sich auf eine vereinfachte Version des «Know Your Customer» (KYC) Prozesses. Der KYC-Prozess ist ein Verfahren, die Finanzinstitute und andere Unternehmen anwenden, um die Identität ihrer Kundinnen und Kunden zu überprüfen und sicherzustellen, dass diese nicht in illegale Aktivitäten verwickelt sind. 
+
+Der KYC-Prozess umfasst in der Regel das Sammeln und Überprüfen von Informationen über den Kunden, wie Name, Adresse und Ausweisdokumente.
+
+## KYC Prozess
+
+Mittlerweile müssen immer mehr Bitcoinbörsen aus regulatorischen Gründen beim Anmeldeverfahren das KYC anbieten. In einem Anmeldeverfahren musst du vorher deine Identität über ID-Dokumente nachweisen, bevor du in Bitcoin investieren darfst.
+
+Die meisten Menschen haben kein Problem damit, sich über ein KYC-Verfahren zu registrieren. Deine Daten solltest du dennoch nicht jedem anvertrauen. Schaut man in die Vergangenheit, wurde vermehrt unsachgemäss mit den sensiblen Daten der Kundschaft umgegangen. So wurden durch diverse Cyberattacken Ausweis- oder Reisepassdaten bei mehreren Börsen gestohlen und veröffentlicht.
+
+## KYC-Light Prozess
+
+KYC light ist eine vereinfachte Version des KYC-Prozesses, bei der weniger Informationen über die Kundschaft erfasst und überprüft werden. Das Ziel von KYC-Light ist es, ein Gleichgewicht zwischen Kundenfreundlichkeit und der Einhaltung gesetzlicher Vorschriften zu schaffen.
+
+## Bitcoin ohne Registrierung kaufen
+
+Pocket ermöglicht es, Bitcoin ohne Registrierung zu kaufen. Dabei wird das Bitcoin-Wallet mit einer IBAN-Adresse verknüpft. Sobald eine Überweisung mit einem bestimmten Verwendungszweck getätigt wird, werden automatisch Bitcoin zum aktuellen Preis an deine Bitcoin-Wallet versendet. Dies wird als KYC-Light bezeichnet und ermöglicht dir so ein einfacheres Onboarding, um in Bitcoin zu investieren.
+
+<Callout icon = "💡">
+ KYC-Light ist nicht anonym. Es ermöglicht dir ein einfacheres Onboarding ohne eine Registrierung.
+</Callout>
+
+## KYC-Light-Verfahren
+
+Bei Pocket fällt bei der Anmeldung die ganze KYC-Prozedur weg, wenn du täglich unter CHF 1’000 CHF (1’000 Euro) oder jährlich CHF 100’000 (100’000 Euro) in Bitcoin investierst. Bei Pocket verifizierst du dich einmalig mit einer Banktransaktion (IBAN) und kannst danach sogar automatisch mit einem Dauerauftrag wiederkehrende Bitcoin-Käufe einrichten.
+
+Durch die Banktransaktion kennt Pocket deinen vollständigen Namen und die Bank. Je nach Bank wird uns ebenfalls die Wohnadresse übermittelt. Dennoch kriegt Pocket weniger sensible Daten zu Gesicht, wie zum Beispiel kein Geburtsdatum, Nationalität oder Passfoto, Adressnachweis (Stromrechnung etc.).
+
+Viele Kunden schätzen dieses Verfahren, da man weniger persönliche Daten angibt und gleichzeitig das Kaufen von Bitcoin einfacher und schneller gestaltet ist.
+
+<Callout icon = "💡">
+ KYC-Light ermöglicht es dir, Bitcoin mit weniger persönlichen Daten zu kaufen.
+</Callout>
+
+## Wieso kann Pocket KYC-Light anbieten?
+
+Pocket ist in der Schweiz ansässig und ist durch die Schweizer Finanzmarktaufsicht FINMA reguliert. In der Schweiz besteht einen Schwellenwert, welche Kunden und Kundinnen von Börsen oder Brokers davon Gebrauch machen können und sich nicht vollständig identifizieren müssen. 
+
+Der Schwellenwert ist, wie oben erwähnt, bei 1’000 CHF am Tag bzw. 100’000 im Jahr. Bei einer vollständigen Identifizierung (KYC-Verfahren) bei Pocket fällt diese Limite weg.
+
+<Callout icon="❓">
+Hast du noch Fragen?
+Falls dir noch Dinge zum Thema KYC-Light unklar sind, kannst du uns gerne über [Telegram](https://t.me/PocketBitcoinTG) oder per [E-Mail](https://pocketbitcoin.com/de/contact) kontaktieren. Die Pocket-Community hilft dir gerne weiter.
+</Callout>
+
+## Buchtipp
+
+<Books>
+  <Book book={bitcoinEntdecken} />
+</Books>

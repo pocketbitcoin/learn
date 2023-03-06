@@ -1,0 +1,138 @@
+---
+type: learn/article
+lang: de
+slug: medium-of-exchange-explained
+title: Was ist ein Tauschmittel?
+metatitle: Tauschmittel einfach erklärt
+author: Claudio Koller
+category:
+  slug: economy
+  title: Wirtschaft
+description: >
+  Welche monetären Eigenschaften braucht ein gutes Tauschmittel? Wieso hat sich Gold über jahrtausende durchgesetzt? Mehr dazu in diesem Artikel.
+keywords:
+- Tauschmittel
+- Medium of Exchange
+- Was ist Geld?
+- Eigenschaften Tauschmittel
+- Eigenschaften Geld
+- Eigenschaften Währung
+- Ist Bitcoin Geld?
+- Ist Bitcoin eine Währung?
+- Naturalgeld
+- Warengeld
+- Fiatgeld
+- Fiatwährung
+published: !!timestamp 2022-12-22T21:21:21.000+02:00
+updated: !!timestamp 2022-12-22T21:21:21.000+02:00
+---
+
+import { ArticleLayout, Article, Articles, Books, Book, Callout } from 'ui/learn';
+import { metadata as moneyExplained } from './money-explained.mdx';
+import { metadata as bitcoinStandard } from '../books/bitcoin-standard.mdx';
+
+export { getStaticProps } from 'lib/learn';
+export default (p) => (
+  <ArticleLayout
+    article={metadata}
+    related={moneyExplained}
+    toc={toc}
+    {...p}
+  />
+);
+
+Ein Tauschmittel ist ein Gut, das den Austausch von anderen Waren und Dienstleistungen innerhalb einer Wirtschaft erleichtert. In der Vergangenheit wurden Gegenstände wie Steine, Muscheln, Perlen, Zigaretten oder Gold als Tauschmittel verwendet.
+
+In der Wirtschaft ist ein Tauschmittel jeder Gegenstand, der im Austausch gegen Waren und Dienstleistungen allgemein akzeptiert wird. In der modernen Wirtschaft ist das am häufigsten verwendete Tauschmittel die Fiawährung, welche wir auch als CHF, USD, Euro etc. kennen.
+
+## Tauschmittel als Zwischeninstrument
+
+Ein Tauschmittel ist ein Zwischeninstrument, das den Verkauf, Kauf oder Handel von Waren zwischen Parteien erleichtert. Die Verwendung eines Tauschmittels ermöglicht eine grössere Effizienz in einer Volkswirtschaft. 
+
+In einem herkömmlichen Tauschsystem kann der Handel zwischen zwei Parteien nur dann stattfinden, wenn eine Partei über eine Ware verfügt, die die andere Partei wünscht, und umgekehrt. Die Wahrscheinlichkeit, dass dies gleichzeitig der Fall ist, ist sehr gering.
+
+Aus diesen Gründen entwickelten sich die Fiatwährungen zu den üblichen Tauschmittel in modernen Volkswirtschaften. Damit ein System, wie eine Währung, als Tauschmittel fungieren kann, muss es einen Wertmassstab darstellen und diesen auch so gut wie möglich stabil halten um die tatsächlichen Kosten besser zu ermitteln. Ausserdem müssen alle Parteien diesen Standard akzeptieren.
+
+<Callout icon = "💡">
+ Bitcoin wird in Regionen mit politischer und finanzieller Instabilität immer häufiger als alternatives Tauschmittel verwendet.
+</Callout>
+
+[> Erfahre mehr über Geld und was es für verschiedene Arten es gibt.](/learn/economy/money-explained)
+
+## Papiergeld als Tauschmittel - eine Chinesische Erfindung?
+
+In China kannte man seit dem 7. Jahrhundert n. Chr. das sogenannte «Fey-thsian» oder «fliegendes Geld», eine Vorform des Papiergeldes. 
+
+Wahrscheinlich wurde das System von den Kreditgebern eingeführt. Sie gaben dem Papier einen bestimmten Wert bei. Die Behörden veranlassten, die Händlerinnen und Händler zu ermutigen, ihre Metallmünzen bei einer staatlichen Finanzverwaltung zu hinterlegen. 
+
+Im Austausch dafür erhielten sie offizielle die Kompensationsnote, «fliegendes Geld» genannt. Danach entwickelte sich das Papiergeld in China und in anderen Regionen stetig weiter.
+
+<Callout icon = "💡">
+ Das älteste erhaltene Papiergeld stammt aus der Zeit der Ming-Dynastie im 14. Jahrhundert.
+</Callout>
+
+### Marco Polo und das Papiergeld
+
+Als der Händler Marco Polo, der im 13. Jahrhundert über 20 Jahre in Peking war, nach Europa zurück kehrte und  über seine Reise berichtete, schenkte man im keinen Glauben, als er den Gebrauch von Papiergeld in China erläuterte. Zu dieser Zeit stelle man sich die die Nutzung von «wertlosem Papier» als Geld bzw. Tauschmittel in der westlichen Welt für unvorstellbar.
+
+>Sie glauben, die Leute drehen heute durch wegen Bitcoin? Stellen Sie sich vor, wie sie ausgeflippt sind, als ihnen gesagt wurde, dass Handel ab jetzt statt mit Gold, mit einem Stück Papier betrieben wird.
+>
+>Andreas Antonopoulos
+
+[> Erfahre mehr über das Fiatgeld.](/learn/economy/fiatmoney-explained)
+
+## Monetäre Grundeigenschaften
+
+Folgende Merkmale sollte ein gutes Tauschmittel aufweisen:
+
+- **Seltenheit:** Das Gut, was die Funktionen des Geldes übernimmt, muss begrenzt und nicht beliebig vermehrbar sein.
+
+    Beispiel: Sand oder Steine eignen sich nicht, da sie weit verbreitet sind. Gold oder Bitcoin hingegen sind selten und erfüllen dieses Kriterium.
+
+- **Haltbarkeit:** Das Gut muss auch nach Jahren noch seine ursprünglichen Eigenschaften haben und darf nicht veränderbar sein.
+
+    Beispiel: Da Gemüse oder andere verderbliche Ware nur einige Tage haltbar sind, verlieren sie nach kurzer Zeit ihren Wert. Da weder Gold noch Bitcoin verdirbt, erfüllen sie diese Grundeigenschaft für ein langfristiges Tauschmittel.
+
+- **Transferierbarkeit:** Das Gut muss mit wenig Aufwand von einem zum anderen Ort bewegt werden können.
+
+    Beispiel: Grundstücke oder Immobilien sind unbewegliche Güter. Sie können also schlecht zwischen verschiedenen Parteien transferiert werden. Hingegen können Gold, Vieh, Fiatgeld oder Bitcoin einfacher zwischen Personen übergeben werden.
+
+- **Teilbarkeit:** Das Gut muss trotz einer Teilbarkeit, seine ursprünglichen Eigenschaften nicht verlieren.
+
+    Beispiel: Ein Vieh kann nicht geteilt werden, ohne dass es getötet wird. Daher kann es nicht im gleichen Zustand, mit den selben Eigenschaften zwischen verschiedenen Personen aufgeteilt werden. Gold, Silber oder Bitcoin sind jedoch beliebig in kleinere Mengen teilbar, ohne dass sich ihre Eigenschaften verändern.
+
+- **Fungibel / Homogenität:** Das Gut muss austauschbar sein.
+
+    Beispiel: Da ein Huhn nicht gleich ist wie ein anderes Huhn (Grösse, Alter, Gesundheit, Geschlecht etc.) kann es nicht einfach eins zu eins ausgetauscht werden. Eine Unze Gold ist jedoch gut mit einer anderen Unze Gold austauschbar. Dasselbe gilt bei Bitcoin.
+
+- **Verfizierbarkeit / Fälschungssicher:** Das Gut muss fälschungssicher und überprüfbar sein.
+
+    Beispiel: Die Reinheit eines Edelmetalls ist schwieriger zum prüfen als die Echtheit von Fiatgeld, dass mit mehreren Sicherheitsmerkmalen versehen ist oder Bitcoin, die in der Blockchain verifiziert sind.
+
+- **Wertstabilität:** Das Gut muss langristig einen stabilen Wert beibehalten.
+
+    Beispiel: Viele Güter verderben nach ein paar Jahren, wie Fiatgeld durch die Inflation an Kaufraft verliert. Gold konnte seinen Wert hingegen über mehrere Jahrhundert beibehalten und sogar steigern. Wie Gold hat Bitcoin langfristig gesehen einen positiven Trend.
+
+- **Allgemeine Akzeptanz:** Das Gut muss von allen Teilnehmern anerkannt sein, um als Tauschmittel akzeptiert zu werden.
+
+    Beispiel: Zigaretten haben grundsätzlich in der Gesellschaft kaum eine Akzeptanz als Tauschmittel. Direkt nach dem Zweiten Weltkrieg oder in einem Gefängnis dagegen schon. Die Adaption von Bitcoin nimmt von Tag zu Tag auf verschiedenen Ebenen zu.
+
+## Fazit
+
+Zusammenfassend lässt sich sagen, dass ein Tauschmittel eine Art von Geld oder Vermögenswert ist, dass als Zahlungsmittel für Waren und Dienstleistungen in der Gesellschaft akzeptiert wird.
+
+Die Verwendung eines Tauschmittels ermöglicht es den Menschen, Handel und Austausch zu betreiben, ohne direkt tauschen zu müssen. Zudem kann das Tauschmittel eine effiziente Verteilung von Ressourcen in einer Wirtschaft erleichtern.
+
+In der Vergangenheit wurden verschiedene Formen von Geld, wie Gold, Muscheln und Fiatwährungen, als Tauschmittel verwendet. Heute tauchen Kryptowährungen wie Bitcoin als potenzielles Tauschmittel auf.
+
+<Callout icon = "💡">
+Die Verwendung eines Tauschmittels ist ein wichtiges Merkmal moderner Volkswirtschaften und wird sich wahrscheinlich auch in Zukunft weiterentwickeln.
+</Callout>
+
+## Buchtipp
+
+<Books>
+  <Book book={bitcoinStandard} />
+</Books>
+
+

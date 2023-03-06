@@ -1,0 +1,71 @@
+---
+type: learn/article
+lang: de
+slug: monetary-policy-explained
+title: Geldpolitik einfach erklärt
+metatitle: Was bedeutet Geldpolitik?
+author: Claudio Koller
+category:
+  slug: economy
+  title: Wirtschaft
+description: >
+  Erfahre mehr darüber, was Geldpolitik ist und wie sie die Wirtschaft beeinflusst. Der Artikel erklärt, was Geldpolitik bedeutet und welche Instrumente Zentralbanken verwenden, um die Wirtschaft zu steuern.
+keywords:
+- Geldpolitik Bitcoin
+- Geldpolitik Nationalbanken
+- Geldpolitik Zentralbanken
+- Geldpolitik Zinsfuss
+- Geldpolitik Leitzins
+published: !!timestamp 2023-22-02T21:21:21.000+02:00
+updated: !!timestamp 2023-22-02T21:21:21.000+02:00
+---
+
+import { ArticleLayout, Article, Articles, Books, Book, Callout } from 'ui/learn';
+import { metadata as fiscalPolicyExplained } from './fiscal-policy-explained.mdx';
+import { metadata as layeredMoney } from '../books/layered-money.mdx';
+
+export { getStaticProps } from 'lib/learn';
+export default (p) => (
+  <ArticleLayout
+    article={metadata}
+    related={fiscalPolicyExplained}
+    toc={toc}
+    {...p}
+  />
+);
+
+Geldpolitik spielt eine wichtige Rolle in der Wirtschaft eines Landes. Es handelt sich hierbei um Massnahmen, die von einer Zentralbank, wie der Europäischen Zentralbank (EZB) oder der Federal Reserve (FED), durchgeführt werden, um die Geldmenge im Umlauf und den Zinsfuss zu beeinflussen. 
+
+## Geldpolitik und der Zinsfuss
+
+Die Geldpolitik hat einen direkten Einfluss auf das Geldangebot und die Kreditbedingungen in einer Wirtschaft. Durch die Erhöhung oder Senkung des Zinsfusses kann die Zentralbank den Geldfluss im Wirtschaftssystem beeinflussen und so die Nachfrage nach Krediten und Investitionen beeinflussen. 
+
+Eine Erhöhung des Zinsfusses wird dazu führen, dass Banken weniger Kredite vergeben und dass Verbraucherinnen und Verbraucher sowie Unternehmen weniger bereit sind, Kredite aufzunehmen. 
+
+[> Erfahre mehr über den Leitzins.](/learn/economy/prime-rate-explained)
+
+Dies führt zu einer Verlangsamung der Konjunktur und einer Senkung der Inflation. Eine Senkung des Zinsfusses führt dagegen zu einer Erhöhung des Geldangebots, was zu einer Stimulierung der Konjunktur und einer Erhöhung der Inflation beitragen kann.
+
+[> Erfahre mehr über den Konjunkturzyklus.](/learn/economy/business-cycle-explained)
+
+## Geldpolitik und Bitcoin
+
+Geldpolitik bezieht sich normalerweise auf Massnahmen, die von staatlichen Zentralbanken ergriffen werden, um die Geldmenge und den Zinsfuss in einer Währung zu beeinflussen. Im Falle von Bitcoin gibt es keine staatliche Zentralbank oder eine andere höhe Institution, die diese Rolle übernimmt.
+
+Stattdessen wird die Geldmenge von Bitcoin durch seine Protokollregeln reguliert, die eine begrenzte Gesamtmenge an Bitcoin festlegen, die im Laufe der Zeit abgebaut werden können.
+
+Daher gibt es im Kontext von Bitcoin keine «Geldpolitik» im traditionellen Sinne, sondern lediglich die festgelegten Regeln des Bitcoin-Protokolls, die dessen Geldmenge festgelegt sind.
+
+## Fazit
+
+Es lässt sich festhalten, dass die Geldpolitik eine bedeutende Rolle in der Wirtschaft spielt. Die Zentralbanken setzen verschiedene Instrumente ein, um die Geldmenge zu beeinflussen und damit die Inflation zu kontrollieren. Dazu gehören zum Beispiel die Festlegung von Leitzinsen, der Ankauf sowie Verkauf von Wertpapieren und die Regelung der Mindestreserveanforderungen für Banken.
+
+<Callout icon = "💡">
+ Die Zentralbank hat das Ziel, die Wirtschaft zu steuern um bestimmte wirtschaftliche Interessen wie Preisstabilität, Beschäftigung und Wachstum zu erreichen.
+</Callout>
+
+## Buchtipp
+
+<Books>
+  <Book book={layeredMoney} />
+</Books>

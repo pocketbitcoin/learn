@@ -1,0 +1,80 @@
+---
+type: learn/article
+lang: de
+slug: bitcoin-whitepaper
+title: Kurzer Einblick in das Bitcoin-Whitepaper
+metatitle: Was ist das Bitcoin-Whitepaper?
+author: Claudio Koller
+category:
+  slug: bitcoin
+  title: Bitcoin Grundlagen
+description: >
+ Der Grundstein von Bitcoin ist das Bitcoin-Whitepaper. Wenn du dich mit Bitcoin beschäftigen möchtest, solltest du dich mit Whitepaper auseinandersetzen.
+keywords:
+- Bitcoin Whitepaper
+- Satoshi Nakamoto
+- Bitcoin Erfindung
+- Bitcoin Dokument
+- Bitcoin Geschichte
+- Bitcoin Gründungsdokument
+published: !!timestamp 2023-02-02T21:21:21.000+02:00
+updated: !!timestamp 2023-02-02T21:21:21.000+02:00
+---
+
+import { ArticleLayout, Article, Articles, Books, Book, Callout } from 'ui/learn';
+import { metadata as whoIsSatoshiNakamoto } from './who-is-satoshi-nakamoto.mdx';
+import { metadata as bitcoinSelbstbestimmungDurchMathematik} from '../books/bitcoin-selbstbestimmung-durch-mathematik.mdx';
+
+export { getStaticProps } from 'lib/learn';
+export default (p) => (
+  <ArticleLayout
+    article={metadata}
+    related={whoIsSatoshiNakamoto}
+    toc={toc}
+    {...p}
+  />
+);
+
+Das Bitcoin-Whitepaper wurde im Oktober 2008 von einer Einzelperson oder einer Gruppe unter dem Pseudonym Satoshi Nakamoto veröffentlicht und legte den Grundstein für Bitcoin. Das Whitepaper gilt daher als Gründungsdokument der Kryptowährung.
+
+
+## Was ist ein Whitepaper?
+
+ Ein Whitepaper ist ein kurzer Bericht oder Leitfaden, welcher ein komplexes wissenschaftliches Thema kurz zusammenfasst und beschreibt. Die Leserin und der Leser kann damit einen schnellen Zugang zum Thema erlangen und versteht die und Gedankengänge des Verfassers.
+
+
+## Veröffentlichung des Whitepapers
+
+«Bitcoin: A Peer-to-Peer Electronic Cash System», war der Betreff einer E-Mail, die Satoshi Nakamoto an eine Kryptographie-Mailing-Liste am 31. Oktober 2008 versandte. Auf gerade mal neun Seiten beschreibt Satoshi Nakamoto in diesem Whitepaper die technische Grundlage für ein dezentrales System für elektronische Transaktionen.
+
+<Callout icon = "💡">
+ Das Bitcoin-Whitepaper ist das wichtigste Dokument, das du lesen musst, wenn du dich in den technischen Hintergrund von Bitcoin einarbeiten möchtest.
+</Callout>
+
+[> Erfahre mehr über Satoshi Nakamoto.](/learn/bitcoin/who-is-satoshi-nakamoto)
+
+## Inhalt des Whitepapers
+
+In einfachen Worten beschreibt das Pseudonym, wie verschiedenen Parteien online Direktzahlungen ausführen können, ohne dabei eine höhere Instanz oder eine Zwischenpartei, wie eine Bank oder Regierung, zu benötigen.
+
+Das Whitepaper beschreibt die technischen Details des Bitcoin-Netzwerks und seine Funktionsweise, einschliesslich der dezentralen Natur des Netzwerks, der Verwendung eines verteilten Hauptbuchs und des Mining-Prozesses zur Erzeugung neuer Bitcoin.
+
+<Callout icon = "💡">
+ Der Begriff «Blockchain» wurde im Bitcoin-Whitepaper kein einziges Mal erwähnt, stattdessen schreibt Satoshi Nakamoto von einem Zeitstempel-Server.
+</Callout>
+
+Das Whitepaper verbindet mehrere kryptographische Konzepte wie Hashes, Signaturen und Merkle Trees, um erstmals ein dezentrales Transaktionssystem für digitales Bargeld zu schaffen. Anders als sämtliche vorhergegangenen Konzepte für die Erschaffung von digitalem Bargeld basiert Bitcoin nicht auf einem vertrauensbasierten System.
+
+## Fazit
+
+Das Bitcoin-Whitepaper beschreibt die technischen Details des Bitcoin-Netzwerks und seine Funktionsweise. Das Dokument gilt als bahnbrechendes Werk auf dem Gebiet der Kryptographie und ist nach wie vor eine wichtige Referenz für alle, die sich für die Entwicklung und Verwendung von Bitcoin interessieren.
+
+<Callout icon = "🔗">
+ [Hier](https://www.bitcoin.de/de/bitcoin-whitepaper-deutsch-html) findest du die deutsche Übersetzung vom Bitcoin-Whitepaper.
+</Callout>
+
+## Buchtipp
+
+<Books>
+  <Book book={bitcoinSelbstbestimmungDurchMathematik} />
+</Books>

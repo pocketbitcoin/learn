@@ -1,0 +1,79 @@
+---
+type: learn/article
+lang: de
+slug: open-source-explained
+title: Was bedeutet Open-Source?
+metatitle: Open-Source einfach erklärt
+author: Claudio Koller
+category:
+  slug: bitcoin
+  title: Bitcoin Grundlagen
+description: >
+ Erfahre alles über Open-Source-Software und warum sie für die IT-Branche so wichtig ist. Dieser Artikel erklärt einfach und verständlich, was Open Source bedeutet, wie es funktioniert und welche Vorteile es bietet.
+keywords:
+- Bitcoin Open-Source
+- Open-Source Software
+- Vorteile Open-Source
+- Nachteile Open-Source
+- Bitcoin Wallets Open-Source
+published: !!timestamp 2023-02-06T21:21:21.000+02:00
+updated: !!timestamp 2023-02-06T21:21:21.000+02:00
+---
+
+import { ArticleLayout, Article, Articles, Books, Book, Callout } from 'ui/learn';
+import { metadata as bitcoinWalletsOptions } from './bitcoin-wallets-options.mdx';
+import { metadata as bitcoinEntdecken } from '../books/bitcoin-entdecken.mdx';
+
+export { getStaticProps } from 'lib/learn';
+export default (p) => (
+  <ArticleLayout
+    article={metadata}
+    related={bitcoinWalletsOptions}
+    toc={toc}
+    {...p}
+  />
+);
+
+Ein besonderes Merkmal von Bitcoin ist, dass die Software Open-Source (wörtlich übersetzt: «freie Quelle») entwickelt wird. Von Open Source spricht man, wenn der Quellcode von einer Software offen zugänglich ist und sie von jedem verändert und weiterverbreitet werden kann.
+
+## Open-Source und GitHub
+
+Open-Source Software wird dezentral und kollaborativ entwickelt und stützt sich auf Peer-Review und Community-Produktion. Diese Software ist flexibler und langlebiger, weil sie nicht von einem einzelnen Programmierer oder Unternehmen, sondern in grösseren öffentlichen Communitys entwickelt wird.
+
+Viele Open-Source Projekte werden auf GitHub gehostet, wo Sie auf Repositories (Speicherort für Programmdateien) zugreifen oder sich an Community-Projekten beteiligen können. Linux ist ein Beispiel für ein beliebtes Open-Source-Projekt.
+
+## Vorteile Open-Source Software
+
+Privatpersonen oder Firmen haben der grosse Vorteil, dass sie für die Open-Source Software keine Lizenzen bezahlen müssen. Dazu kommt die Unabhängigkeit von einem Hersteller.
+
+Dadurch, dass der Code von vielen unabhängigen Entwicklern gelesen wird, würde ein Missbrauch der Software sofort auffallen. Sicherheitslücken in einer Open-Source-Software werden tendenziell schneller entdeckt und behoben, da mehr unabhängige Entwicklerinnen und Entwickler an ihr arbeiten.
+
+Auch kleine Fehler in der Software können schnell behoben werden, da viele unabhängige Programmierer sich gegenseitig ihre Fehler aufzeigen und gemeinsam über Probleme diskutieren.
+
+Hinzu kommt, dass die Nutzerin oder der Nutzer ein Programm auf seine Bedürfnisse anpassen kann. Es steht ihm frei, einfach den Code mit eigenen Funktionen zu erweitern.
+
+## Nachteile Open-Source Software
+
+Es gibt weder Garantien noch einen klassischen Support. Hilfe erhält man jedoch meistens von der Community. Zudem hat man eine grosse Abhängigkeit von einer aktiven Community. Die Aktivität ist meist abhängig von der Nachfrage und dem Potenzial des Projekts.
+
+## Bitcoin als Open-Source Software
+
+Der Open-Source-Charakter von Bitcoin hat mehrere entscheidende Vorteile. Er ermöglicht es jedem, die innere Funktionsweise der Software zu untersuchen und zu verifizieren, was zur Förderung der Transparenz und des Vertrauens in das System beiträgt.
+
+Ausserdem können Entwicklerinnen und Entwickler erlaubnisfrei am Projekt mitarbeiten und Verbesserungen und Erweiterungen vorschlagen, was zu Innovation und Wachstum beitragen kann. Dadurch schliesst Bitcoin kein Know-how aus. Jede Person oder Firma, die möchte, kann daran arbeiten und die Software verändern oder weiterentwickeln.
+
+<Callout icon = "💡">
+ Open-Source Software ist auch bekannt als Open Innovation.
+</Callout>
+
+## Bitcoin-Wallet
+
+Bei deiner Wahl nach einer Bitcoin Wallet empfiehlt es sich für ein Open-Source Wallet zu entscheiden. Am besten eine Wallet benutzen, die von einer grossen Community verwendet wird. Diese Projekte sind meistens transparent und man weiss, was genau im Hintergrund abläuft.
+
+[> Erfahre mehr über die verschiedenen Bitcoin-Wallets, sowie deren Vor- und Nachteilen.](/learn/bitcoin/bitcoin-wallets-options)
+
+## Buchtipp
+
+<Books>
+  <Book book={bitcoinEntdecken} />
+</Books>

@@ -1,0 +1,132 @@
+---
+type: learn/article
+lang: de
+slug: why-should-run-bitcoin-full-node
+title: Wieso sollte man eine Bitcoin Full Node betreiben?
+metatitle: Bitcoin Full Node einfach erklärt
+author: Claudio Koller
+category:
+  slug: bitcoin
+  title: Bitcoin Grundlagen
+description: >
+ Erfahre mehr darüber, warum es wichtig ist, eine Bitcoin Full Node zu betreiben. Dieser Artikel erklärt, was eine Full Node ist und wie sie dazu beiträgt, das Bitcoin-Netzwerk sicherer und widerstandsfähiger gegen Angriffe zu machen.
+keywords:
+- Bitcoin Full Node
+- Bitcoin Knotenpunkt
+- Dezentralität Bitcoin
+- Wieso Full Node Bitcoin
+- Gründe Bitcoin Full Node
+- Bitcoin Full Node installieren
+- Bitcoin Full Node aufsetzen
+- Sicherheit Bitcoin
+published: !!timestamp 2023-02-16T21:21:21.000+02:00
+updated: !!timestamp 2023-02-16T21:21:21.000+02:00
+---
+
+import { ArticleLayout, Article, Articles, Books, Book, Callout } from 'ui/learn';
+import { metadata as nonCustodialWalletExplained } from './non-custodial-wallet-explained.mdx';
+import { metadata as bitcoinEntdecken} from '../books/bitcoin-entdecken.mdx';
+
+export { getStaticProps } from 'lib/learn';
+export default (p) => (
+  <ArticleLayout
+    article={metadata}
+    related={nonCustodialWalletExplained}
+    toc={toc}
+    {...p}
+  />
+);
+
+Eine Full Node ist ein Computer, der eine vollständige Kopie der Bitcoin-Blockchain speichert und verwaltet. Indem man eine Full Node betreibt, kann man sicherstellen, dass man die volle Kontrolle seine Bitcoin hat, ohne auf Dritte wie Bitcoin-Börsen oder Wallet-Provider angewiesen zu sein. In diesem Artikel werden wir uns genauer anschauen, warum es sinnvoll ist, eine Bitcoin Full Node zu betreiben und welche Vorteile es bietet.
+
+## Was ist eine Full Node?
+
+Eine Full Node ist eine komplette Kopie der Bitcoin-Transaktionshistorie ab dem ersten Block, dem Genesis-Block. Mithilfe deines eigenen Bitcoin Full Nodes kannst du selbstständig Transaktionen verifizieren, senden und empfangen und gleichzeitig das Bitcoin-Netzwerk stärken. Desto mehr Full Nodes untereinander kommunizieren, desto sicherer und dezentraler ist das Netzwerk vor möglichen Angriffen. 
+
+Die Bitcoin Full Nodes kommunizieren auch untereinander und sichern damit das Netzwerk ab. So werden Blöcke und Transaktionen von den Full Nodes angenommen und gegengeprüft. Treten dabei keine Unregelmässigkeiten auf, werden diese wiederum an andere Nodes weitergeleitet.
+
+<Callout icon = "💡">
+  Eine Bitcoin Full Node ist eine Software, die das Bitcoin-Netzwerk unterstützt, indem sie die gesamte Blockchain speichert, Transaktionen validiert und zur Sicherheit und Dezentralisierung des Netzwerks beiträgt.
+</Callout>
+
+## Lernprozess und Verwahrung von Bitcoin
+
+Wenn man sich mit Bitcoin vertraut macht, beginnt man oft damit, sie über eine Börse oder eine Broker-Plattform zu kaufen und dort zu belassen. Der nächste Schritt besteht normalerweise darin, zu lernen, wie man selbst Bitcoin aufbewahrt, indem man sie in eine Non-Custodial-Wallet transferiert, bei der man die Kontrolle über die privaten Schlüssel hat.
+
+Um jedoch die volle Kontrolle über seine Bitcoin zu erlangen, ist es wichtig, einen eigenen Full Node zu verwenden. Dadurch kann man die Integrität des Netzwerks überprüfen und die Sicherheit seiner Transaktionen verbessern.
+
+## Komplette Souveränität
+
+Um Bitcoin direkt und ohne die Beteiligung Dritter zu nutzen, ist es unerlässlich, eine Full Node zu betreiben. Wer sich vollständige monetäre Souveränität wünscht, muss einen eigenen Full Node einrichten.
+
+Wenn man darauf vertraut, dass Wallet-Anbieter, Broker oder Exchanges die eigenen Bitcoin sicher aufbewahren, geht man gegen die grundlegende Philosophie von Bitcoin «Don’t trust, verify» (wörtlich übersetzt: «Vertraue nicht, überprüfe selbst») vor. 
+
+Nur durch das Betreiben einer eigenen Bitcoin Full Node kann man diese Unsicherheiten ausschliessen und sicherstellen, dass man die volle Kontrolle über den eigenen Bitcoin-Besitz hat.
+
+<Callout icon = "💡">
+  Nur die, die eine Full Node betreiben, können sicher sein, dass sie Bitcoin besitzen.
+</Callout>
+
+## Stimmrecht im Bitcoin-Netzwerk
+
+Durch das Betreiben deiner eigenen Full Node leistest du einen Beitrag zur Aufrechterhaltung der Regeln von Bitcoin. Das kann sowohl für dich als auch für das gesamte Bitcoin-Netzwerk von Vorteil sein.
+
+Die Regeln von Bitcoin werden durch einen gemeinsamen Konsens der Teilnehmerinnen und Teilnehmer im Netzwerk festgelegt. Jede Full Node kommuniziert mit anderen Nodes, um sicherzustellen, dass diese Regeln eingehalten werden.
+
+### Upgrades in der Bitcoin-Blockchain
+
+In der Bitcoin-Blockchain können Upgrades vorgeschlagen werden. Wenn dies der Fall ist, entscheidet jede Full Node für sich selbst, ob es das Upgrade annehmen und implementieren oder bei der alten Version bleiben möchte. Diese individuellen Entscheidungen führen indirekt zu einer Abstimmung über das Upgrade. 
+
+Je nachdem, wie sich die Full Nodes entscheiden, bilden sich zwei Fraktionen: Eine Gruppe von Full Nodes, die bei der alten Version bleiben, und eine Gruppe von Full Nodes, die das Upgrade implementieren. Wenn es zu einer deutlichen Trennung zwischen den beiden Gruppen kommt, spricht man von einem Hard Fork bei Bitcoin.
+
+Bei Bitcoin kam es so bereits zu mehreren Hard Forks, aus denen unter anderem Litecoin und Bitcoin Cash hervorgingen. Nur mit einer eigenen Full Node kannst du an diesem Abstimmungsprozess teilnehmen. 
+
+<Callout icon = "💡">
+  Durch den Betrieb von mehreren Full Nodes wird das Bitcoin-Netzwerk dezentralisiert und somit demokratisiert.
+</Callout>
+
+## Transaktionen selber verifizieren
+
+Durch das Betreiben deiner eigenen Full Node hast du die Möglichkeit, Transaktionen im Bitcoin-Netzwerk eigenständig zu verifizieren. Das bedeutet, dass jede Transaktion, die jemals im Netzwerk stattgefunden hat, von deiner Full Node überprüft wird. Somit kannst du sicher sein, dass die Transaktionen und Bestände im Netzwerk korrekt sind, ohne auf die Verifikation anderer vertrauen zu müssen.
+
+<Callout icon = "💡">
+ Full Nodes setzen die Bitcoin-Netzwerkregeln durch und weisen alle Transaktionen zurück, die diese verletzen.
+</Callout>
+
+## Netzwerk unterstützen
+
+Desto mehr Full Nodes an das Bitcoin-Netzwerk angeschlossen sind, desto sicherer ist es. Denn so lange ehrliche Nodes den Angreifer überstimmen können, ist das Bitcoin-Netzwerk sicher.
+
+Durch eine grössere Anzahl an aktiven Full Nodes wird das Bitcoin-Netzwerk widerstandsfähiger gegen Angriffe, da es nicht von wenigen zentralen Dienstleister abhängt, auf denen sich Millionen von Nutzerinnen und Nutzer verlassen müssen.
+
+Die dezentrale Verteilung von Full Nodes erhöht das Vertrauen in das Bitcoin-Netzwerk, weil mehr Nutzerinnen und Nutzer in der Lage sind, Transaktionen unabhängig voneinander zu validieren.
+
+<Callout icon = "💡">
+ Dadurch wird das Risiko von Fehlern oder Angriffen reduziert, da keine einzelne Partei das Netzwerk kontrolliert oder beeinflussen kann.
+</Callout>
+
+## Lerneffekt
+
+Der Betrieb einer Bitcoin Full Node ist nicht nur eine Möglichkeit, die volle Kontrolle über die Bitcoin zu behalten, sondern es bietet auch eine grossartige Gelegenheit, das Bitcoin-Protokoll und die zugrunde liegende Technologie besser zu verstehen. 
+
+Durch das Betreiben einer Full Node kannst du tiefere Einblicke in die Funktionsweise der Bitcoin-Blockchain gewinnen und versteht, wie Transaktionen gesendet und bestätigt werden.
+
+## Einen Bitcoin Full Node einzurichten ist einfacher als gedacht
+
+In der Praxis ist ein Full Node meistens ein Raspberry Pi mit externer Festplatte und Internetanschluss. Du interagierst mit dem Full Node hauptsächlich über deinen normalen Computer. Einmal installiert, läuft dein Bitcoin Full Node Tag und Nacht und hält deine Kopie der Bitcoin-Blockchain aktuell und fehlerfrei.
+
+## Bitcoin Full Nodes Implementierungen
+
+Es gibt mehrere Implementierungen von Bitcoin Full Nodes, die alle die gleiche grundlegende Funktionalität bereitstellen, aber unterschiedliche Eigenschaften aufweisen können. Beispiele für Full Node Implementierungen sind [Raspiblitz](https://shop.fulmo.org/), [Umbrel](https://umbrel.com/), [Citadel](https://runcitadel.space/) oder [myNode](https://mynodebtc.com/).
+
+## Fazit
+
+Insgesamt gibt es gute Gründe, warum du eine Bitcoin Full Node betreiben solltest. Eine Full Node ermöglicht es einem, unabhängig und autonom zu agieren, da du die volle Kontrolle über deine Bitcoin-Transaktionen hast und nicht auf Dritte wie Börsen oder Wallet-Anbieter angewiesen bist. 
+
+Der Betrieb einer Full Node kann eine lohnende Erfahrung sein, die einem dabei hilft, das Bitcoin-Protokoll besser zu verstehen und sich an der Erhaltung des dezentralen Charakters des Bitcoin-Netzwerks zu beteiligen.
+
+## Buchtipp
+
+<Books>
+  <Book book={bitcoinEntdecken} />
+</Books>

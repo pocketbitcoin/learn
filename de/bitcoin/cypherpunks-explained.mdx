@@ -1,0 +1,111 @@
+---
+type: learn/article
+lang: de
+slug: cypherpunks-explained
+title: Die Entstehung der Cypherpunks und Bitcoin 
+metatitle: Wer waren und sind die Cypherpunks?
+author: Claudio Koller
+category:
+  slug: bitcoin
+  title: Bitcoin Grundlagen
+description: >
+ Erfahre mehr über die Cypherpunk-Bewegung und ihre Rolle bei der Entstehung von Bitcoin. Der Artikel gibt einen kurzen Einblick in die Geschichte der Cypherpunks und ihre Vision einer freien und sicheren digitalen Welt.
+keywords:
+- Cypherpunks
+- Entstehung Bitcoin
+- Ursprung Bitcoin
+- Cypherpunks Bitcoin
+- Julian Assange Bitcoin
+- Edward Snowden Bitcoin
+- Entstehung Cypherpunks
+- Ursprung Cypherpunks
+published: !!timestamp 2023-01-06T21:21:21.000+02:00
+updated: !!timestamp 2023-01-06T21:21:21.000+02:00
+---
+
+import { ArticleLayout, Article, Articles, Books, Book, Callout } from 'ui/learn';
+import { metadata as whoIsSatoshiNakamoto } from './who-is-satoshi-nakamoto.mdx';
+import { metadata as bitcoinEntdecken } from '../books/bitcoin-entdecken.mdx';
+
+export { getStaticProps } from 'lib/learn';
+export default (p) => (
+  <ArticleLayout
+    article={metadata}
+    related={whoIsSatoshiNakamoto}
+    toc={toc}
+    {...p}
+  />
+);
+
+Vielen ist nicht bewusst, wie oft die Arbeit der Cypherpunks in unserem täglichen Leben vorkommt. Egal ob wir einkaufen gehen und mit unserer Karte bezahlen, oder ob wir uns einen gemütlichen Abend mit Netflix machen. Praktisch jede Interaktion mit Technologie und digitalen Geräten beinhaltet wichtige Grundsteine, die von den Cypherpunks gelegt wurden. 
+
+## Wer waren die Cypherpunks?
+
+Die Cypherpunks waren eine Gruppe von Menschen, die sich in den späten1980er Jahren zusammen gefunden haben und die sich für die Verwendung von Kryptographie zur Förderung von Privatsphäre und Freiheit im Internet einsetzten. Sie waren unteranderem Vorreiter bei der Entwicklung von diversen verschlüsselten Kommunikationsprotokollen und der Kryptowährung Bitcoin.
+
+## Entstehung der Cypherpunks
+
+Bis etwa in die 1970er Jahre wurde die Kryptographie hauptsächlich von Militär und Spionageabteilungen praktiziert. Die technischen Wurzeln der Cypherpunk-Ideen gehen auf Arbeiten des Kryptographen David Chaum zu Themen, wie anonymes digitales Bargeld und pseudonyme Reputationssysteme, zurück. 
+
+In den späten 1980er Jahren entwickelten sich die ersten Ideen zu einer Art Bewegung. Im Jahre 1992 veranstalteten Eric Hughes, Timothy C. May und John Gilmore regelmässige Treffen in einer kleineren Gruppe in Kalifornien. Dabei entstand der Name «Cypherpunk». Der Name bildet sich aus den Begriffen Cipher, Cyber und Punk.
+
+## Prinzipien der Cypherpunks
+
+Die Cypherpunks diskutierten früh über die digitale Revolution und deren Einfluss auf die Freiheit des Individuums. Ihnen wurde schon früh klar, dass die Massenüberwachung im digitalen Zeitalter ein grosses Problem werden könnte. Die einzige Hoffnung, seine Privatsphäre zu schützen, lag in der Kryptographie. In weiterer Folge entstand eine gesellschaftliche Bewegung rund um das Thema Verschlüsselung.
+
+Die grundlegenden Prinzipien sind die Privatsphäre in der Kommunikation und in  der Datenspeicherung. Zudem lehnten die Cypherpunks die Zensur und Überwachung durch Regierung und Polizei ab. Diese Ziele sollten durch Kryptographie (altgriechisch: krypto für «verborgen», «geheim» und graphie für «schreiben», «Schrift») realisiert werden. Die meisten Prinzipien wurden später im Cypherpunk's Manifesto von Eric Hughes (1993) niedergeschrieben. 
+
+## Crypto Anarchist Manifesto
+
+Timothy C. May, Computeringenieur und leitender Wissenschaftler bei Intel, veröffentlichte im Jahre 1988 das Manifest - das “Crypto Anarchsist Manifesto”, welches die Veränderung der Beziehung zwischen Bürger und Staat durch den technologischen Fortschritt prophezeite.
+
+> So wie die Technologie des Buchdrucks die Macht der mittelalterlichen Zünfte und das gesellschaftliche Machtgefüge veränderte und reduzierte, so werden auch kryptologische Methoden, das Wesen von Unternehmen und die Einmischung der Regierung in wirtschaftliche Transaktionen grundlegend verändern.
+>
+> [Crypto Anarchist Manifesto (Timothy C. May, 1988)](https://www.activism.net/cypherpunk/crypto-anarchy.html)
+
+
+## Ziele der Cypherpunks
+
+Die Cypherpunks stehen politisch dem Libertarismus nahe und fordern das Offenlegen von öffentlichem Wissen (Wissen über die Gesellschaft, Politik, Wirtschaft, Wissenschaft) und das Verbergen von privatem Wissen. Dieses Ideal wird von Datenschützern sehr befürwortet, führt aber häufig zum Interessenkonflikt mit dem Staat.
+
+> Privatsphäre ist notwendig für eine offene Gesellschaft im elektronischen Zeitalter. ... Wir können nicht von Regierungen, Unternehmen oder anderen grossen, gesichtslosen Organisationen erwarten, dass sie uns Privatsphäre gewähren ... Wir müssen unsere eigene Privatsphäre verteidigen, wenn wir überhaupt eine haben wollen. ... Cypherpunks schreiben Code. Wir wissen, dass jemand Software zum Schutz der Privatsphäre schreiben muss, und ... wir werden sie schreiben. 
+>
+> [A Cypherpunk's Manifesto (Eric Hughes, 1993)](https://www.activism.net/cypherpunk/manifesto.html)
+
+## Cypherpunk Mailingliste
+
+Sie führten schlussendlich eine Mailingliste, in welcher sie Ideen und Visionen miteinander austauschten. Bekannte Persönlichkeiten, wie Julian Assange, der Gründer von WikiLeaks, «Proof-of-Work» Erfinder Adam Back und Hal Finney, welcher die erste Bitcoin-Transaktion erhielt, traten der Mailingliste bei.
+
+> Es spielt keine Rolle, ob du nichts zu verbergen hast. Denn bei Privatsphäre geht es nicht ums Verbergen. Es geht darum, eine freie und offene Gesellschaft zu schützen. Es geht darum, das Recht zu schützen, frei, unabhängig, anders und individuell zu sein.
+> 
+> Edward Snowden
+
+## Bitcoin Whitepaper
+
+Zwei Jahrzehnte später, nachdem Tim C. May das Krypto-anarchistische Manifest verfasst hatte, veröffentlichte Satoshi Nakamoto am 31. Oktober 2008 das Bitcoin Whitepaper. Er publizierte das Konzept auf die erwähnte Mailingliste der Cypherpunks. Damit realisierte er ein digitales, von Staaten unabhängiges Zahlungsmittel für die ganze Gesellschaft.
+
+> Ich habe ein neues Open-Source-P2P-E-Cash-System namens Bitcoin entwickelt. Es ist vollständig dezentralisiert, ohne zentralen Server oder vertrauenswürdige Parteien, da alles auf kryptographische Beweise anstelle auf Vertrauen basiert.
+> 
+> [Satoshi Nakamoto, 11. Februar 2009](http://p2pfoundation.ning.com/forum/topics/bitcoin-open-source)
+
+[> Erfahre mehr über das Bitcoin-Whitepaper.](/learn/bitcoin/bitcoin-whitepaper)
+
+## Vorherige Konzepte für digitales Bargeld
+
+Zuvor gab es einige Konzepte für ein digitales Bargeld, wie Wei Dai’s B-Money oder Nick Szabo’s BitGold. Jedoch konnten sie alle das Double-Spending-Problem nicht lösen. Obwohl diese Vorreiter am Ende nicht erfolgreich waren, legten sie einen wichtigen Grundstein für Bitcoin.
+
+Wei Dai und Adam Back, welcher Proof-of-Work erfunden hat, waren die ersten beiden Personen, die von Satoshi Nakamoto kontaktiert wurden, als er 2008 Bitcoin entwickelte. Beide Personen wurden im Bitcoin-Whitepaper referenziert.
+
+<Callout icon ="💡">
+ Mit der Erfindung von Bitcoin ist den Cypherpunks ein Meilenstein gelungen, der auch in der traditionellen Finanzwelt für grosses Aufsehen sorgt.
+</Callout>
+
+## Fazit
+
+Bitcoin und die Cypherpunk-Bewegung sind eng miteinander verbunden. Die dezentralisierte Natur von Bitcoin sowie die Fähigkeit, zensurresistente Transaktionen zu ermöglichen, stimmen mit den Zielen der Cypherpunks überein, die individuelle Freiheit und Privatsphäre in einer digitalen Welt zu fördern.
+
+## Buchtipp
+
+<Books>
+  <Book book={bitcoinEntdecken} />
+</Books>

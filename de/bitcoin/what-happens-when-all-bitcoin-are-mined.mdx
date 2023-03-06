@@ -1,0 +1,128 @@
+---
+type: learn/article
+lang: de
+slug: what-happens-when-all-bitcoin-are-mined
+title: Was passiert, wenn alle Bitcoin geschürft sind?
+metatitle: Das wird passieren, wenn alle Bitcoin geschürft sind
+author: Claudio Koller
+category:
+  slug: bitcoin
+  title: Bitcoin Grundlagen
+description: >
+ Erfahre mehr darüber, was passiert, wenn alle Bitcoin geschürft wurden und es keine neuen mehr gibt. Dieser Artikel erklärt, wie das Bitcoin-System funktioniert und warum die Anzahl der Bitcoin begrenzt ist und welche Auswirkungen es auf den Bitcoin-Preis hat.
+keywords:
+- Bitcoin Mining
+- Bitcoin Miner
+- Bitcoin schürfen
+- Bitcoin Halving
+- Bitcoin Knappheit
+- Bitcoin Seltenheit
+- Bitcoin Block-Reward
+- Bitcoin Block-Subsidy
+published: !!timestamp 2023-02-06T21:21:21.000+02:00
+updated: !!timestamp 2023-02-06T21:21:21.000+02:00
+---
+
+import { ArticleLayout, Article, Articles, Books, Book, Callout } from 'ui/learn';
+import { metadata as bitcoinMiningDifficultyExplained } from './bitcoin-mining-difficulty-explained.mdx';
+import { metadata as bitcoinSelbsbestimmungDurchMathematik } from '../books/bitcoin-selbstbestimmung-durch-mathematik.mdx';
+
+export { getStaticProps } from 'lib/learn';
+export default (p) => (
+  <ArticleLayout
+    article={metadata}
+    related={bitcoinMiningDifficultyExplained}
+    toc={toc}
+    {...p}
+  />
+);
+
+Im Jahr 2140 wird voraussichtlich das letzte Bitcoin Halving stattfinden. Viele Leute fragen sich, was passiert dann mit Bitcoin, wenn die Miner, welche für die Sicherheit des Netzwerkes verantwortlich sind, keinen Block-Reward für die geleistete Arbeit mehr erhalten.
+
+## Bitcoin – die absolute Knappheit
+
+Bitcoin ist der erste Vermögenswert in der Geschichte mit einer nachweislichen absoluten Knappheit. Diese Knappheit ist für jeden Netzwerkteilnehmer überprüfbar und wird durch einen Algorithmus im öffentlichen Quellcode von Bitcoin geregelt. Deshalb wird Bitcoin oftmals als «digitales Gold» und somit als einen attraktiven Wertspeicher angesehen.
+
+## Bitcoin-Halving
+
+Ein Block wird durchschnittlich alle 10 Minuten an die Bitcoin-Blockchain hinzugefügt. Mit jedem geschürften Block erhält der Miner eine Vergütung in Form von Bitcoin. Diese Vergütung, der Block-Reward, besteht aus der Block-Subsidy und Transaktionsgebühren. So können die Miner die aufgewendeten Ressourcen decken.
+
+Jedoch halbiert sich die Block-Subsidy alle 4 Jahre. Dieses Ereignis wird auch als Bitcoin-Halving bezeichnet. Dieser Prozess wird bis etwa zum Jahr 2140 andauern. Dann wird die Block-Subsidy von einem Satoshi (kleinste Bitcoin-Währungseinheit) pro Block auf null sinken.
+
+[> Erfahre mehr wieso Bitcoin auf 21 Millionen Währungseinheiten begrenzt ist.](/learn/bitcoin/why-21-mio-bitcoin)
+
+## Block-Subsidy tendiert gegen null
+
+Da die Block-Subsidy gegen null tendiert, glauben viele Bitcoin-Skeptiker, dass niedrige Miner-Einnahmen zu geringerer Sicherheit führt und so Einfluss auf den Wert von Bitcoin hat.
+
+Die Hashrate widerspiegelt die Sicherheit der Bitcoin-Blockchain. Wenn die Block-Subsidy sinkt, sind die Einnahmen der Miner und gleichzeitig die Sicherheit vom Bitcoin-Netzwerk bedroht. Es kommen jedoch mehrere Faktoren zusammen, die es den Minern ermöglichen, trotz einer Halbierung der Block-Subsidy, weiterhin profitabel zu schürfen und so die Sicherheit vom Bitcoin-Netzwerk zu erhalten.
+
+## Transaktionsgebühren
+
+Die Einnahmen der Miner bestehen aus der Block-Subsidy, die neuen geschürften Bitcoin und den Transaktionsgebühren, die bei einer Transaktion gezahlt werden. Diese Summe wird als Block-Reward bezeichnet. Während also die Block-Subsidy halbiert wird, bleiben die Transaktionsgebühren unverändert.
+
+Die Blockgrösse von Bitcoin ist begrenzt. Im Durchschnitt können so nur etwa 2’000 bis 3’000 Transaktionen je Block verarbeitet werden. Steigt die Nachfrage nach einem Platz im Block, so ist mit einem Anstieg der Transaktionsgebühren zu rechnen, da die Nutzer miteinander um die Einbindung ihrer Transaktion konkurrieren.
+
+Der langfristige Trend zeigt, dass die Akzeptanz von Bitcoin stetig zunimmt. Daher steigt die Nachfrage nach Transaktionen im Netzwerk und somit wird erwartet, dass die Transaktionsgebühren steigen, um die Miner zu entschädigen.
+
+<Callout icon = "💡">
+ Durch Transaktionsgebühren besteht auch langfristig ein monetärer Anreiz für Miner, die Blockchain von Bitcoin stabil zu halten.
+</Callout>
+
+> In ein paar Jahrzehnten, wenn der Block-Reward zu klein wird, wird die Transaktionsgebühr die Hauptentschädigung für das Mining sein. Ich bin sicher, dass es in 20 Jahren entweder ein sehr grosses Transaktionsvolumen oder gar kein Volumen geben wird.
+>
+> [Satoshi Nakamoto, 14. Februar 2010](https://bitcointalk.org/index.php?topic=48.msg329#msg329)
+
+## Mining-Difficulty
+
+Die erwarteten Einnahmen eines Miners hängen von seinem proportionalen Anteil an der gesamten Bitcoin-Hashrate ab. Wenn also andere Miner aufgrund des Halving gezwungen sind, den Betrieb einzustellen, ist der proportionale Anteil der Erträge für die aktiven Miner umso grösser, wenn sie, trotz Halving, geschafft haben profitabel zu bleiben.
+
+Wenn die gesamte Hashrate sinkt, nimmt auch die Difficulty des Minings ab. Für Miner, die weiterhin schürfen, kann das Halving zu einer höheren Rentabilität führen, indem sie die Konkurrenz ausschaltet und die Wahrscheinlichkeit erhöht, einen Block zu finden und die Belohnung zu erhalten.
+
+> Da die Computer immer schneller werden und die gesamte Rechenleistung, die für die Erzeugung von Bitcoins eingesetzt wird, zunimmt, steigt die Schwierigkeit proportional an, um die gesamte Neuproduktion konstant zu halten. Es ist also im Voraus bekannt, wie viele neue Bitcoins jedes Jahr in der Zukunft geschaffen werden. Die Münzen müssen zunächst irgendwie verteilt werden, und eine konstante Rate scheint die beste Formel zu sein.
+>
+> [Satoshi Nakamoto, 8. November 2008](https://www.metzdowd.com/pipermail/cryptography/2008-November/014831.html)
+
+[> Erfahre mehr über die Bitcoin Mining-Difficulty.](/learn/bitcoin/bitcoin-mining-difficulty)
+
+## Innovation Hardware und Infrastruktur 
+
+Die Mining-Hardware und die ganze Infrastruktur um das Bitcoin-Mining verbessert sich stetig. Die Einführung der ASICS-Miner führte zu einer effizienteren Berechnung des Proof-of-Works. Wenn ein Miner die Energieeffizienz seiner Mining-Hardware steigern und so die Kosten senken kann, kann dies einen zusätzlichen Teil, der durch das Halving verlorenen Einnahmen, ausgleichen.
+
+Die ganze Mining-Infrastruktur drumherum kann durch Erfahrungen und technologischen Fortschritt ebenfalls optimiert und effizienter gestaltet werden (Hardware, Kühlung, Gebäude, Standort, externe & interne Prozesse etc.)
+
+## Energiepreis
+
+Die Energiepreise schwanken zwar zeitlich und geografisch, aber die Energiekosten, der grösste Teil der Betriebskosten eines Mining-Unternehmens, sind allgemein langfristig rückläufig. Wenn der Miner über einen Zeitraum von vier Jahren seine Energiekosten senken kann, kann er die zukünftigen Einnahmeverluste verkraften.
+
+Die Miner handeln wirtschaftlich und stehen in einem freien Wettbewerb gegenüber. Sie sind dazu gezwungen günstige Energiequellen zu finden um langfristig konkurenzfähig zu bleiben.
+
+Das Bitcoin-Mining ist geografisch unabhängig. Ein Miner kann seinen Betrieb dort ansiedeln, wo die billigste Energie weltweit zu finden ist. Dies ermöglicht es Minern, an abgelegenen Orten zu arbeiten, die für andere Unternehmen ungeeignet sind. Der günstigste Strom ist dort, wo ein grosses Angebot auf eine gleichzeitig tiefe Nachfrage trifft. Dies sind meist Orte mit überschüssiger Energie.
+
+## Preis von Bitcoin
+
+Der Preis von Bitcoin hat ebenfalls einen enormen Einfluss auf die Rentabilität des Bitcoin-Minings. Die überwiegende Mehrheit der Miner zahlt ihre Kosten immer noch mit Fiatgeld (Dollar, Euro etc.). Wenn sich also der Preis von Bitcoin über einen Zeitraum von vier Jahren verdoppelt, kann ein Miner einen 50-prozentigen Rückgang der Block-Subsidy ausgleichen.
+
+Der Preis sollte bei gleichbleibender Nachfrage aufgrund der einfachen Theorie von Angebot und Nachfrage steigen. Zwischen allen bisherigen Halvings ist der Preis von Bitcoin in US-Dollar mehr als genug gestiegen, um die Miner für den 50%igen Rückgang der Block-Subsidy zu entschädigen.
+
+## Lightning Netzwerk
+
+Es wird zwar erwartet, dass die Gebühren für Transaktionen auf der Blockchain steigen werden, aber es ist nicht notwendig, dass alle Bitcoin-Transaktionen über die Bitcoin-Blockchain abgewickelt werden. Zusätzliche Secondlayer, wie das Lightning Netzwerk bieten günstigere und schnellere Transaktionen und entlasten dabei die Blockchain.
+
+## Fazit
+
+All diese Faktoren tragen dazu bei, dass die Miner und somit die Sicherheit des Netzwerks nach einem Halving erhalten bleiben. In der Tat haben vergangene Halvings die Hashrate nicht signifikant beeinflusst. Im Gegenteil, die Bitcoin-Hashrate hat weiterhin neue Höchststände erreicht.
+
+Da die Block-Subsidy gegen null geht, werden die Transaktionsgebühren einen immer grösseren Teil des Block-Rewards ausmachen. Die Einnahmen der Miner und damit die Sicherheit von Bitcoin werden vollständig von diesen Gebühren abhängig sein.
+
+Skeptiker haben Bedenken geäussert, ob die Gebühren ein ausreichendes Mass an Sicherheit gewährleisten werden. Obwohl diese Bedenken berechtigt sind, zeigt das kontinuierliche Wachstum des Bitcoin-Netzwerks das Gegenteil.
+
+<Callout icon = "🔗">
+  [Hier](https://www.blockchain.com/charts/hash-rate) findest du die aktuelle Hashrate von Bitcoin.
+</Callout>
+
+## Buchtipp
+
+<Books>
+  <Book book={bitcoinSelbsbestimmungDurchMathematik} />
+</Books>

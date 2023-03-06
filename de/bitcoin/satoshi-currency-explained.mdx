@@ -1,0 +1,96 @@
+---
+type: learn/article
+lang: de
+slug: satoshi-currency-explained
+title: Was ist ein Satoshi?
+metatitle: Was ist ein Satoshi? Erklärung der Währungseinheit
+author: Claudio Koller
+category:
+  slug: bitcoin
+  title: Bitcoin Grundlagen
+description: >
+ Ein Satoshi ist die kleinste Währungseinheit von Bitcoin. Aber wie viel Satoshi ergeben ein Bitcoin? Lerne wie du Bitcoin in Satoshi umrechnen kannst.
+keywords:
+- Satoshi
+- Währungseinheit Satoshi
+- Währungseinheit Bitcoin
+- Geldeinheit Satoshi
+- Geldeinheit Bitcoin
+- Satoshi Nakamoto
+published: !!timestamp 2022-11-04T21:21:21.000+02:00
+updated: !!timestamp 2022-11-04T21:21:21.000+02:00
+---
+
+import { ArticleLayout, Article, Articles, Books, Book, Callout } from 'ui/learn';
+import { metadata as bitcoinExplained } from './bitcoin-explained.mdx';
+import { metadata as buyBitcoinOptions } from './buy-bitcoin-options.mdx';
+import { metadata as bitcoinEntdecken } from '../books/bitcoin-entdecken.mdx';
+
+export { getStaticProps } from 'lib/learn';
+export default (p) => (
+  <ArticleLayout
+    article={metadata}
+    related={bitcoinExplained}
+    related={buyBitcoinOptions}
+    toc={toc}
+    {...p}
+  />
+);
+
+Ein Satoshi ist die kleinste Währungseinheit von Bitcoin. Wie beim Euro der Cent, oder beim Franken der Rappen, ist bei Bitcoin der Satoshi die kleinste Währungseinheit.
+
+Viele Personen glauben, dass wenn sie in den digitalen Vermögenswert investieren möchten, sie einen ganzen Bitcoin kaufen müssen. Da die kleinere Währungseinheit Satoshi existiert, ist es jedoch möglich, nur einen Bruchteil eines Bitcoin zu kaufen. Dadurch können kleinere Transaktionen durchgeführt werden.
+
+## Wie viel Satoshi sind ein Bitcoin?
+
+Ein Bitcoin ist teilbar in 100.000.000 Satoshi. Satoshi werden auch mit Sat(s) abgekürzt.
+
+<Callout icon = "🪙">
+1 Satoshi = 0,00000001 Bitcoin <br />
+1 Bitcoin = 100’000’000 Satoshi
+</Callout>
+
+Ein Wert in Bitcoin kann also immer mit 100 Millionen multipliziert werden, um den Betrag in Satoshi umzurechnen.
+
+### Wie viel Satoshi sind ein Euro?
+
+Am 21.10.2022 ist ein Bitcoin ungefähr 19’494.83 Euro wert. Umgekehrt entspricht also ein Euro zu diesem Zeitpunkt genau 0.0000513 Bitcoin. Die Umrechnung von Euro in Satoshi ist immer vom aktuellen Tageskurs abhängig.
+
+<Callout icon = "🪙">
+1 BTC = 100’000’000 Sats = 19’494.83 EUR <br />
+1 EUR = 0.0000513 BTC = 5'129.57 Sats
+</Callout>
+
+### Wie viel Satoshi sind ein Schweizer Franken?
+
+Am 21.10.2022 ist ein Bitcoin ungefähr 19’195.47 Schweizer Franken wert. Umgekehrt entspricht also ein Franken zu diesem Zeitpunkt genau 0.0000521 Bitcoin. Die Umrechnung von Franken in Satoshi ist immer vom aktuellen Tageskurs abhängig.
+
+<Callout icon = "🪙">
+1 BTC = 100’000’000 Sats = 19’195.47 CHF <br />
+1 CHF = 0.0000521 BTC = 5'209.56 Sats
+</Callout>
+
+## Woher kommt der Name Satoshi?
+
+Bitcoin wurde von dem Pseudonym [Satoshi Nakamoto](/learn/bitcoin/who-is-satoshi-nakamoto) erfunden. Bis heute ist unklar, wer oder welches Kollektiv sich hinter diesem Pseudonym verbirgt. Satoshi Nakamoto muss jedoch eine überdurchschnittliche hohe Begabung in den Bereichen der Programmierung, der Kryptographie, sowie ein sehr gutes ökonomisches Verständnis haben. Der Satoshi wurde also nach dem Bitcoin-Schöpfer-Kollektiv Satoshi Nakamoto benannt.
+
+[> Erfahre mehr über Satoshi Nakamoto.](/learn/bitcoin/who-is-satoshi-nakamoto)
+
+## Wo kann ich Satoshi kaufen?
+
+Es gibt viele verschiedene Optionen um Satoshi und somit Bitcoin zu kaufen. Inzwischen gibt es zahlreiche Bitcoin Börsen, Broker, Peer-to-Peer-Plattformen und Bitcoin-Automaten.
+
+[> Erfahre mehr zu den verschiedenen Kauf-Optionen, sowie deren Vor- und Nachteilen.](/learn/bitcoin/buy-bitcoin-options)
+
+Bitcoin Broker eignen sich am besten für Einsteiger, die einfach und unkompliziert Bitcoin kaufen wollen. Der Austausch von Fiatwährung gegen Bitcoin und umgekehrt findet zwischen dem Käufer oder Verkäufer und dem Broker statt.
+
+<Callout icon = "💡">
+ Pocket ist ein Broker für Privatpersonen, die kleinere oder grössere Mengen an Bitcoin kaufen möchten. Es dauert wenige Minuten, um deinen ersten Bitcoin-Kauf zu tätigen.
+[> Jetzt in nur 3 Schritten Bitcoin kaufen](/checkout)
+</Callout>
+
+## Buchtipp
+
+<Books>
+  <Book book={bitcoinEntdecken} />
+</Books>

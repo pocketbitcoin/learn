@@ -1,0 +1,90 @@
+---
+type: learn/article
+lang: de
+slug: bitcoin-price-explained
+title: Wie entsteht der Preis von Bitcoin? 
+metatitle: Wie entsteht der Bitcoin-Preis?
+author: Claudio Koller
+category:
+  slug: economy
+  title: Wirtschaft
+description: >
+  Erfahre mehr darüber, wie der Preis von Bitcoin zustande kommt. Dieser Artikel erklärt, welche Faktoren den Preis von Bitcoin beeinflussen, wie der Markt funktioniert und welche Rolle Angebot und Nachfrage spielen.
+keywords:
+- Bitcoin Kurs
+- Bitcoin Preis
+- Bitcoin Angebot und Nachfrage
+- Bitcoin Angebot
+- Bitcoin Nachfrage
+- Bitcoin Adoption
+published: !!timestamp 2023-02-02T21:21:21.000+02:00
+updated: !!timestamp 2023-02-02T21:21:21.000+02:00
+---
+
+import { ArticleLayout, Article, Articles, Books, Book, Callout } from 'ui/learn';
+import { metadata as moneyExplained } from './money-explained.mdx';
+import { metadata as layeredMoney } from '../books/layered-money.mdx';
+
+export { getStaticProps } from 'lib/learn';
+export default (p) => (
+  <ArticleLayout
+    article={metadata}
+    related={moneyExplained}
+    toc={toc}
+    {...p}
+  />
+);
+
+Der Bitcoin-Preis entsteht, wie bei alle anderen Güter und Dienstleistungen, durch Angebot und Nachfrage. Da es sich bei Bitcoin um ein dezentrales digitales Geld handelt, gibt es keine Zentralbank oder eine andere höhere Autorität, die einen fixen Wechselkurs festlegen kann. 
+
+## Angebot und Nachfrage
+
+Der freie Markt entscheidet den Preis über ein Gut oder eine Dienstleistung. Gibt es eine höhere Nachfrage nach Bitcoin als das aktuelle Angebot, steigt der Preis. 
+
+Übersteigt jedoch das Angebot die Nachfrage auf dem Markt, dann sinkt der Preis, bis Angebot und Nachfrage wieder im Gleichgewicht sind.
+
+<Callout icon = "💡">
+ Der Preis von Bitcoin spiegelt wider, wie viel die Menschen bereit sind, dafür zu zahlen.
+</Callout>
+
+## Preisbildung auf dem freien Markt
+
+Eine Verkäuferin oder Verkäufer verlangt möglichst viel, gleichzeitig will eine Käuferin oder Käufer möglichst wenig dafür bezahlen. Man verhandelt also und findet in der Schnittstelle einen Kompromiss. Dieser Kompromiss ergibt den aktuellen Marktpreis.
+
+<Callout icon = "💡">
+ Die Preisbildung ist das Ergebnis des Zusammentreffens von Angebot und Nachfrage, bei dem sich bei der Schnittstelle der Preis bildet.
+</Callout>
+
+## Angebot und Nachfrage bei Bitcoin
+
+Das Angebot an Bitcoin ist durch das zugrundeliegende Protokoll auf 21 Millionen Bitcoin begrenzt. Dieses begrenzte Angebot kann zusammen mit der steigenden Nachfrage nach Bitcoin den Preis in die Höhe treiben.
+
+[> Erfahre mehr wieso Bitcoin auf 21 Millionen Währungseinheiten begrenzt ist.](/learn/bitcoin/why-21-mio-bitcoin)
+
+Desto mehr Menschen Bitcoin annehmen und desto mehr Unternehmen Bitcoin als Zahlungsmittel und Wertaufbewahrungsmitel akzeptieren, desto grösser wird die Nachfrage nach Bitcoin.
+
+<Callout icon = "💡">
+ Bitcoin ist absolut knapp und auf ~ 21 Millionen Währungseinheiten begrenzt.
+</Callout>
+
+## Marktstimmung am Finanzmarkt
+
+Die Marktstimmung am Finanzmarkt ist bei Angebot und Nachfrage ein wichtiger Faktor, der den Bitcoin-Preis beeinflussen kann. Ist die Stimmung unter den Anlegerinnen und Anleger sowie in der Öffentlichkeit gegenüber Bitcoin positiv, kann dies zu höheren Preisen führen. Andererseits können negative Nachrichten oder behördliche Massnahmen, die sich auf den wahrgenommenen Wert von Bitcoin auswirken, zu einem Rückgang des Preises führen.
+
+<Callout icon = "💡">
+ Der Preis von Bitcoin wird von externen Faktoren, wie der Entwicklung der Weltwirtschaft und politischen Ereignissen, beeinflusst,.
+</Callout>
+
+## Fazit
+
+Zusammenfassend lässt sich sagen, dass der Preis von Bitcoin, wie alle andere Güter und Dienstleistungen, durch Angebot und Nachfrage bestimmt wird. Jedoch kann Angebot und Nachfrage sehr komplex sein. 
+
+Darunter spielen diverse Faktoren eine Rolle, wie die Akzeptanz sowie Adoption in der Gesellschaft und Finanzindustrie, Marktstimmung der Teilnehmerinnen und Teilnehmer oder geopolitische Ereignisse. 
+
+Diese oder andere ökonomische Faktoren können sich alle auf den Preis von Bitcoin auswirken, was kurzfristig zu höheren Schwankungen führen kann.
+
+## Buchtipp
+
+<Books>
+  <Book book={layeredMoney} />
+</Books>

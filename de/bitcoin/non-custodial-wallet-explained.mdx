@@ -1,0 +1,91 @@
+---
+type: learn/article
+lang: de
+slug: non-custodial-wallet-explained
+title: Wieso sind Non-Custodial Wallets so wichtig?
+metatitle: Non-Custodial Wallets einfach erklärt
+author: Claudio Koller
+category:
+  slug: bitcoin
+  title: Bitcoin Grundlagen
+description: >
+ Mit einem Non-Custodial-Wallet hast du die volle Kontrolle über deine Bitcoin – und zwar ohne Beteiligung von Dritten. Dieser Artikel klärt auf wieso Non-Custodial Wallets so wichtig sind.
+keywords:
+- Bitcoin Wallets
+- Hardware Wallets
+- Non-Custodial Wallets
+- Cold Storage Bitcoin
+- Cold Wallets Bitcoin
+- Hot Wallets Bitcoin
+- Hot Storage Bitcoin
+published: !!timestamp 2023-02-13T21:21:21.000+02:00
+updated: !!timestamp 2023-02-13T21:21:21.000+02:00
+---
+
+import { ArticleLayout, Article, Articles, Books, Book, Callout } from 'ui/learn';
+import { metadata as bitcoinWalletsOptions } from './bitcoin-wallets-options.mdx';
+import { metadata as bitcoinsVerwahrenUndVererben} from '../books/bitcoins-verwahren-und-vererben.mdx';
+
+export { getStaticProps } from 'lib/learn';
+export default (p) => (
+  <ArticleLayout
+    article={metadata}
+    related={bitcoinWalletsOptions}
+    toc={toc}
+    {...p}
+  />
+);
+
+Viele von uns haben sicherlich schon einmal gehört, dass es wichtig ist, seine eigenen privaten Schlüssel im Zusammenhang mit Bitcoin zu bewahren. Aber was genau bedeutet das eigentlich? Wie hängt das mit Non-Custodial Wallets zusammen und warum ist es so wichtig, eine solche Wallet zu nutzen?
+
+## Was sind Non-Custodial Wallets?
+
+In einer Wallet werden nicht deine Bitcoin, sondern der Zugang, die privaten Schlüssel, aufbewahrt. 
+
+Bei der Custodial Wallet gibst du deine privaten Schlüssel in die Hände anderer, denen du vertraust, ab  (z.B. eine Börse oder Broker). Hingegen bei einer Non-Custodial Wallet verbleiben die privaten Schlüssel bei dir.
+
+Das bedeutet, dass die Person für die Sicherheit ihrer Bitcoin selbst verantwortlich ist, anstatt sich einer dritten Partei anzuvertrauen.
+
+[> Erfahre mehr über die verschiedenen Bitcoin-Wallets, sowie deren Vor- und Nachteilen.](/learn/bitcoin/bitcoin-wallets-options)
+
+<Callout icon = "💡">
+ Bei der Verwendung von Custodial Wallets ist also Vertrauen in eine dritte Partei erforderlich. In einem grundlegenden Sinne unterscheiden sie sich nicht von herkömmlichen Bankkonten.
+</Callout>
+
+## Bitcoin Philosophie = Non-Custodial Wallets
+
+Es sind die Non-Custodial Wallets, die viel mehr mit dieser Philosophie von Bitcoin übereinstimmen. Bei einer Non-Custodial-Wallet kannst nur du auf dein Bitcoin-Guthaben zugreifen und diese kontrollieren. Niemand sonst hat darauf Zugriff, solange du deine privaten Schlüssel geheim hältst.
+
+<Callout icon = "💡">
+ Non-Custodial Bitcoin-Wallets sind wichtig, weil sie der Nutzerin oder Nutzer ermöglicht, die Kontrolle über ihre eigenen Bitcoin zu behalten, anstatt die Kryptowährung einer Drittpartei anzuvertrauen.
+</Callout>
+
+## Non-Custodial = grosse Eigenverantwortung
+
+Die Verantwortung für die Verwaltung der eigenen privaten Schlüssel zu übernehmen, ist für jede Person eine grosse Herausforderung. Das gilt insbesondere dann, wenn es um grössere Bestände geht. 
+
+Im Artikel [Wie erstelle ich ein sicheres Backup?](/learn/bitcoin/set-up-bitcoin-backup) findest du zusätzliche Empfehlungen, wie du mit den entsprechenden Sicherheitsmassnahmen ein sicheres Backup für deine Non-Custodial-Wallet erstellen kannst.
+
+## Kontrolle
+
+Mit einem Non-Custodial Wallet haben die Benutzerinnen und Benutzer die volle Kontrolle über ihre privaten Schlüssel. Dies bedeutet, dass sie sicherstellen können, dass ihre Bitcoin sicher aufbewahrt werden, ohne dass ein Dritter Zugriff darauf hat. 
+
+Die Benutzerinnen und Benutzer können ihre privaten Schlüssel auf ihren eigenen Geräten auf einer Hot-Wallet oder, bei grösseren Beträgen, eine Hardware-Wallet aufbewahren. Dadurch wird sichergestellt, dass der private Schlüssel offline und sicher vor Hackern und Diebstahl geschützt ist.
+
+## Unabhängigkeit
+
+Ein weiterer Vorteil von Non-Custodial Wallets ist die Unabhängigkeit. Da die Benutzer die volle Kontrolle über ihre Bitcoin haben, sind sie nicht von Drittaprteien abhängig. Dies bedeutet, dass sie ihre Bitcoin jederzeit und überall verwenden und handeln können, ohne auf die Genehmigung oder Unterstützung eines Dritten angewiesen zu sein.
+
+## Fazit
+
+Bei Non-Custodial Wallets haben Benutzerinnen und Benutzer die volle Kontrolle über ihre privaten Schlüssel und sind nicht von einer dritten Partei abhängig. Dies entspricht ebenfalls die Philosophie von Bitcoin. 
+
+Dies bringt jedoch eine grosse Eigenverantwortung für die Sicherheit deiner Bitcoin mit sich. Bei Verlust oder Diebstahl kann dein Bitcoin Guthaben nicht wiederhergestellt werden können. Daher ist es wichtig, die richtigen Sicherheitsmassnahmen zu treffen.
+
+[> Lerne mehr wie man Bitcoin vererbt und wie du dabei richtig vorgehen solltest.](/learn/bitcoin/how-to-bequeath-bitcoin)
+
+## Buchtipp
+
+<Books>
+  <Book book={bitcoinsVerwahrenUndVererben} />
+</Books>

@@ -1,0 +1,132 @@
+---
+type: learn/article
+lang: de
+slug: set-up-coldcard
+title: So richtest du die Coldcard mit Pocket ein
+metatitle: Anleitung Pocket mit Coldcard einrichten
+author: Claudio Koller
+category:
+  slug: coldcard
+  title: Coldcard
+description: >
+ Lerne in unserer Schritt für Schritt Anleitung, mit Bildern, wie du mit der Coldcard über Pocket Bitcoin kaufen kannst.
+keywords:
+- Coldcard
+- Pocket mit Coldcard einrichten
+- Coldcard Bitcoin kaufen
+- Cold Wallet
+- Cold Storage
+- Hardware Wallet
+- Pocket Hardware Wallet
+- Pocket Coldcard
+- Pocket Coinkite
+- Bitcoin Wallet
+published: !!timestamp 2022-12-15T21:21:21.000+02:00
+updated: !!timestamp 2022-12-15T21:21:21.000+02:00
+---
+
+import { ArticleLayout, Article, Articles, Books, Book, Callout } from 'ui/learn';
+import { metadata as setUpColdcardXpub} from 'pages/deu/learn/coldcard/set-up-coldcard-xpub.mdx';
+import { metadata as bitcoinsVerwahrenUndVererben } from '../books/bitcoins-verwahren-und-vererben.mdx';
+
+export { getStaticProps } from 'lib/learn';
+export default (p) => (
+  <ArticleLayout
+    article={metadata}
+    toc={toc}
+    related={setUpColdcardXpub}
+    {...p}
+  />
+);
+
+Dieser Artikel dient als Anleitung für die Initialisierung von der Coldcard über Pocket für den Kauf von Bitcoin.
+
+Die Coldcard ist eine Hardware Wallet von der Firma Coinkite. Mit der Hardware Wallet verwaltest du den Zugang zu deinem Bitcoin Guthaben.
+
+Mit der Coldcard-Integration kannst du deine Bitcoin-Adresse komplett über die SD-Karte deiner Coldcard abrufen, ohne dass du deine Coldcard je an deinen Computer anschliessen musst. 
+
+Die Möglichkeit deine Wallet ganz ohne Kabelverbindung zu nutzen ist auch als «Air-Gapped» bekannt.
+
+## 1. Voraussetzung
+
+In diesem Artikel gehen wir davon aus, dass du bereits eine Coldcard hast und dieser schon eingerichtet ist.
+
+## 2. Synchronisation mit Pocket starten
+
+Wähle [Bitcoin kaufen](/checkout) auf der Pocket-Webseite. Klicke auf den Button «Wallet auswählen».
+
+![Bildschirmfoto der Pocket-Website mit dem Button Wallet auswählen](https://cdn.pocketbitcoin.com/DAFKWqAdn3o/537c1342-bc4e-40ac-aa5d-54ccc85d5da8.png?width=1024&height=768&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMElEQVQImWMIZMicEDJhfsL0KoZEhmn5K7//+/Dn//8tHWsZZBiSYhnKCrRagxiiAV9tETPJbJAiAAAAAElFTkSuQmCC)
+
+Auf der nächsten Seite musst du angeben, wo deine Bitcoin aufbewahren möchtest.
+
+Um nun deine Coldcard Hardware Wallet zu nutzen, klicke in der Kachel «Auf deiner bestehenden Bitcoin Wallet» auf den Button «Auswählen».
+
+![Bildschirmfoto der Pocket-Website mit der Option bestehende Bitcoin-Wallet](https://cdn.pocketbitcoin.com/DAFKWqAdn3o/ca5b4922-330c-4a7e-acbd-eefd112f41e9.png?width=1024&height=768&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMElEQVQImWPwYYhf1bxqU9facqkEhhq/rm//3z39/bzBv4JBmcG/wKSgwCTXicEZAGJ4EL7I41DhAAAAAElFTkSuQmCC)
+
+Auf der nächsten Seite musst du angeben, welche Art von Wallet du besitzt. Klicke auf «Coldcard».
+
+![Bildschirmfoto mit der Pocket-Website mit der Option Coldcard](https://cdn.pocketbitcoin.com/DAFKXQ29Ip8/b188946b-04d7-4448-a6f1-4c5300741e61.png?width=1024&height=576&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMElEQVQImWNwZ8iZ37lwxcQVFQzRDFEMvY/fPfj0/287Qy0DJ0NVBEN9BkNjNEMKAEuuD70hmQIQAAAAAElFTkSuQmCC)
+
+In dem du auf den Button «Per MicroSD-Karte signieren» klickst, bestätigst du, dass du den Prozess via SD-Karte durchführen wirst.
+
+![Bildschirmfoto mit der Pocket-Website Per MicroSD-Karte signieren](https://cdn.pocketbitcoin.com/DAFKXQ29Ip8/a72b9d3c-c46a-496a-8a56-43a3ac9f29ca.png?width=1024&height=576&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMElEQVQImWNIYGhYX71pZ+PWXoZChirtOc8+3fn+/998j8kM4gzlfgzlKQz1YQzxAGsJEPgCtLSDAAAAAElFTkSuQmCC)
+
+Als nächstes gibst du anstatt deiner Bitcoin-Adresse den Derivation-Pfad an. Anhand dieses Pfades leitet deine Coldcard selbstständig die richtige Bitcoin-Adresse ab. Der Standard-Pfad zeigt auf die erste Bitcoin-Adresse deines ersten Kontos (`84'/0'/0'/0/0`).
+
+![Bildschirmfoto mit der Pocket-Website Eingabe des Derivation-Pfades deiner Bitcoin-Adresse](https://cdn.pocketbitcoin.com/DAFKXQ29Ip8/f6385cde-eb5b-40e6-9f23-fdcfb1ac7ad9.png?width=1024&height=576&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMElEQVQImWNwZcia0jB9WuOMIoYwhjCGjiNbjv/8/7+doYpBkKEikKEok6EhnCERADXDDtQ4IaFhAAAAAElFTkSuQmCC)
+
+Lade anschliessend die `coldcard.txt` Datei herunter und speichere diese auf deine Coldcard SD-Karte. 
+
+Anschliessend kannst du die gespeicherte Datei via `Advanced/Tools` -> `File Management` -> `Sign Text File` auswählen und signieren lassen.
+
+![Coldcard Menüführung zur Signatur-Funktion](https://cdn.pocketbitcoin.com/DAFKXQ29Ip8/8aec4a87-6d4b-457a-87f6-0c740bba79c6.png?width=1024&height=576&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMklEQVQImQEnANj/ANBr3sNovsptuP+b5AA8EEsXABgYABZNIEYA/6j//5v//6z//8n/dSEUx+1PsqYAAAAASUVORK5CYII=)
+
+Nimm deine SD-Karte wieder aus deiner Coldcard heraus und schliesse sie wieder an deinen Computer an. Du findest darauf die signierte Datei coldcard-signed.txt, die du bei Pocket hochladen kannst.
+
+![Die signierte Datei "coldcard-signed.txt" auf der Coldcard-SD Kart](https://cdn.pocketbitcoin.com/DAFKXQ29Ip8/153cf949-d46f-4a45-8cd5-3b7b0f4284f7.png?width=1024&height=576&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMklEQVQImQEnANj/AP+e/+R2481fvv+9/wD/g/8tIT0QABv/m/8A/5///4n//5P//7T/6UcZtj2Cvu0AAAAASUVORK5CYII=)
+
+Mit deiner Bitcoin-Adresse und der Signatur in `coldcard-signed.txt` kann Pocket nun direkt in deine Coldcard-Wallet Auszahlungen tätigen. 
+
+## 3. Bitcoin-Adresse bei Pocket bestätigen
+
+Bestätige nun die Bitcoin-Adresse und schliesse deinen Auftrag ab, damit du deine Zahlungsdetails zum Bitcoin-Kauf erhältst.
+
+![Bildschirmfoto mit der Pocket Website mit der bestätigten Adresse](https://cdn.pocketbitcoin.com/DAFKXQ29Ip8/3f584358-21e7-4ac6-86c0-3744c97a517e.png?width=1024&height=576&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMElEQVQImWNwY8jqKe+fUje1iCGMIYSh/cT+i9/+/29jqGDgZqiMYWjIZmgMY0gAADOMDtnWBGlBAAAAAElFTkSuQmCC)
+
+## 4. E-Mail-Adresse angeben
+
+Damit wir dich über deine Transaktionen auf dem Laufenden halten können, musst du im nächsten Schritt deine E-Mail-Adresse eingeben. Keine Angst, wir senden dir keine Marketing-Mails, sondern werden dir jeweils nur per E-Mail deine zukünftigen Transaktionen bestätigen.
+
+Gib deine E-Mail-Adresse ein und klicke auf den Button «Bestätigen».
+
+![Bildschirmfoto der Pocket-Website mit der Aufforderung die E-Mail-Adresse anzugeben](https://cdn.pocketbitcoin.com/DAFKWqAdn3o/abbf447d-87a5-467f-b809-86d23756858c.png?width=1024&height=768&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMElEQVQImWMIZcjpdu2e5t1by5DAMLtszdd/7379/79r8iYGSYbUUIayFM6aIIZoAFlgENx62p20AAAAAElFTkSuQmCC)
+
+## 5. Bankkonto angeben
+
+Jetzt muss nur noch das Bankkonto verknüpft werden. Dazu gibst du hier deine gewünschte IBAN-Adresse ein, von der du einzahlst.
+
+![Bildschirmfoto der Pocket-Website mit der Aufforderung die Bankverbindung anzugeben](https://cdn.pocketbitcoin.com/DAFKWqAdn3o/288c85cb-2109-4cca-b0f3-b0b8d9fa4eee.png?width=1024&height=768&placeholder=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMElEQVQImWMIZEhfUrd4ffuqSuUUho7E2a9/P/31//+K2oUMsgyhKSqF9QF9/gxhAHCREdjADMpHAAAAAElFTkSuQmCC)
+
+Klicke anschliessend auf den Button «Akzeptieren und fortfahren». Jetzt ist alles fertig eingerichtet.
+
+## 6. Auftragsbestätigung studieren
+
+Auf der nächsten Seite findest du alle Informationen zu deinem Auftrag. Unter anderem findest du alle Zahlungs-Informationen zu Pocket, damit du gleich einen ersten Bitcoin-Kauf tätigen kannst. Bitte beachte auch die Tageslimite, wenn du Zahlungen erstellst.
+
+## 7. Bitcoin kaufen
+
+Um nun Bitcoin zu kaufen kannst du einfach in deinem E-Banking eine neue Zahlung einrichten. Alle notwendigen Informationen, wie IBAN, Referenznummer, BIC und unsere Adresse, haben wir dir auch per E-Mail zugestellt. Denke daran unbedingt die Zahlungsreferenz bei der Überweisung anzugeben, damit die Zahlung deiner Bitcoin-Adresse zugeordnet und an dich ausbezahlt werden kann.
+
+Jetzt kannst du unter anderem auch einen Dauerauftrag / DCA-Auftrag einrichten und so Bitcoin in einem gewünschten Intervall, zum Beispiel wöchentlich oder monatlich, auf deine neu verknüpfte Wallet empfangen.
+
+<Callout icon = "❓">
+Hast du noch Fragen? Falls dir noch Sachen unklar sind oder du Probleme beim einrichten deiner Coldcard hast, kannst du uns gerne über [Telegram](https://t.me/PocketBitcoinTG) oder per [E-Mail](/contact) kontaktieren. Die Pocket-Community hilft dir gerne weiter.
+</Callout>
+
+## Buchtipp
+
+<Books>
+  <Book book={bitcoinsVerwahrenUndVererben} />
+</Books>
+
+

@@ -1,0 +1,132 @@
+---
+type: learn/article
+lang: de
+slug: stock-to-flow-ratio-explained
+title: Was ist das Stock-to-Flow-Verhältnis?
+metatitle: Was ist das Stock-to-Flow-Verhältnis?
+author: Claudio Koller
+category:
+  slug: economy
+  title: Wirtschaft
+description: >
+  Wir erklären was das S/F-Verhältnis ist, wie es bei Bitcoin berechnet wird und was das steigende Stock-to-Flow-Ratio langfristig für den Bitcoin-Kurs bedeutet.
+keywords:
+- Stock-to-Flow Verhältnis Bitcoin
+- Stock-to-Flow Ratio Bitcoin
+- Bewertungsmethode Bitcoin
+- Knappheit eines Gutes
+- Rarität eines Gutes
+- S2F Bitcoin
+- Rarität Bitcoin
+- Knappheit Bitcoin
+- Rarität Gold
+- Rarität Rohstoffe
+published: !!timestamp 2022-10-14T21:21:21.000+02:00
+updated: !!timestamp 2022-10-14T21:21:21.000+02:00
+---
+
+import { ArticleLayout, Article, Articles, Books, Book, Callout } from 'ui/learn';
+import { metadata as bitcoinStandard } from '../books/bitcoin-standard.mdx';
+import { metadata as goldExplained } from './gold-explained.mdx';
+
+export { getStaticProps } from 'lib/learn';
+export default (p) => (
+  <ArticleLayout
+    article={metadata}
+    related={goldExplained}
+    toc={toc}
+    {...p}
+  />
+);
+
+Das Stock-to-Flow-Verhältnis beschreibt die Seltenheit eines Gutes. Das Bewertungsmodell kommt aus dem traditionellen Finanzmarkt und wird seit vielen Jahren zur Bewertung von Rohstoffen, wie Gold und Silber, verwendet. Es lässt sich ebenfalls auf den digitalen Vermögenswert Bitcoin anwenden. Je höher das Stock-to-Flow-Verhältnis, desto seltener das Gut.
+
+## Stock-to-Flow als Bewertungsmethode
+
+Edelmetalle und Bitcoin haben das gleiche Problem, wenn es um deren Bewertung geht. Beide Vermögenswerte haben keinen Cashflow. Daher wird bei diesen Assets oft das Stock-to-Flow-Verhältnis als Bewertungsmethode eingesetzt, welches die Knappheit eines Guts, anstatt deren Cashflow, zur Bewertung heranzieht.
+
+Stock-to-Flow-Ratio bedeutet auf Deutsch das Verhältnis von Bestand zu Zufluss. Als Stock wird die aktuelle Menge des Rohstoffes oder des Gutes bezeichnet, also der Bestand. Bei Gold oder Silber wäre dies also die Gesamtmenge, die im Laufe der Geschichte geschürft wurde. Als Flow wird die Menge bezeichnet, welche jährlich zum bereits geschürften Bestand dazu kommt.
+
+## Ursprung Stock-to-Flow-Verhältnis
+
+Das Stock-to-Flow-Verhältnis wurde erstmals 1997 vom ungarischen Professor Fekete beschrieben. Das Modell setzt bei Gütern den schon existierenden Bestand ins Verhältnis zum jährlichen Zuwachs durch die Produktion.
+
+## Berechnung Stock-to-Flow-Verhältnis
+
+Das Stock-to-Flow-Verhätnis wird mit der Formel S2F = [Stock] / [Flow] berechnet. Es gibt die Zeit in Jahren an, welche benötigt wird, um die aktuell verfügbare Menge des Gutes erneut zu produzieren. Also die Knappheit des Guts in Anzahl Jahren ausgedrückt.
+
+<Callout icon = "💡">
+ Bei Gold handelt es sich um eine natürliche Knappheit. Bei Bitcoin handelt es sich hingegen um eine mathematische Verknappung.
+</Callout>
+
+## Stock-to-Flow-Verhältnis bei Gold
+
+Gold, eines der seltensten Metalle der Erde, hat ein sehr hohes Stock-to-Flow-Verhältnis. Gemäss World Gold Council wurden bis 2017 über 205’000&nbsp;Tonnen abgebaut. In den letzten Jahren wurden durchschnittlich rund 3’100&nbsp;Tonnen Gold abgebaut. Durch diese Rarität ist Gold bisher das stabilste Geld aller Zeiten.
+
+Gold nimmt eine Sonderrolle unter den Rohstoffen ein. Grund dafür ist, dass die Industrie sehr wenig Gold verbraucht. Der Grossteil der geförderten Menge existiert also noch irgendwo. Meistens in Form von Barren als Wertaufbewahrungsmittel.
+
+Diese Tatsache ist auch ein Grund für die gute Sicherheit und Stabilität von Gold. Die jährliche Förderung ist im Vergleich zur gesamten Goldmenge sehr gering, daher ist das S2F-Verhältnis hoch. Somit hat ein Produktionsausfall oder eine Überproduktion fast keinen Einfluss auf den Goldpreis.
+
+### Berechnung S2F-Verhältnis bei Gold
+
+Stand September 2022: <br /> 205’000 Tonnen (Stock) / 3’100 Tonnen (Jährlicher Flow) = 66 Jahre
+
+[> Lerne wieso Gold wertvoll ist und es seit Jahrhunderten als Wertaufbewahrungsmittel benutzt wird.](/learn/economy/gold-explained)
+
+## Stock-to-Flow-Verhältnis bei anderen Edelmetallen
+
+Bei Platin liegt das S2F-Verhältnis gerade einmal bei ungefähr einem Jahr. Für Silber ist ein Verhältnis von 22 Jahren dokumentiert. Während es also nur ungefähr ein Jahr dauert, bis mit der aktuellen Platinproduktion der gegenwärtige Bestand verdoppelt worden ist, dauert es bei Silber ungefähr 22&nbsp;Jahre.
+
+## Stock-to-Flow-Verhältnis bei Bitcoin
+
+Die maximale Menge an Bitcoin ist per Protokoll festgelegt. Dieses Maximum liegt bei 21 Millionen Bitcoin.
+
+[> Erfahre mehr, wieso Bitcoin auf 21 Millionen Währungseinheiten begrenzt ist.](/learn/bitcoin/why-21-mio-bitcoin)
+
+Bei Bitcoin bezeichnet Stock, also der Bestand, die bereits geschürfte Menge an Bitcoins oder Satoshis, die sich im Umlauf befindet. Im September 2022 liegt der Bestand ungefähr bei 19.1 Millionen Bitcoin.
+
+Alle 10 Minuten wird ein neuer Block geschürft und momentan, gemäss Stand 2022, mit der Ausschüttung von 6.25 Bitcoin pro Block belohnt. Pro Jahr sind dies also ungefähr 52'560 Blöcke und 328'500 Bitcoin. 
+
+Der momentane jährliche Flow liegt also bei diesen 328'500 Bitcoin. Das Stock-to-Flow-Verhältnis liegt somit bei rund 58 Jahren und ist somit nah bei Gold, welches aktuell etwa 66 Jahre beträgt.
+
+### Bitcoin-Halving
+
+Speziell bei Bitcoin ist jedoch, dass der Flow geplant alle vier Jahre reduziert wird. Alle vier Jahre, oder alle 210’000 Blöcke, wird die Ausschüttung pro Block, auch als Block-Subsidy bezeichnet, halbiert. 
+
+Diese Halbierung der Belohnung für das erfolgreiche Schürfen eines Blockes wird als Halving bezeichnet. Durch diesen Mechanismus wird die Gesamtmenge an Bitcoin erst im Jahr 2140 vollständig geschürft sein. Somit steigt auch das Stock-to-Flow-Verhältnis im Laufe der Zeit immer weiter an.
+
+[> Erfahre mehr über das Bitcoin-Halving.](/learn/bitcoin/bitcoin-halving-explained)
+
+### Berechnung S2F-Verhältnis Bitcoin
+
+Stand September 2022: <br />
+19’142’000 BTC (Stock) / 328’500 BTC (Jährlicher Flow) = 58 Jahre
+
+Bitcoin Halving März 2024: <br />
+19’687’500 BTC (Stock) / 164’250 BTC (Jährlicher Flow) = 119 Jahre
+
+<Callout icon = "💡">
+ Bei der nächsten Halbierung der Ausschüttungen wird Bitcoin ein Stock-to-Flow Verhältnis von über 115&nbsp;Jahren erreichen und im Jahr 2032 wird das Verhältnis bei etwa 500&nbsp;Jahren liegen.
+</Callout>
+
+## Fazit
+
+Bitcoin wird als begrenzte Ressource angesehen und daher als knappes Gut betrachtet. Knappe Güter sind physisch selten oder schwer zu finden, wie beispielsweise Edelmetalle. Wenn ein Gut eine gewisse Knappheit erreicht hat, kann es als Wertaufbewahrungsmittel genutzt werden, solange es eine entsprechende Nachfrage gibt.
+
+<Callout icon = "💡">
+ Ein steigenden Stock-to-Flow-Verhältnis weist also grundsätzlich auf die Rarität eines Guts hin. Daher wird es oft auch mit dem steigenden Preis eines Guts in Verbindung gesetzt.
+</Callout>
+
+Bei Bitcoin ist das zukünftige Angebot sehr transparent und durch die Mathematik nachweislich knapp. Der Bitcoin-Preis ist in der Vergangenheit nach jedem Halving stark angestiegen. 
+
+Dies deutet auf einen langfristig positiven Trend des Bitcoin-Kurses hin. Der Preis ist jedoch kurzfristig hohen Überreaktionen des Marktes ausgesetzt und schwankt daher stark.
+
+<Callout icon = "📈">
+Historisch gesehen folgt auf eine steigende Nachfrage nach einem immer knapperen Gut ein stark steigender Preis.
+</Callout>
+
+## Buchtipp
+
+<Books>
+  <Book book={bitcoinStandard} />
+</Books>

@@ -1,0 +1,122 @@
+---
+type: learn/article
+lang: de
+slug: money-explained
+title: Was ist Geld? Geld einfach erklärt
+metatitle: Geld einfach erklärt
+author: Claudio Koller
+category:
+  slug: economy
+  title: Wirtschaft
+description: >
+  Was ist Geld überhaupt? Was für Eigenschaften muss gutes Geld erfüllen? Auf diese Fragen gehen wir in diesem Artikel ein.
+keywords:
+- Fiatgeld
+- Fiatwährung
+- Geld
+- Währung
+- Was ist Geld?
+- Geld einfach erklärt
+- Staatliches Geld
+- Warengeld
+- Naturalgeld
+- Gold
+published: !!timestamp 2022-12-21T21:21:21.000+02:00
+updated: !!timestamp 2022-12-21T21:21:21.000+02:00
+---
+
+import { ArticleLayout, Article, Articles, Book, Books, Callout } from 'ui/learn';
+import { metadata as mediumOfExchangeExplained } from './medium-of-exchange-explained.mdx';
+import { metadata as fiatmoneyExplained } from './fiatmoney-explained.mdx';
+import { metadata as layeredMoney } from '../books/layered-money.mdx';
+
+export { getStaticProps } from 'lib/learn';
+export default (p) => (
+  <ArticleLayout
+    article={metadata}
+    related={mediumOfExchangeExplained}
+    toc={toc}
+    {...p}
+  />
+);
+
+Um Bitcoin als Tauschmittel sowie als Wertaufbewahrungsmittel verstehen zu können, muss man zuerst Geld grundsätzlich verstehen. Obwohl wir es jeden Tag benutzen, ist diese Frage überraschend schwer zu beantworten, was Geld genau ist.
+
+## Direkter Austausch von Gütern
+
+Der einfachste Weg für Menschen, Werte zu tauschen, ist der gegenseitige direkte Austausch von Gütern. Dieser Prozess des direkten Austauschs wird auch als Tauschhandel bezeichnet. Dies ist jedoch nur in einem kleinen Ökosystem praktikabel, kann aber auch zu einem grossen Nachteil werden, da die Bedürfnisse beider Parteien nicht immer gestillt werden können.
+
+In einer komplexen globalen Wirtschaft braucht man ein neutrales Gut, welches als Tauschmittel dient.
+
+<Callout icon ="💡">
+ Geld ist in einer Gesellschaft ein allgemein anerkanntes Tausch- und Zahlungsmittel.
+</Callout>
+
+## Zwei Arten von Geld
+
+Geld wird grundsätzlich zwischen Waren- und Fiatgeld unterschieden.
+
+Warengeld, wie Tabak, Muscheln oder Gold besitzt zusätzlich zu seinem Tauschwert meistens auch einen inneren Wert, in Form der Ware selbst.
+
+[> Erfahre mehr über das Warengeld.](/learn/economy/commodity-money-explained)
+
+Hingegen Fiatgeld sind von der Regierung herausgegebene nationale Währungen, wie US-Dollar, Euro oder Schweizer Franken. Der Wert ergibt sich aus der Existenz der Regierung und der Nationalbank, die sie herausgegeben hat.
+
+[> Erfahre mehr über das Fiatgeld.](/learn/economy/fiatmoney-explained)
+
+>Wir nutzen Geld, um Wert zu kommunizieren, um einander auszudrücken, wie sehr wir ein Produkt, eine Dienstleistung, eine Geste schätzen.
+>
+>Andreas Antonopoulos
+
+## Geld im Wandel der Zeit
+
+Historisch gesehen haben verschiedene Kulturen und Regionen verschiedene neutrale Tauschmittel genutzt. So zum Beispiel kamen Muscheln, Tabak, Gold, Silber, Papier oder Bitcoin als Geld bzw. Zahlungsmittel zum Einsatz.
+
+Moderne Volkswirtschaften basieren grundsätzlich auf dem Fiatgeld. Es hat an sich keinen inneren Wert, trotzdem dient es in der heutigen Gesellschaft als Zahlungsmittel für Waren und Dienstleistungen. Es wird akzeptiert, weil die Menschen darauf vertrauen, dass die zuständige Zentralbank gut wirtschaftet und so den Wert des Geldes langfristig stabil hält.
+
+Würden die Zentralbanken an dieser Aufgabe scheitern, so würde das Fiatgeld seine allgemeine Akzeptanz als Tauschmittel verlieren und wäre auch nicht mehr attraktiv als Wertaufbewahrungsmittel.
+
+<Callout icon ="💡">
+ Ist man durch die Rechtsordnung verpflichtet, das Geld anzunehmen, dient es als gesetzliches Zahlungsmittel. Im Euro-Währungsgebiet ist der Euro das gesetzliche Zahlungsmittel. Nur die europäische Zentralbank darf im Euro-System den Euro erzeugen und den in Umlauf bringen.
+</Callout>
+
+## Funktionen eines Geldes
+
+Geld erfüllt drei Funktionen. Als Tauschmittel im Handel mit anderen Parteien. In der Funktion als Recheneinheit bildet es eine Referenz und erleichtert den wertmässigen Vergleich von Gütern und Dienstleistungen. Als Wertaufbewahrungsmittel ermöglicht Geld das Sparen und somit den Erhalt der Kaufkraft.
+
+### Tauschmittel
+
+Als allgemeines neutrales Tausch- und Zahlungsmittel dient das Geld dem Austausch von Gütern und Dienstleistungen. Es erleichtert den Warentausch zwischen den Parteien.
+
+<Callout icon ="💡">
+ Es wird meistens von den Menschen durch geleistete «Arbeit und Zeit» gekauft, und sie Verkaufen es wieder für ihre Wünsche und Bedüfnisse.
+</Callout>
+
+### Recheneinheit
+
+Eine Recheneinheit ermöglicht den Wert aller Güter und Dienstleistungen in einer Einheit  auszudrücken und auf diese Weise vergleichbar zu machen. Geld fungiert als Wertemassstab.
+
+### Wertaufbewahrungsmittel
+
+Die Wertspeicherfunktion ermöglicht das Sparen. Konkret bedeutet Sparen, dass erhaltene Geld nicht zeitnah gegen Güter oder Dienstleistungen getauscht werden muss. Stattdessen spart man sein Kapital und bezieht Güter sowie Dienstleistungen zu einem späteren Zeitpunkt. Die Kaufkraft sollte dabei erhalten bleiben.
+
+## Monetäre Grundeigenschaften
+
+Um die obenerwähnten Funktionen erfüllen zu können, sollte Geld zudem haltbar, transferierbar, teilbar, fungibel, verifizierbar sowie eine gewisse Wertstabilität haben. Gleichzeitig, eines der wichtigsten Faktoren, muss die die Menge einer Knappheit unterliegen.
+
+Im Artikel [Was ist ein Tauschmittel?](/learn/economy/medium-of-exchange-explained) wird genauer auf die monetären Eigenschaften eines Zahlungsmittels eingangen.
+
+## Fazit
+
+Geld ist ein Tauschmittel, das bei Transaktionen für Waren und Dienstleistungen allgemein akzeptiert wird. Es dient als Recheneinheit und Wertaufbewahrungsmittel und hat sich im Laufe der Zeit von materiellen Gegenständen wie Perlen, Muscheln und Münzen zu Papiergeld und elektronischem Geld entwickelt.
+
+<Callout icon ="💡">
+ Geld spielt eine entscheidende Rolle für das Funktionieren moderner Volkswirtschaften und ist ein unverzichtbarer Bestandteil unseres täglichen Lebens geworden.
+</Callout>
+
+## Buchtipp
+
+<Books>
+  <Book book={layeredMoney} />
+</Books>
+

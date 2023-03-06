@@ -1,0 +1,88 @@
+---
+type: learn/article
+lang: de
+slug: why-21-mio-bitcoin
+title: Wieso ist Bitcoin auf 21 Millionen begrenzt? 
+metatitle: Warum ist Bitcoin auf 21 Millionen begrenzt?
+author: Claudio Koller
+category:
+  slug: bitcoin
+  title: Bitcoin Grundlagen
+description: >
+ Erfahre mehr darüber, warum Bitcoin auf eine maximale Gesamtmenge von 21 Millionen Einheiten begrenzt ist. Der Artikel erklärt, warum diese Beschränkung notwendig ist und wie sie sich auf die Langzeitstabilität von Bitcoin auswirkt.
+keywords:
+- 21 Millionen Bitcoin
+- 21 Mio Bitcoin
+- 21 Mio BTC
+- Wieso 21 Mio BTC?
+- Wieso 21 Mio Bitcoin?
+published: !!timestamp 2023-02-02T21:21:21.000+02:00
+updated: !!timestamp 2023-02-02T21:21:21.000+02:00
+---
+
+import { ArticleLayout, Article, Articles, Books, Book, Callout } from 'ui/learn';
+import { metadata as whatHappensWhenAllBitcoinAreMined } from './what-happens-when-all-bitcoin-are-mined.mdx';
+import { metadata as bitcoinEntdecken} from '../books/bitcoin-entdecken.mdx';
+
+export { getStaticProps } from 'lib/learn';
+export default (p) => (
+  <ArticleLayout
+    article={metadata}
+    related={whatHappensWhenAllBitcoinAreMined}
+    toc={toc}
+    {...p}
+  />
+);
+
+Im Gegensatz zu den staatlichen Fiatwährungen ist Bitcoin digital begrenzt. Aber wieso genau ist Bitcoin ausgerechnet auf 21 Millionen Einheiten limitiert? 
+
+## Bitcoin-Whitepaper
+
+Die Begrenzung von Bitcoin findet im Whitepaper keine Erwähnung, allerdings weist Satoshi Nakamoto, der Erfinder von Bitcoin, mit folgender Aussage auf das Limit hin:
+
+> «Die Gesamtauflage wird 21.000.000 Coins betragen. Sie wird verteilt werden an Netzwerkknoten, wenn sie Blöcke bilden, wobei der Betrag alle vier Jahre halbiert wird. 
+>
+> Die ersten 4 Jahre: 10.500.000 Coins <br />
+> nächste 4 Jahre: 5.250.000 Coins <br />
+> nächste 4 Jahre: 2.625.000 Coins <br />
+> nächste 4 Jahre: 1.312.500 Coins <br />
+> usw. <br />
+>
+> Wenn das ausläuft, kann das System Transaktionsgebühren unterstützen, falls benötigt. Es basiert auf einem offenen Wettbewerb, und es wird wahrscheinlich immer Nodes geben, die bereit sind, Transaktionen kostenlos zu verarbeiten.»
+>
+> [Satoshi Nakamoto, 8. Januar 2009](https://www.metzdowd.com/pipermail/cryptography/2009-January/014994.html)
+
+
+## Was ist das Bitcoin Halving?
+
+Wenn die Miner Bitcoin schürfen, erhalten sie dafür eine Belohnung, den sogenannten Block Reward.  Dieser setzt sich aus den Transaktionsgebühren und der Block Subsidy zusammen. 
+
+<Callout icon = "💡">
+ Die Block-Subsidy ist die Provision an neu geschürften Bitcoin, welcher ein erfolgreicher Miner erhält.
+</Callout>
+
+In den ersten 4 Jahren erhielten die Bitcoin-Miner dafür 50 Bitcoin pro Block. Alle 210’000 Blöcke oder umgerechnet alle vier Jahre kommt es allerdings zum Bitcoin Halving. Dabei wird die Block Subsidy für die geschürften Bitcoin jeweils halbiert.
+
+Bisher gab es deshalb folgende Bitcoin Halvings:
+
+- November 2012: Reduktion auf 25 Bitcoins pro Block
+- Juli 2016: Reduktion auf 12,5 Bitcoins pro Block
+- Mai 2020: Reduktion auf 6,25 Bitcoins pro Block
+
+<Callout icon = "💡">
+ Das nächste Halving ist in etwa für Mai 2024 vorhergesagt. Ab diesem Zeitpunkt wird die Block Subsidy nur noch 3,125 Bitcoins pro Block betragen.
+</Callout>
+
+## Fazit
+
+Wahrscheinlich stand nicht die 21 Millionen Bitcoin, sondern die 50 Bitcoin pro Block am Anfang in der Überlegung. Denn die 21 Millionen sind auch die mathematische Konsequenz. Sie ergibt sich, wenn man die Zahl der produzierten Blöcke (210’000 pro Halving-Periode) mit der Summe der sich halbierenden Belohnungen (50 Bitcoin+ 25 Bitcoin+ 12,5 Bitcoin + 6,25 Bitcoin + …0 ≈ 100) multipliziert.
+
+<Callout icon = "💡">
+ Genauer gesagt, werden insgesamt 20.999.9999.9999.9769 Bitcoin geschürft.
+</Callout>
+
+## Buchtipp
+
+<Books>
+  <Book book={bitcoinEntdecken} />
+</Books>

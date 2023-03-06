@@ -1,0 +1,81 @@
+---
+type: learn/article
+lang: de
+slug: cantillon-effect-explained
+title: Der Cantillon-Effekt einfach erklärt
+metatitle: Was ist der Cantillon-Effekt?
+author: Claudio Koller
+category:
+  slug: economy
+  title: Wirtschaft
+description: >
+  Was bedeutet der Cantillon-Effekt? Was sind die gesellschaftlichen Ursachen? Wie kann Bitcoin dieses Problem lösen? Auf diesen ökonimschen Effekt wird in diesem Artikel eingegangen.
+keywords:
+- Cantillon-Effekt
+- Inflation
+- Umverteilung
+- Deflation
+- Richard Cantillon
+published: !!timestamp 2023-02-02T21:21:21.000+02:00
+updated: !!timestamp 2023-02-02T21:21:21.000+02:00
+---
+
+import { ArticleLayout, Article, Articles, Books, Book, Callout } from 'ui/learn';
+import { metadata as fiatmoneyExplained } from './fiatmoney-explained.mdx';
+import { metadata as fiatStandard } from '../books/fiat-standard.mdx';
+
+export { getStaticProps } from 'lib/learn';
+export default (p) => (
+  <ArticleLayout
+    article={metadata}
+    related={fiatmoneyExplained}
+    toc={toc}
+    {...p}
+  />
+);
+
+Der Cantillon-Effekt ist ein wirtschaftliches Konzept, das sich auf die Art und Weise bezieht, wie die Verteilung des von einer Zentralbank geschaffenen neuen Geldes die Wirtschaft beeinflusst.
+
+## Was ist der Cantillon-Effekt?
+
+Die Inflation führt zu einer sozialen Ungerechtigkeit. Diejenigen, die nah an der Geldquelle sind und das neu erzeugte Geld zuerst erhalten, meistens staatliche Stellen, grössere Firmen und Finanzinstitute, können damit noch zu den alten Preisen einkaufen. 
+
+Doch diejenige Empfängerinnen und Empfänger von Löhnen und Pensionen, bei denen das Geld zuletzt ankommt, müssen für die Güter und Dienstleistungen bereits mehr bezahlen.
+
+<Callout icon = "💡">
+ Der Cantillon-Effekt bezeichnet in der Wirtschaft den Effekt, dass sich eine Erhöhung der Geldmenge nicht automatisch gleichmässig auf alle Bereiche in einer Volkswirtschaft verteilt.
+</Callout>
+
+## Richard Cantillon
+
+Benannt wurde dieser Effekt nach dem irisch-französischen Ökonomen Richard Cantillon (1680 - 1734). Er verfasste ein [Manuskript](https://archive.org/details/AnEssayonEconomicTheory_201612/mode/2up), welches zeigt, was die Vermehrung der Geldmenge auf die Einkommens- und Vermögensverhältnisse unterschiedlicher Personen verändert. 
+
+## Umverteilung von unten nach oben
+
+In einem Geldsystem, in dem ungedecktes Fiatgeld ausgegeben wird, wie es heute weltweit der Fall ist, fällt der Cantillon-Effekt weitaus stärker aus, als wenn Gold, Silber oder Bitcoin Verwendung findet. 
+
+Denn während ersteres willkürlich und beliebig von einer höheren zentralen Instanz beliebig manipulierbar ist, ist dies bei Edelmetallen und Bitcoin nicht möglich. Gold, Silber und Bitcoin sind physikalisch durch Natur oder Mathematik begrenzt und somit nicht beliebig beeinflussbar.
+
+<Callout icon = "💡">
+ Inflation führt langfristig zu einer Umverteilung von unten nach oben.
+</Callout>
+
+[> Erfahre mehr über das Fiatgeld.](/learn/economy/fiatmoney-explained)
+
+## Bitcoin und der Cantillon-Effekt
+
+Denn im Gegensatz zu traditionellem Fiatgeld, die von Zentralbanken ausgegeben und kontrolliert werden, ist Bitcoin dezentralisiert und unterliegt nicht denselben geldpolitischen Massnahmen. 
+
+Stattdessen ist die Geldpolitik von Bitcoin disinflationär und das Angebot an Bitcoin wird durch einen vorher festgelegten Algorithmus bestimmt, welcher klar durch die Teilnehmer definiert wird.
+
+Nach dieser Ansicht kann die dezentrale und Inflationsresistente Natur von Bitcoin eine stabilere und gerechtere Form von Geld bieten, die die negativen Auswirkungen des Cantillon-Effekts abschwächt.
+
+<Callout icon = "💡">
+Bitcoin bietet eine alternative Form von Geld, die nicht von zentraler Geldschöpfung der Zentralbanken und Regierungen unterliegt. 
+</Callout>
+
+## Buchtipp
+
+<Books>
+  <Book book={fiatStandard} />
+</Books>

@@ -1,0 +1,58 @@
+---
+type: learn/article
+lang: de
+slug: hodl-explained
+title: Woher stammt der Begriff «HODL»?
+metatitle: Der Begriff «HODL» einfach erklärt
+author: Claudio Koller
+category:
+  slug: bitcoin
+  title: Bitcoin Grundlagen
+description: >
+ Der Begriff «HODL» ist eines der bekanntesten Memes in der Bitcoin-Community. In diesem Artikel werden wir erklären, woher der Begriff «HODL» stammt.
+keywords:
+- Hodl
+- Bitcoin Hodl
+- Bitcoin buy and hold
+- Bedeutung Hodl
+- Bitcoim Meme
+- Meme Hodl
+published: !!timestamp 2023-02-13T21:21:21.000+02:00
+updated: !!timestamp 2023-02-13T21:21:21.000+02:00
+---
+
+import { ArticleLayout, Article, Articles, Books, Book, Callout } from 'ui/learn';
+import { metadata as bitcoinExplained } from './bitcoin-explained.mdx';
+import { metadata as bitcoinSelbstbestimmungDurchMathematik} from '../books/bitcoin-selbstbestimmung-durch-mathematik.mdx';
+
+export { getStaticProps } from 'lib/learn';
+export default (p) => (
+  <ArticleLayout
+    article={metadata}
+    related={bitcoinExplained}
+    toc={toc}
+    {...p}
+  />
+);
+
+Der Begriff «HODL» ist eines der bekanntesten Memes in der Bitcoin-Community. Man stösst schnell darauf, wenn man sich mit Bitcoin beschäftigt. In diesem Artikel werden wir erklären, woher das Meme «HODL» stammt.
+
+## Woher kommt das Meme «HODL» und welche Bedeutung hat es?
+
+Der Begriff «HODL» führt auf einen Tippfehler zurück, den ein User im Bitcoin Forum [«bitcointalk»](https://bitcointalk.org/index.php?topic=375643.0) im Jahr 2013 machte. 
+
+Im Januar war der Preis damals für einen Bitcoin unter 15 Dollar. Anfangs Dezember, im selben Jahr, stieg der digitale Vermögenswert auf einen Höchststand von über 1.100 Dollar. Einige Tage später, am 18. Dezember 2013, fiel der Bitcoin-Preis innerhalb von 24 Stunden um knapp 40 Prozent von 720 Dollar auf 440 Dollar. 
+
+Dies veranlasste ein Forumsmitglied mit dem Nickname «GameKyuubi» zu einem Posting, in dem er erklärte, dass er nicht vorhabe seine Bitcoin zu verkaufen, sondern sie weiterhin halte, da er wisse, dass er sowieso nie den richtigen Ein- und Ausstieg erwischen würde. 
+
+Da er beim Verfassen des Textes bereits einige Gläser intus hatte und somit stark angetrunken war, unterlief ihm in der Überschrift ein kleiner Tippfehler, der später in die Geschichte von Bitcoin eingehen sollte. Aus «I AM HOLDING» (Übersetzt «ICH HALTE») wurde das berühmte «I AM HODLING».
+
+<Callout icon = "💡">
+ Nach mehreren Gläsern Whiskey intus wurde aus «HOLD» den Begriff «HODL». Das berühmteste Meme im Bitcoin-Space wurde entstanden.
+</Callout>
+
+## Buchtipp
+
+<Books>
+  <Book book={bitcoinSelbstbestimmungDurchMathematik} />
+</Books>

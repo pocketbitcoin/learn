@@ -1,0 +1,92 @@
+---
+type: learn/article
+lang: de
+slug: set-up-bitcoin-backup
+title: Wie erstelle ich ein sicheres Bitcoin-Backup?
+metatitle: Wie erstelle ich ein sicheres Bitcoin-Backup?
+author: Claudio Koller
+category:
+  slug: bitcoin
+  title: Bitcoin Grundlagen
+description: >
+  Was ist eine Wiederherstellungsphrase? Wie kann damit eine Bitcoin Wallet wiederhergestellt werden? Dieser Artikel erklärt alles rund ums Thema Bitcoin Backup.
+keywords:
+- Bitcoin Backup
+- Wie erstelle ich ein Bitcoin Backup?
+- Wozu ein Bitcoin Backup?
+- Wieso ist ein Bitcoin Backup wichtig?
+- Bitcoin Nachlass / Vererbung
+- Wie eine Bitcoin wiederherstellen?
+published: !!timestamp 2022-10-14T21:21:21.000+02:00
+updated: !!timestamp 2022-10-14T21:21:21.000+02:00
+---
+
+import { ArticleLayout, Article, Articles, Books, Book, Callout } from 'ui/learn';
+import { metadata as howToBequeathBitcoin } from './how-to-bequeath-bitcoin.mdx';
+import { metadata as bitcoinsVerwahrenUndVererben } from '../books/bitcoins-verwahren-und-vererben.mdx';
+
+export { getStaticProps } from 'lib/learn';
+export default (p) => (
+  <ArticleLayout
+    article={metadata}
+    related={howToBequeathBitcoin}
+    toc={toc}
+    {...p}
+  />
+);
+
+Wenn eine Bitcoin Wallet verloren geht, gelöscht, beschädigt oder gestohlen wird, ist es massgebend, dass ein Backup vorhanden ist. Denn ein Bitcoin Backup ermöglicht die Wiederherstellung einer Wallet mit der Wiederherstellungsphrase.
+
+## Bitcoin Wallet = Schlüsselbund
+
+Viele Personen denken, dass sich ihre Bitcoin auf ihrer Wallet befinden. Diese Annahme ist jedoch nicht korrekt, denn Bitcoin werden immer dezentral auf der Bitcoin-Blockchain gespeichert. 
+
+Mit einer Wallet verwaltest du lediglich den Zugang zu deinen Bitcoin. Daher kannst du dir deine Wallet wie einen Schlüsselbund vorstellen. Mit der Wiederherstellungsphrase kannst du den Zugriff auf deine Bitcoin wiederherstellen.
+
+## Was ist die Wiederherstellungsphrase?
+
+Die Wiederherstellungsphrase, auch bekannt als Seed, besteht je nach Wallet aus 12 oder 24&nbsp;Wörtern, die von deiner Wallet zufällig generiert werden. Aus diesen Wörtern wird dein privater Schlüssel abgeleitet. Du kannst sie gut mit dem Passwort zu deinem eBanking vergleichen.
+
+Ein wichtiger Unterschied zwischen der Wiederherstellungsphrase und einem eBanking-Passwort ist jedoch, dass du deine Bank kontaktieren kannst, falls du das Passwort zu deinem eBanking-Konto vergessen hast. Wenn du eine Non-Custodial Wallet besitzt, bist du hingegen deine eigene Bank. Das bedeutet auch, dass du keinen Kundensupport und keine weitere Ansprechperson hast.
+
+Aus diesem Grund ist die sichere Aufbewahrung der Wiederherstellungsphrase einer der wichtigsten Aspekte für Personen, die in Bitcoin investieren. Trotzdem wird die Aufbewahrung oftmals vernachlässigt oder unterschätzt.
+
+Leider häufen sich Betrugsfälle, in welchen Wiederherstellungsphrasen an Personen weitergegeben werden, die sich zum Beispiel als Mitarbeitende von Bitcoin-Unternehmen ausgeben. Deine Wiederherstellungsphrase ist jedoch nur für dich bestimmt. Falls dich jemand danach fragt, musst du sofort misstrauisch werden.
+
+<Callout icon="⚠️">
+Gib deine privaten Schlüssel niemals an andere Personen weiter! Pocket wird dich nie nach einem privaten Schlüssel fragen.
+</Callout>
+
+## Wie bewahrst du deine Wiederherstellungsphrase sicher auf?
+
+Bitcoin selber zu verwahren bringt eine grosse Eigenverantwortung mit sich. Jeder, der Zugriff auf die Wiederherstellungsphrase deiner Wallet hat, kann auf deine Bitcoin zugreifen. Deshalb ist es wichtig, dass du diese sicher aufbewahrst und niemals an Dritte weitergibst.
+
+Schreibe die Wörter niemals digital auf. Die Wiederherstellungsphrase sollte immer offline abgspeichert werden. Ebenfalls solltest du die Wörter nicht auf ein digitales Dokument schreiben und danach ausdrucken, da einige Drucker deine Druckaufträge archivieren.
+
+Am besten schreibst du die Wörter, wie vorgegeben, nummeriert auf ein Blatt Papier. Es wird empfohlen die Wörter mit Bleistift und Kugelschreiber aufzuschreiben, da Kugelschreiber auf die Dauer verbleichen kann. Von Vorteil wäre es, wenn du das Dokument danach laminierst.
+
+<Callout icon="🔐">
+Bevor du dein ganzes Bitcoin-Guthaben auf die eingerichtete Wallet sendest, empfiehlt es sich sicherheitshalber die Wallet mit der Wiederherstellungsphrase wiederherzustellen. So bist du dir ganz sicher, dass du alle Wörter korrekt aufgeschrieben und dabei keine Schreibfehler gemacht hast.
+</Callout>
+
+Dein Backup sollte wasser- und im Idealfall sogar feuerfest sein. Alternativ gibt es nützliches Zubehör, mit welchem du dein Backup noch sicherer verwalten kannst (z.&nbsp;B. Gravuren in Stahlplatte, feuerfeste und wasserdichte Mappen, sowie einen klassischen Tresor).
+
+Eine weitere Möglichkeit wäre es die Wiederherstellungsphrase, oder eine Kopie davon, bei einer Bank oder einem Notar zu hinterlegen. Jedoch musst du diesen Institutionen vertrauen und bist von ihnen abhängig, was der Ideolgie von Bitcoin widerspricht.
+
+## Wie kann ich mit meiner Wiederherstellungpshrase den Zugriff auf meine Bitcoin wiederherstellen?
+
+Die aufgeschriebenen Wörter, deine Wiederherstellungsphrase, kannst du in jede Wallet importieren, indem du alle Wörter in der richtigen Reihenfolge eingibst. Es muss nicht unbedingt der gleiche Typ Wallet sein, welchen du zuvor verwendet hast. Die meisten Wallet sind auf dem gleichen Standard aufgebaut.
+
+Eine neue Hardware-Wallet kannst du direkt über uns bestellen. [Wähle hier deine neue Wallet aus und erhalte sie innerhalb weniger Werktage.](https://pocketbitcoin.com/checkout)
+
+<Callout icon="❓">
+Hast du noch Fragen? Falls dir noch Sachen unklar sind oder du Probleme bei der Wiederherstellung deiner Wallet hast, kannst du uns gerne über [Telegram](https://t.me/PocketBitcoinTG) oder per [E-Mail](/contact) kontaktieren. Die Pocket-Community hilft dir gerne weiter.
+</Callout>
+
+[> Lerne mehr wie man Bitcoin vererbt und wie du dabei richtig vorgehen solltest.](/learn/bitcoin/how-to-bequeath-bitcoin)
+
+## Buchtipp
+
+<Books>
+  <Book book={bitcoinsVerwahrenUndVererben} />
+</Books>

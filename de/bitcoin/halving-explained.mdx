@@ -1,0 +1,112 @@
+---
+type: learn/article
+lang: de
+slug: halving-explained
+title: Bitcoin-Halving einfach erklärt
+metatitle: Was ist das Bitcoin-Halving?
+author: Claudio Koller
+category:
+  slug: bitcoin
+  title: Bitcoin Grundlagen
+description: >
+ Erfahre mehr über das Bitcoin-Halving – ein wichtiges Ereignis, das alle vier Jahre stattfindet und die Belohnung für das Mining von Bitcoin halbiert. Dieser Artikel erklärt einfach und verständlich, was das Bitcoin-Halving ist, warum es stattfindet und welche Auswirkungen es auf das Bitcoin-Netzwerk hat.
+keywords:
+- Was ist Bitcoin?
+- Bitcoin Halving
+- Bitcoin Mining
+- Bitcoin Proof-of-Work
+published: !!timestamp 2023-02-13T21:21:21.000+02:00
+updated: !!timestamp 2023-02-13T21:21:21.000+02:00
+---
+
+import { ArticleLayout, Article, Articles, Books, Book, Callout } from 'ui/learn';
+import { metadata as bitcoinExplained } from './bitcoin-explained.mdx';
+import { metadata as bitcoinEntdecken} from '../books/bitcoin-entdecken.mdx';
+
+export { getStaticProps } from 'lib/learn';
+export default (p) => (
+  <ArticleLayout
+    article={metadata}
+    related={bitcoinExplained}
+    toc={toc}
+    {...p}
+  />
+);
+
+Das Bitcoin Halving ist ein bedeutendes Ereignis im Bitcoin-Netzwerk, das alle vier Jahre stattfindet. Es hat Auswirkungen auf die Belohnung, welche Bitcoin-Miner erhalten. Im folgenden Artikel werden wir näher auf das Bitcoin Halving eingehen und erklären, was es ist, wie es funktioniert und welche Auswirkungen es auf das Bitcoin-Ökosystem hat.
+
+## Was ist das Bitcoin-Halving?
+
+Bitcoin-Halving bedeutet, wie der Name bereits andeutet, die Halbierung der Block-Subsidy für einen geschürften Block. Das bedeutet, dass die Miner 50% weniger Bitcoin als Belohnung für die Verifizierung ihrer Transaktion erhalten. 
+
+Durch das Halving wird die disinflationäre Angebotsstruktur hinter Bitcoin mathematisch gestützt. Es wird nie mehr als nicht ganz 21 Millionen Bitcoin geben.
+
+<Callout icon = "💡">
+Der Mechanismus des Halving macht Bitcoin zu einer knappen, inflationsresistenten Ressource.
+</Callout>
+
+[> Erfahre mehr, wieso Bitcoin auf 21 Millionen Währungseinheiten begrenzt ist.](/learn/bitcoin/why-21-mio-bitcoin)
+
+## Wann findet das Halving statt?
+
+Im Bitcoin-Netzwerk findet alle 210’000 Blöcke ein Halving statt. Wenn man von einer durchschnittlichen Blockzeit von 10 Minuten ausgeht, wird das Halving etwa alle vier Jahre stattfinden. 
+
+<Callout icon = "💡">
+ Die Bitcoin Block-Subsidy halbiert sich nach 210’000 Blöcken, etwa alle vier Jahre.
+</Callout>
+
+Dieser Prozess wird sich bis ungefähr zum Jahr 2140 fortsetzen, wenn die 34. Halbierung die letzte Block-Subsidy von 0,00000001 Bitcoin (= 1 Satoshi) auf 0 gehen wird. 
+
+Ab dann erhalten die Miner nur noch die Gebühren, welche bezahlt werden, um Transaktionen auszuführen.
+
+<Callout icon = "💡">
+ Das letzte Bitcoin-Halving fand am 11. Mai 2020 statt, das nächste ist für März 2024 geplant. Das letzte Halving wird voraussichtlich im Jahr 2140 der Fall sein.
+</Callout>
+
+[> Erfahre mehr darüber, was passiert, wenn alle Bitcoin geschürft sind.](/learn/bitcoin/what-happens-when-all-bitcoin-are-mined)
+
+## Die historischen Bitcoin-Halvings
+
+In den ersten 4 Jahren erhielten die Miner als Block-Subsidy 50 Bitcoin pro Block. 
+
+Danach gab es folgende Bitcoin-Halvings:
+
+- November 2012: Reduktion auf 25 Bitcoins pro Block
+- Juli 2016: Reduktion auf 12,5 Bitcoins pro Block
+- Mai 2020: Reduktion auf 6,25 Bitcoins pro Block
+
+## Beeinflusst das Halving den Bitcoin-Preis?
+
+Durch das Halving werden im Laufe der Zeit weniger Bitcoin ausgegeben, wodurch ein Anstieg des Bitcoin-Preises wahrscheinlicher wird. Unter Annahme bei einer gleichbleibenden Nachfrage.
+
+Das Halving ist also eine der Möglichkeiten, wie das Bitcoin-Protokoll die Knappheit aufrechterhält. Die reduzierte Inflationsrate und die dadurch entstehende Angebotsverknappung sollte einen positiven Effekt auf den Preis haben. 
+
+Der Preis sollte steigen, solange die Nachfrage auf dem Niveau vor der Verknappung bleibt, weil alle 10 Minuten nur halb so viele neue Bitcoin dazu kommen.
+
+<Callout icon = "💡">
+ Das Bitcoin Halving ermöglicht eine mathematische Verknappung der Inflation. Historisch gesehen hat jedes Halving den Preis von Bitcoin auf ein neues Allzeithoch gebracht.
+</Callout>
+
+## Was geschieht, wenn der Block-Reward zu klein wird?
+
+Das Halving beim Bitcoin-Mining könnte dazu führen, dass einige Miner nicht mehr genug Belohnungen erhalten, um profitabel zu bleiben. Infolgedessen könnten sie ihre ASIC-Geräte vom Bitcoin-Netzwerk abziehen, was zu einem Rückgang der Hashrate führen würde. 
+
+Dies könnte dazu führen, dass die Blockzeit länger wird, bis die Mining-Difficulty angepasst wird. Sobald die Mining Difficulty angepasst wird, wird das kryptografische Rätsel, das die Miner lösen müssen, einfacher, was wiederum die durchschnittliche Blockzeit auf etwa 10 Minuten zurückkehren lässt.
+
+<Callout icon = "💡">
+ Letztendlich werden die Transaktionsgebühren die Haupteinnahmequelle der Miner sein.
+</Callout>
+
+[> Erfahre mehr über das Bitcoin Mining-Difficulty.](/learn/bitcoin/bitcoin-mining-difficulty-explained)
+
+## Fazit
+
+Das Bitcoin-Halving dient dazu, die Inflation von Bitcoin transparent zu kontrollieren und sicherzustellen, dass die Anzahl der im Umlauf befindlichen Bitcoin nicht zu schnell wächst. 
+
+Das Bitcoin-Halving kann ebenfalls auch einen Einfluss auf den Bitcoin-Preis haben. Bei gleicher Nachfrage nach der Kryptowährung und bei geringerer Angebotsmenge müsste der Preis in einem freien Markt steigen.
+
+## Buchtipp
+
+<Books>
+  <Book book={bitcoinEntdecken} />
+</Books>

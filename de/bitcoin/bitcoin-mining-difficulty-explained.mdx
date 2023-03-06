@@ -1,0 +1,85 @@
+---
+type: learn/article
+lang: de
+slug: bitcoin-mining-difficulty-explained
+title: Was ist die Bitcoin Mining-Difficulty?
+metatitle: Was ist die Bitcoin Mining-Difficulty? | Pocket
+author: Claudio Koller
+category:
+  slug: bitcoin
+  title: Bitcoin Grundlagen
+description: >
+ Die Bitcoin Mining-Difficulty ist die Schwierigkeit der Aufgabe um einen neuen Block in der Bitcoin-Blockchain zu finden. Sie wird regelmässig angepasst.
+keywords:
+- Mining Difficulty
+- Bitcoin Mining
+- Bitcoin Hashrate
+- Bitcoin Schwierigkeit
+- Bitcoin Proof-of-Work
+published: !!timestamp 2023-02-06T21:21:21.000+02:00
+updated: !!timestamp 2023-02-06T21:21:21.000+02:00
+---
+
+import { ArticleLayout, Article, Articles, Books, Book, Callout } from 'ui/learn';
+import { metadata as whatHappensWhenAllBitcoinAreMined } from './what-happens-when-all-bitcoin-are-mined.mdx';
+import { metadata as bitcoinEntdecken } from '../books/bitcoin-entdecken.mdx';
+
+export { getStaticProps } from 'lib/learn';
+export default (p) => (
+  <ArticleLayout
+    article={metadata}
+    related={whatHappensWhenAllBitcoinAreMined}
+    toc={toc}
+    {...p}
+  />
+);
+
+Da der Prozess des Minings reine Glückssache ist, könnte man behaupten, dass je mehr Miner im Netzwerk aktiv sind, desto schneller werden neue Blöcke gefunden. Somit würde sich die durchschnittliche Blockzeit im Bitcoin-Netzwerk verändern, je nach dem viele Miner aktiv sind. Dies würde fatale Folgen auf den Ausschüttungsplan von Bitcoin haben und zu einer ungewollten Inflation führen.
+
+## Bitcoin-Mining kurz erklärt
+
+Bitcoin-Mining ist der Prozess des Hinzufügens neuer Transaktionen zur Bitcoin-Blockchain und ist für die Sicherheit des Netzwerks zuständig.
+
+Das Bitcoin-Protokoll passt die Mining-Difficulty automatisch an, um sicherzustellen, dass der Blockchain neue Blöcke mit gleichbleibender Geschwindigkeit hinzugefügt werden, unabhängig von der zum Mining verwendeten Rechenleistung.
+
+<Callout icon = "💡">
+ Die Bitcoin Mining Difficulty bestimmt den Schwierigkeitsgrad der zu erfüllenden Rechenaufgabe, die gelöst werden muss, um einen neuen Block zu schürfen.
+</Callout>
+
+## Je mehr Rechenleistung, desto schwieriger die Rechenaufgabe
+
+Je mehr Miner dem Netzwerk beitreten, die um neue Blöcke konkurrieren, desto höher wird die Mining-Difficulty. Wenn die Mining-Leistung im Netzwerk zunimmt, erhöht das Protokoll automatisch die Schwierigkeit, um das Finden neuer Blöcke zu erschweren und die durchschnittliche zehnminütige Blockzeit einzuhalten.
+
+Die Mining-Difficulty ist ein Indikator für den Schwierigkeitsgrad beim Bitcoin-Mining. Sie bestimmt die Komplexität der zu lösenden kryptographischen Rechenaufgabe und variiert je nach Anzahl Miner oder genauer gesagt der Rechenleistung im Netzwerk.
+
+<Callout icon = "💡">
+ Je mehr Miner sich dem Bitcoin-Netzwerk anschliessen, desto höher die Hashrate, beziehungsweise die Schwierigkeit der Rechenaufgabe.
+</Callout>
+
+[> Erfahre mehr über die Hashfunktionen bei Bitcoin](/learn/bitcoin/hashfunction-explained)
+
+## Difficulty Adjustment
+
+Das Bitcoin-Netzwerk ist so konzipiert, dass im Durchschnitt alle zehn Minuten ein neuer Block zur Bitcoin-Blockchain hinzugefügt wird.
+
+Demnach muss die Difficulty erhöht oder reduziert werden, um die gewünschte Blockzeit von durchschnittlich 10 Minuten einzuhalten. Daher wird die Difficulty alle 2.016 Blöcke, was ungefähr 2 Wochen entspricht, angepasst. Diese Anpassung wird auch als Difficulty Adjustment bezeichnet.
+
+<Callout icon = "💡">
+ Die Difficulty im Bitcoin-Netzwerk wird alle 2.016 Blöcke angepasst.
+</Callout>
+
+## Fazit
+
+Die Bitcoin Mining-Difficulty ist die Schwierigkeit der Aufgabe um einen neuen Block in der Bitcoin-Blockchain zu finden. Die Schwierigkeit wird in regelmässigen Abständen angepasst, um sicherzustellen, dass die durchschnittliche Zeit, um einen neuen Block zu finden, konstant bleibt.
+
+Dies ist notwendig, um die dezentrale Natur des Bitcoin-Netzwerks aufrechtzuerhalten und um sicherzustellen, dass der Blockchain in gleichmässigem Tempo neue Blöcke hinzugefügt werden.
+
+<Callout icon = "💡">
+ Die Mining-Difficulty ist ein wichtiger Parameter, der dazu beiträgt, die Sicherheit und Dezentralisierung des Bitcoin-Netzwerks zu gewährleisten.
+</Callout>
+
+## Buchtipp
+
+<Books>
+  <Book book={bitcoinEntdecken} />
+</Books>

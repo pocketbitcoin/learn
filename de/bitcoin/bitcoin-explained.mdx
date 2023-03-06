@@ -1,0 +1,115 @@
+---
+type: learn/article
+lang: de
+slug: bitcoin-explained
+title: Was ist Bitcoin?
+metatitle: Was ist Bitcoin? Bitcoin kurz und einfach erklärt
+author: Claudio Koller
+category:
+  slug: bitcoin
+  title: Bitcoin Grundlagen
+description: >
+ Wie ist Bitcoin eine Software und Währung zugleich? Wir erklären, wie Bitcoin funktioniert und was die Unterschiede zum Euro und anderen Währungen sind.
+keywords:
+- Was ist Bitcoin?
+- Bitcoin kurz erklärt
+- Bitcoin einfach erklärt
+- Bitcon als Geld
+- Bitcoin als Wertspeicher
+- Bitcoin als Wertaufbewahrungsmittel
+- Bitcoin als Zahlungsnetzwerk
+- Be your own bank
+published: !!timestamp 2022-10-14T21:21:21.000+02:00
+updated: !!timestamp 2022-10-14T21:21:21.000+02:00
+---
+
+import { ArticleLayout, Article, Articles, Books, Book, Callout } from 'ui/learn';
+import { metadata as satoshiCurrencyExplained } from './satoshi-currency-explained.mdx';
+import { metadata as bitcoinEntdecken} from '../books/bitcoin-entdecken.mdx';
+
+export { getStaticProps } from 'lib/learn';
+export default (p) => (
+  <ArticleLayout
+    article={metadata}
+    related={satoshiCurrencyExplained}
+    toc={toc}
+    {...p}
+  />
+);
+
+Bitcoin ist eine Open-Source Software, welche eine dezentrale, digitale und globale Währung zur Verfügung stellt. Zugleich ist Bitcoin ein monetäres Netzwerk über das Menschen sich direkt gegenseitig Geld zusenden können, ohne sich persönlich vertrauen und kennen zu müssen.
+
+## Die Bitcoin-Blockchain
+
+Die technische Grundlage von Bitcoin ist die Blockchain. Diese Technologie nutzt kryptographisch miteinander verknüpfte Blöcke, um Transaktionen zu speichern und abzuwickeln.
+
+Im Gegensatz zu herkömmlichen Zahlungssystemen, bei denen eine zentrale Institution wie eine Regierung, eine Zentralbank oder ein Unternehmen die Kontrolle hat, ist die Bitcoin-Blockchain eine dezentrale Datenbank, die keiner zentralen Kontrolle unterliegt. Das bedeutet, dass man kein Vertrauen in eine Drittpartei haben muss, um Zahlungen abzuwickeln.
+
+Dank dieser dezentralen Struktur funktioniert Bitcoin vollständig ohne Vertrauen in eine zentrale Autorität.
+
+<Callout icon = "📎">
+ Bitcoin ist ein Zahlungsnetzwerk und Geld zugleich und kommt ohne Finanzinstitute zurecht.
+</Callout>
+
+## Ursprung Bitcoin
+
+Die Idee von Bitcoin wurde von einer Person oder Gruppe unter dem Pseudonym Satoshi Nakamoto im Oktober 2008 als Whitepaper im Internet publiziert und im Januar 2009 wurde die Open-Source Software dazu veröffentlicht.
+
+[> Erfahre mehr über das Bitcoin-Whitepaper.](/learn/bitcoin/bitcoin-whitepaper)
+
+## Bitcoin als Zahlungsnetzwerk
+
+Bitcoin-Transaktionen können ohne Überwachung einer Regierung, eines Unternehmens oder einer Bank abgewickelt werden. Im Bitcoin Zahlungsnetzwerk gibt es also keine Parteien zur Vermittlung oder höhere Instanzen, die es kontrollieren. Transaktionen werden kryptographisch signiert und über ein gleichberechtigtes Peer-to-Peer-Netzwerk zensurresistent abgewickelt.
+
+Jede Person, die mit einem elektronischen Gerät Internetempfang hat, kann Teil des Netzwerks sein. Das Bitcoin-Netzwerk grenzt daher niemanden aus.
+
+<Callout icon = "📎">
+ Bitcoin ist eine Open-Source Software, welche direkte Transaktionen zwischen zwei Parteien ermöglicht, ohne höhere Kontrollinstanz.
+</Callout>
+
+Die Bitcoin-Software ist Open-Source. Dies bedeutet, dass der Quellcode vollständig publiziert und frei zugänglich ist. Jede Person, die am Netzwerk teilnimmt, hat dadurch die Option den Algorithmus selber zu überprüfen und zu verifizieren. 
+
+Jeder Mensch hat die Möglichkeit an der Entwicklung von Bitcoin mitzuwirken und Verbesserungsvorschläge einzureichen. Änderungen am System können jedoch nicht alleine ausgeführt und publiziert werden. Es braucht dafür einen gemeinsamen Konsens des Netzwerks, also eine Übereinkunft der Netzwerk-Teilnehmenden.
+
+## Bitcoin als Geld
+
+Netzwerkteilnehmende können sich Geld in Form der Währungseinheit Bitcoin zusenden. Dies geschieht komplett digital. Anders als es bei Fiatgeld, wie dem US-Dollar, dem Euro oder dem Schweizer Franken der Fall ist, existieren also keine physischen Noten oder Münzen der Währungseinheit Bitcoin.
+
+Wie der Cent zum Euro oder der Rappen zum Franken, so hat auch Bitcoin eine kleine Währungseinheit, die Satoshi genannt wird. Jeder Bitcoin besteht aus 100&nbsp;Millionen Satoshi.
+
+<Callout icon = "💡">
+1 BTC = 100’000’000 Satoshi
+</Callout>
+
+Einer der grössten Unterschiede von Bitcoin zu herkömmlichen staatlichen Währungen ist, dass die Anzahl der im Netzwerk zu Verfügung stehenden Bitcoin auf Basis einer kryptographischen Formel auf 21 Millionen Einheiten begrenzt ist.
+
+[> Erfahre mehr, wieso Bitcoin auf 21 Millionen Währungseinheiten begrenzt ist.](/learn/bitcoin/why-21-mio-bitcoin)
+
+<Callout icon = "🏷️">
+ Der Preis von Bitcoin wird in einem freien Markt durch Angebot und Nachfrage bestimmt.
+</Callout>
+
+## Bitcoin braucht keine Finanzinstitute
+
+Da Bitcoin ohne Banken, Fintechs oder anderer Finanzinstitute funktioniert, ist jede Person, die Bitcoin besitzt, ihre eigene Bank.
+
+<Callout icon = "🏦">
+ Bei Bitcoin gilt das Motto: Be your own bank.
+
+</Callout>
+
+Wenn du deine Bitcoin auf deiner eigenen Wallet verwaltest, besitzt du den alleinigen Zugang zu deinem Bitcoin-Guthaben. Somit bist du völlig unabhängig gegenüber jeglichen Drittparteien. Du musst nur dir selber und der Kryptographie hinter Bitcoin vertrauen.
+
+[> Erfahre mehr über die Grundlagen der Kryptographie hinter Bitcoin.](/learn/bitcoin/cryptography-explained)
+
+Die Datenbank von Bitcoin, auch Blockchain genannt, mit allen Transaktionen und Beständen liegt nicht auf einem zentralen Server eines Finanzinstituts, sondern ist auf tausenden Computern weltweit verteilt. Diese Verteilung gibt allen Netzwerkteilnehmenden die Sicherheit, dass keine Bitcoin aus dem Nichts erschaffen, falsche Transaktionen ausgeführt oder zweimal ausgegeben werden können.
+
+> Bitcoin schafft ein Umfeld das reif ist für Innovation, denn es ist nicht nur eine Währung; es ist eine Technologie, ein Netzwerk und eine Währung.
+>
+> Andreas Antonopoulos
+
+## Buchtipp
+
+<Books>
+  <Book book={bitcoinEntdecken} />
+</Books>
